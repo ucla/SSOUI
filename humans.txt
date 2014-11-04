@@ -3,13 +3,21 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+	Warren Leung -- Lead, Java Engineering
+	Carl Uebelhart -- UX, Front End Dev, Design -- @erutan
+	Karthik Doppola -- Java Engineering
+	Xiaoling Zhang -- Suppport
+	
+	Albert Wu -- User Stories, Tanking
 
 # THANKS
 
-    <name>
+	Cats
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    jQuery, Modernizr
+	HTML5, Jekyll
+	jQuery, Modernizr
+	SASS, COMPASS
+	Bundler, Placeholdr
+	Shibboleth

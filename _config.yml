@@ -7,4 +7,5 @@ github_username:  erutan
 
 # Build settings
 markdown: kramdown
-pages: ./_pages
+destination: _site
+pages: _pages

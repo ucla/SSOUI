@@ -1,0 +1,10 @@
+# Site settings
+title: UCLA Single Sign On Templates
+email: carl@erutan.net
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://auth.ucla.edu" # the base hostname & protocol for your site
+twitter_username: erutan
+github_username:  erutan
+
+# Build settings
+markdown: kramdown

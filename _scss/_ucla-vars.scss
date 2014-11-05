@@ -1,18 +1,41 @@
- // Primary color
- 
+/////////////////////////////////////////
+///             LAYOUT
+/////////////////////////////////////////
+
+
+
+/////////////////////////////////////////
+///          UCLA COLOURS
+/////////////////////////////////////////
+
+// Primary color
+
 $uclablue: #3399cc;
- 
+
 // Secondary Colors
- 
+
 $uclagold: #ffb300;
 $uclayellow: #ffe800;
 $ucladarkblue: #0055a6;
 $uclaliteblue: #00a5e5;
- 
+
 // Tertiary Colors
- 
+
 $uclayellowneon: #ffff00;
 $uclagreenneon: #00ff87;
 $uclapinkneon: #ff00a5;
 $uclaliteblueneon: #00ffff;
 $uclapurpleneon: #8237ff;
+
+/////////////////////////////////////////
+///           GENERAL VARS
+/////////////////////////////////////////
+
+$body-text-color: #666;
+$body-background-color: #fff;
+
+$base-font-stack: ProximaNova, Verdana, sans-serif;
+
+$anchor-font-color: $uclapurpleneon;
+$anchor-font-color-hover: $ucladarkblue;
+

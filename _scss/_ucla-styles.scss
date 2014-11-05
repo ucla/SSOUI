@@ -1,0 +1,40 @@
+/////////////////////////////////////////
+///       GLOBAL/ELEMENTISH
+/////////////////////////////////////////
+
+body.ucla-logon {
+	background: #E3E2FA url('./images/background.png')
+}
+
+a {
+	color: $anchor-font-color;
+	text-decoration: underline;
+	@include transition-property(color);
+	@include transition-duration(.15s);
+	&:visited { 
+		color: $anchor-font-color;
+	}
+	&:hover, &:focus {
+		text-decoration: underline;
+		color: $anchor-font-color-hover;
+		outline: 0;
+	} 
+	&:focus {
+		outline: thin dotted;
+	}
+	&:active {
+		outline: 0;
+	}
+}
+
+/////////////////////////////////////////
+///          CLASSES/ROLES
+/////////////////////////////////////////
+
+header[role="banner"] {
+	
+}
+
+footer[role="contentinfo"] {
+	background: $ucladarkblue;
+}

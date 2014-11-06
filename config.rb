@@ -1,4 +1,7 @@
 # Require any additional compass plugins here.
+require 'singularitygs'
+require 'breakpoint'
+require 'compass-normalize'
 
 # USE BUNDLER!!
 

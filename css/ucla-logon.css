@@ -1,0 +1,67 @@
+/*
+Syntax error: Invalid CSS after "$p-font-size": expected selector or at-rule, was ": 1em;"
+        on line 65 of /Users/erutan/Github/SSOUI/_scss/_ucla-vars.scss
+        from line 15 of /Users/erutan/Github/SSOUI/_scss/ucla-logon.scss
+
+60: $h1-font-size: 2em;
+61: $h2-font-size: 1.75em;
+62: $h3-font-size: 1.5em;
+63: $h4-font-size: 
+64: 
+65: $p-font-size: 1em;
+66: $meta-font-size: .75em;
+67: 
+68: /////////////////////////////////////////
+69: ///           FONT FACE
+70: /////////////////////////////////////////
+
+Backtrace:
+/Users/erutan/Github/SSOUI/_scss/_ucla-vars.scss:65
+/Users/erutan/Github/SSOUI/_scss/ucla-logon.scss:15
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/scss/parser.rb:1312:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/scss/parser.rb:1248:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/scss/parser.rb:42:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/engine.rb:409:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/engine.rb:305:in `to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:295:in `block in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:294:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:151:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/root_node.rb:20:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/engine.rb:274:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:214:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:208:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:208:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:462:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:324:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.7.11/lib/listen/listener.rb:282:in `call'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.7.11/lib/listen/listener.rb:282:in `_process_changes'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.7.11/lib/listen/listener.rb:239:in `block in _wait_for_changes'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.7.11/lib/listen/listener.rb:222:in `loop'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.7.11/lib/listen/listener.rb:222:in `_wait_for_changes'
+/Library/Ruby/Gems/2.0.0/gems/listen-2.7.11/lib/listen/listener.rb:318:in `block in _start_wait_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"$p-font-size\": expected selector or at-rule, was \": 1em;\"\A         on line 65 of /Users/erutan/Github/SSOUI/_scss/_ucla-vars.scss\A         from line 15 of /Users/erutan/Github/SSOUI/_scss/ucla-logon.scss\A \A 60: $h1-font-size: 2em;\A 61: $h2-font-size: 1.75em;\A 62: $h3-font-size: 1.5em;\A 63: $h4-font-size: \A 64: \A 65: $p-font-size: 1em;\A 66: $meta-font-size: .75em;\A 67: \A 68: /////////////////////////////////////////\A 69: ///           FONT FACE\A 70: /////////////////////////////////////////"; }

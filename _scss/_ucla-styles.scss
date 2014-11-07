@@ -2,8 +2,8 @@
 ///       GLOBAL/ELEMENTISH
 /////////////////////////////////////////
 
-body.ucla-logon {
-	background: #E3E2FA url('./images/background.png')
+body {
+	background: #E3E2FA url('/images/background.jpg');
 }
 
 a {
@@ -24,6 +24,17 @@ a {
 	}
 	&:active {
 		outline: 0;
+	}
+}
+
+ul[role="main"] {
+	list-style: none;
+	li:before {
+		color: $uclagreenneon;
+		content: "•";
+		position: relative;
+		font-size: 1.2em;
+		margin-left: -.5em;
 	}
 }
 

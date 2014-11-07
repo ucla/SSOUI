@@ -2,7 +2,20 @@
 ///             LAYOUT
 /////////////////////////////////////////
 
+// typical viewport breakpoints
+$mobile-only: 1px 320px;
+$past-mobile: 321px;
+$before-tablet: 1px 768px;
+$mobile-to-tablet: 321px 768px;
+$past-tablet: 769px;
+$tablet-to-laptop: 769px 1024px;
+$wide: 1025px;
 
+// content specific breakpoints
+
+// singularity.gs layout
+@include add-grid(1 16 1);
+@include add-grid(12 at $past-mobile);
 
 /////////////////////////////////////////
 ///          UCLA COLOURS
@@ -28,7 +41,7 @@ $uclaliteblueneon: #00ffff;
 $uclapurpleneon: #8237ff;
 
 /////////////////////////////////////////
-///           GENERAL VARS
+///           TYPOGRAPHY
 /////////////////////////////////////////
 
 $body-text-color: #666;
@@ -39,8 +52,21 @@ $base-font-stack: ProximaNova, Verdana, sans-serif;
 $anchor-font-color: $uclapurpleneon;
 $anchor-font-color-hover: #1e4b87;
 
+// prepare for media queries to shift base font and have that inherited down em chain
+body {
+	font-size: 100%;
+}
+
+$h1-font-size: 2em;
+$h2-font-size: 1.75em;
+$h3-font-size: 1.5em;
+$h4-font-size: 
+
+$p-font-size: 1em;
+$meta-font-size: .75em;
+
 /////////////////////////////////////////
-///          FONTS
+///           FONT FACE
 /////////////////////////////////////////
 
 @font-face {

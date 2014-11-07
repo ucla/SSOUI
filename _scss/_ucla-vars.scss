@@ -18,21 +18,21 @@ $wide: 1025px;
 @include add-grid(12 at $past-mobile);
 
 /////////////////////////////////////////
-///          UCLA COLOURS
+///            COLOURS
 /////////////////////////////////////////
 
-// Primary color
+// Primary UCLA Colour
 
 $uclablue: #3399cc;
 
-// Secondary Colors
+// Secondary UCLA Colours
 
 $uclagold: #ffb300;
 $uclayellow: #ffe800;
 $ucladarkblue: #0055a6;
 $uclaliteblue: #00a5e5;
 
-// Tertiary Colors
+// Tertiary UCLA Colours
 
 $uclayellowneon: #ffff00;
 $uclagreenneon: #00ff87;
@@ -40,8 +40,12 @@ $uclapinkneon: #ff00a5;
 $uclaliteblueneon: #00ffff;
 $uclapurpleneon: #8237ff;
 
+// SSO Colours
+
+$error: darken($uclapinkneon, 30%);
+
 /////////////////////////////////////////
-///           TYPOGRAPHY
+///       TYPOGRAPHY / RHYTHM
 /////////////////////////////////////////
 
 $body-text-color: #666;
@@ -60,10 +64,16 @@ body {
 $h1-font-size: 2em;
 $h2-font-size: 1.75em;
 $h3-font-size: 1.5em;
-$h4-font-size: 
+$h4-font-size: 1.2em;
 
 $p-font-size: 1em;
 $meta-font-size: .75em;
+
+$half-spacing: .5em;
+$default-spacing: 1em;
+$double-spacing: 2em;
+
+$global-border-radius: 5px;
 
 /////////////////////////////////////////
 ///           FONT FACE

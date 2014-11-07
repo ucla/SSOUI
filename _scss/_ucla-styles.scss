@@ -1,9 +1,22 @@
 /////////////////////////////////////////
-///       GLOBAL/ELEMENTISH
+///				GLOBAL/ELEMENTISH
 /////////////////////////////////////////
 
-body {
+html {
 	background: #E3E2FA url('/images/background.jpg');
+	box-sizing: border-box;
+	position: relative; 
+	min-height: 100%;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	max-width: 60em;
+	margin: 0 auto;
+	color: $body-text-color;
 }
 
 a {
@@ -38,14 +51,191 @@ ul[role="main"] {
 	}
 }
 
+input {
+	width: 20em;
+	font-size: $h4-font-size;
+	margin-bottom: $default-spacing;
+	@include border-radius($global-border-radius);
+}
+
+select, input {
+	padding: 0.5em 0.6em;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-shadow: inset 0 1px 3px #ddd;
+	border-radius: 4px;
+}
+
+select:focus {
+	outline: 0;
+	outline: thin dotted \9; /* IE6-9 */
+	border-color: #129FEA;
+}
+
+select[disabled] {
+	cursor: not-allowed;
+	background-color: #eaeded;
+	color: #cad2d3;
+}
+
+input:focus:invalid,
+select:focus:invalid {
+	color: #b94a48;
+	border-color: #ee5f5b;
+}
+
+input:focus:invalid:focus,
+select:focus:invalid:focus {
+	border-color: #e9322d;
+}
+
+select {
+	border: 1px solid #ccc;
+	background-color: white;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0.35em 0 0.75em;
+	border: 0;
+}
+
+legend {
+	display: block;
+	width: 100%;
+	padding: 0.3em 0;
+	margin-bottom: 0.3em;
+	color: #333;
+	border-bottom: 1px solid #e5e5e5;
+	font-size: $h2-font-size;
+}
+
+button {
+	display: inline-block;
+	*display: inline; /*IE 6/7*/
+	zoom: 1;
+	line-height: normal;
+	white-space: nowrap;
+	vertical-align: baseline;
+	text-align: center;
+	cursor: pointer;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Firefox: Get rid of the inner focus border */
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+button {
+	font-family: inherit;
+	font-size: 100%;
+	*font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
+	*overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+	padding: 0.5em 1em;
+	color: #444; /* rgba not supported (IE 8) */
+	color: rgba(0, 0, 0, 0.80); /* rgba supported */
+	*color: #444; /* IE 6 & 7 */
+	border: 1px solid #999;  /*IE 6/7/8*/
+	border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
+	background-color: #E6E6E6;
+	text-decoration: none;
+	border-radius: 2px;
+}
+
+button:hover,
+button:focus {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.10)));
+	background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+	background-image: -moz-linear-gradient(top, rgba(0,0,0, 0.05) 0%, rgba(0,0,0, 0.10));
+	background-image: -o-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+	background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+}
+button:focus {
+	outline: 0;
+}
+
+button:active {
+	box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+}
+
+button[disabled] {
+	border: none;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	filter: alpha(opacity=40);
+	-khtml-opacity: 0.40;
+	-moz-opacity: 0.40;
+	opacity: 0.40;
+	cursor: not-allowed;
+	box-shadow: none;
+}
+
+button.primary {
+	background-color: $uclablue;
+	color: #fff;
+}
+
 /////////////////////////////////////////
-///          CLASSES/ROLES
+///					 CLASSES/ROLES
 /////////////////////////////////////////
 
 header[role="banner"] {
-	
+	img {
+		width: 30%;
+		margin: .5em 0;
+	}
+}
+
+section[role="main"] {
+	background: $body-background-color;
+	box-shadow: 0 1px 1px #347bad;
+	padding: 1em;
+	margin-bottom: 1em;
 }
 
 footer[role="contentinfo"] {
+	position: absolute;
+	bottom: 0;
+	height: 2em;
+	width: 100%;
+	max-width: 79em; 
 	background: $ucladarkblue;
+	font-size: $meta-font-size;
+	padding: $half-spacing;
+	color: lighten($body-text-color, 40%);
+	p {
+		margin: 0;
+	}
+	a {
+		text-decoration: none;
+		color: $body-background-color;
+		&:visited { 
+			color: $body-background-color;
+		}
+		&:hover, &:focus {
+			color: $uclayellowneon;
+			text-decoration: underline;
+		} 
+	}
+}
+
+#sso {
+	label {
+		display: none;
+	}
+	fieldset {
+		border: none;
+	}
+	ol {
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+	}
 }

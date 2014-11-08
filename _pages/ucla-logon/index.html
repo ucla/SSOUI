@@ -4,12 +4,12 @@ layout: ucla-logon
 
 <form id="sso">
 	
-	<fieldset>
-		<legend>Sign in with your UCLA Logon ID</legend>
+	<fieldset class="login-form">
+		<legend>Sign In with your UCLA Logon ID</legend>
 		<ol>
 			<li>
-				<label for="logon">Account</label>
-				<input id="logon" name="logon" type="text" placeholder="Your UCLA Logon Account" aria-required="true" required autofocus>
+				<label for="logon">Account ID</label>
+				<input id="logon" name="logon" type="text" placeholder="Your UCLA Logon ID" aria-required="true" required autofocus>
 			</li>
 			<li>
 				<label for="pass">Password</label>
@@ -18,8 +18,13 @@ layout: ucla-logon
 		</ol>
 	</fieldset>
 
-	<fieldset>
+	<fieldset class="sso-submit">
 		<button class="primary" type="submit">Sign In</button>
 	</fieldset>
+	
+	<ul class="sso-links">
+		<li><a href="">Reset your Password</a></li>
+		<li><a href="">Get a Logon ID</a></li>
+	</ul>
 	
 </form>

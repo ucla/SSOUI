@@ -162,7 +162,7 @@ optgroup {
   font-weight: bold;
 }
 
-/* line 60, ../_scss/_ucla-vars.scss */
+/* line 63, ../_scss/_ucla-vars.scss */
 body {
   font-size: 100%;
 }
@@ -190,25 +190,38 @@ body {
 }
 /* line 5, ../_scss/_ucla-styles.scss */
 html {
-  background: #e3e2fa url("/images/background.jpg");
+  background: #d1e8f8 url("/images/background.jpg");
   box-sizing: border-box;
   position: relative;
   min-height: 100%;
+  width: 100%;
 }
 
-/* line 12, ../_scss/_ucla-styles.scss */
+/* line 13, ../_scss/_ucla-styles.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 16, ../_scss/_ucla-styles.scss */
+/* line 17, ../_scss/_ucla-styles.scss */
 body {
-  max-width: 60em;
+  max-width: 40em;
   margin: 0 auto;
-  color: #666666;
+  color: #666;
+  font-family: ProximaNova, Verdana, sans-serif;
 }
 
-/* line 22, ../_scss/_ucla-styles.scss */
+/* line 24, ../_scss/_ucla-styles.scss */
+h1, h2, h3, h4 {
+  font-weight: normal;
+  color: #347bad;
+}
+
+/* line 29, ../_scss/_ucla-styles.scss */
+p {
+  line-height: 1.375em;
+}
+
+/* line 33, ../_scss/_ucla-styles.scss */
 a {
   color: #8237ff;
   text-decoration: underline;
@@ -221,117 +234,123 @@ a {
   -webkit-transition-duration: 0.15s;
   transition-duration: 0.15s;
 }
-/* line 27, ../_scss/_ucla-styles.scss */
+/* line 38, ../_scss/_ucla-styles.scss */
 a:visited {
   color: #8237ff;
 }
-/* line 30, ../_scss/_ucla-styles.scss */
+/* line 41, ../_scss/_ucla-styles.scss */
 a:hover, a:focus {
   text-decoration: underline;
   color: #1e4b87;
   outline: 0;
 }
-/* line 35, ../_scss/_ucla-styles.scss */
+/* line 46, ../_scss/_ucla-styles.scss */
 a:focus {
   outline: thin dotted;
 }
-/* line 38, ../_scss/_ucla-styles.scss */
+/* line 49, ../_scss/_ucla-styles.scss */
 a:active {
   outline: 0;
 }
 
-/* line 43, ../_scss/_ucla-styles.scss */
-ul[role="main"] {
+/* line 54, ../_scss/_ucla-styles.scss */
+section[role="main"] ul {
   list-style: none;
+  padding-left: 1.5em;
 }
-/* line 45, ../_scss/_ucla-styles.scss */
-ul[role="main"] li:before {
+/* line 57, ../_scss/_ucla-styles.scss */
+section[role="main"] ul li {
+  margin-bottom: .5em;
+}
+/* line 60, ../_scss/_ucla-styles.scss */
+section[role="main"] ul li:before {
   color: #00ff87;
   content: "•";
   position: relative;
   font-size: 1.2em;
-  margin-left: -.5em;
+  left: -.25em;
 }
 
-/* line 54, ../_scss/_ucla-styles.scss */
+/* line 73, ../_scss/_ucla-styles.scss */
 input {
   width: 20em;
-  font-size: 1.2em;
+  font-size: 1.125em;
   margin-bottom: 1em;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
 
-/* line 61, ../_scss/_ucla-styles.scss */
+/* line 80, ../_scss/_ucla-styles.scss */
 select, input {
   padding: 0.5em 0.6em;
   display: inline-block;
   border: 1px solid #ccc;
   box-shadow: inset 0 1px 3px #ddd;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
-/* line 69, ../_scss/_ucla-styles.scss */
+/* line 88, ../_scss/_ucla-styles.scss */
 select:focus {
   outline: 0;
   outline: thin dotted \9;
   /* IE6-9 */
-  border-color: #129FEA;
+  border-color: #00a5e5;
 }
 
-/* line 75, ../_scss/_ucla-styles.scss */
+/* line 94, ../_scss/_ucla-styles.scss */
 select[disabled] {
   cursor: not-allowed;
   background-color: #eaeded;
   color: #cad2d3;
 }
 
-/* line 81, ../_scss/_ucla-styles.scss */
+/* line 100, ../_scss/_ucla-styles.scss */
 input:focus:invalid,
 select:focus:invalid {
   color: #b94a48;
   border-color: #ee5f5b;
 }
 
-/* line 87, ../_scss/_ucla-styles.scss */
+/* line 106, ../_scss/_ucla-styles.scss */
 input:focus:invalid:focus,
 select:focus:invalid:focus {
   border-color: #e9322d;
 }
 
-/* line 92, ../_scss/_ucla-styles.scss */
+/* line 111, ../_scss/_ucla-styles.scss */
 select {
   border: 1px solid #ccc;
-  background-color: white;
+  background-color: #fff;
 }
 
-/* line 97, ../_scss/_ucla-styles.scss */
+/* line 116, ../_scss/_ucla-styles.scss */
 fieldset {
   margin: 0;
-  padding: 0.35em 0 0.75em;
+  padding: 0.5em 0;
   border: 0;
 }
 
-/* line 103, ../_scss/_ucla-styles.scss */
+/* line 122, ../_scss/_ucla-styles.scss */
 legend {
   display: block;
   width: 100%;
-  padding: 0.3em 0;
-  margin-bottom: 0.3em;
+  padding: 0.25em 0;
+  margin-bottom: 0.5em;
   color: #333;
   border-bottom: 1px solid #e5e5e5;
-  font-size: 1.75em;
+  font-weight: normal;
+  color: #347bad;
+  font-size: 1.5em;
 }
 
-/* line 113, ../_scss/_ucla-styles.scss */
+/* line 134, ../_scss/_ucla-styles.scss */
 button {
   display: inline-block;
   *display: inline;
   /*IE 6/7*/
   zoom: 1;
   line-height: normal;
-  white-space: nowrap;
   vertical-align: baseline;
   text-align: center;
   cursor: pointer;
@@ -343,13 +362,13 @@ button {
 }
 
 /* Firefox: Get rid of the inner focus border */
-/* line 130, ../_scss/_ucla-styles.scss */
+/* line 151, ../_scss/_ucla-styles.scss */
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
-/* line 135, ../_scss/_ucla-styles.scss */
+/* line 156, ../_scss/_ucla-styles.scss */
 button {
   font-family: inherit;
   font-size: 100%;
@@ -373,7 +392,7 @@ button {
   border-radius: 2px;
 }
 
-/* line 151, ../_scss/_ucla-styles.scss */
+/* line 172, ../_scss/_ucla-styles.scss */
 button:hover,
 button:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
@@ -384,17 +403,17 @@ button:focus {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
 }
 
-/* line 160, ../_scss/_ucla-styles.scss */
+/* line 181, ../_scss/_ucla-styles.scss */
 button:focus {
   outline: 0;
 }
 
-/* line 164, ../_scss/_ucla-styles.scss */
+/* line 185, ../_scss/_ucla-styles.scss */
 button:active {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
 }
 
-/* line 168, ../_scss/_ucla-styles.scss */
+/* line 189, ../_scss/_ucla-styles.scss */
 button[disabled] {
   border: none;
   background-image: none;
@@ -407,68 +426,100 @@ button[disabled] {
   box-shadow: none;
 }
 
-/* line 180, ../_scss/_ucla-styles.scss */
+/* line 201, ../_scss/_ucla-styles.scss */
 button.primary {
-  background-color: #3399cc;
+  background-color: #347bad;
   color: #fff;
+  font-size: 1.125em;
 }
 
-/* line 190, ../_scss/_ucla-styles.scss */
+/* line 212, ../_scss/_ucla-styles.scss */
 header[role="banner"] img {
-  width: 30%;
-  margin: .5em 0;
+  width: 40%;
+  margin-top: .5em;
 }
 
-/* line 196, ../_scss/_ucla-styles.scss */
+/* line 218, ../_scss/_ucla-styles.scss */
 section[role="main"] {
-  background: white;
+  background: #fff;
   box-shadow: 0 1px 1px #347bad;
   padding: 1em;
   margin-bottom: 1em;
 }
 
-/* line 203, ../_scss/_ucla-styles.scss */
+/* line 225, ../_scss/_ucla-styles.scss */
 footer[role="contentinfo"] {
   position: absolute;
   bottom: 0;
   height: 2em;
   width: 100%;
-  max-width: 79em;
+  max-width: 40em;
   background: #0055a6;
-  font-size: 0.75em;
+  border-top: 1px solid #002140;
   padding: 0.5em;
   color: #cccccc;
 }
-/* line 213, ../_scss/_ucla-styles.scss */
+/* line 235, ../_scss/_ucla-styles.scss */
 footer[role="contentinfo"] p {
   margin: 0;
+  font-size: 0.75em;
 }
-/* line 216, ../_scss/_ucla-styles.scss */
+/* line 239, ../_scss/_ucla-styles.scss */
 footer[role="contentinfo"] a {
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
-/* line 219, ../_scss/_ucla-styles.scss */
+/* line 242, ../_scss/_ucla-styles.scss */
 footer[role="contentinfo"] a:visited {
-  color: white;
+  color: #fff;
 }
-/* line 222, ../_scss/_ucla-styles.scss */
+/* line 245, ../_scss/_ucla-styles.scss */
 footer[role="contentinfo"] a:hover, footer[role="contentinfo"] a:focus {
-  color: yellow;
+  color: #ffff00;
   text-decoration: underline;
 }
 
-/* line 230, ../_scss/_ucla-styles.scss */
+/* line 252, ../_scss/_ucla-styles.scss */
+#sso {
+  overflow: hidden;
+}
+/* line 254, ../_scss/_ucla-styles.scss */
 #sso label {
   display: none;
 }
-/* line 233, ../_scss/_ucla-styles.scss */
+/* line 257, ../_scss/_ucla-styles.scss */
 #sso fieldset {
   border: none;
 }
-/* line 236, ../_scss/_ucla-styles.scss */
+/* line 260, ../_scss/_ucla-styles.scss */
 #sso ol {
   list-style: none;
   margin: 0;
   padding-left: 0;
+}
+
+/* line 267, ../_scss/_ucla-styles.scss */
+.sso-submit {
+  width: 18.51852%;
+  clear: right;
+  float: left;
+  margin-left: 0;
+  margin-right: 1.85185%;
+  padding-top: 0;
+}
+
+/* line 272, ../_scss/_ucla-styles.scss */
+.sso-links {
+  width: 79.62963%;
+  clear: right;
+  float: right;
+  margin-right: 0;
+  overflow: hidden;
+  *zoom: 1;
+  font-size: 0.75em;
+  margin: 0;
+}
+/* line 277, ../_scss/_ucla-styles.scss */
+.sso-links li {
+  margin-bottom: 0;
 }

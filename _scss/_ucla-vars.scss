@@ -14,8 +14,9 @@ $wide: 1025px;
 // content specific breakpoints
 
 // singularity.gs layout
-@include add-grid(1 16 1);
-@include add-grid(12 at $past-mobile);
+@include add-grid(5);
+@include add-gutter(1/10);
+@include sgs-change('output', 'float');
 
 /////////////////////////////////////////
 ///            COLOURS
@@ -24,13 +25,13 @@ $wide: 1025px;
 // Primary UCLA Colour
 
 $uclablue: #3399cc;
+$uclasafeblue: #347bad;
 
 // Secondary UCLA Colours
 
 $uclagold: #ffb300;
-$uclayellow: #ffe800;
 $ucladarkblue: #0055a6;
-$uclaliteblue: #00a5e5;
+$uclalightblue: #00a5e5;
 
 // Tertiary UCLA Colours
 
@@ -43,15 +44,17 @@ $uclapurpleneon: #8237ff;
 // SSO Colours
 
 $error: darken($uclapinkneon, 30%);
+$neutral: #ccc;
+$white: #fff;
 
 /////////////////////////////////////////
 ///       TYPOGRAPHY / RHYTHM
 /////////////////////////////////////////
 
 $body-text-color: #666;
-$body-background-color: #fff;
+$body-background-color: $white;
 
-$base-font-stack: ProximaNova, Verdana, sans-serif;
+$font-stack: ProximaNova, Verdana, sans-serif;
 
 $anchor-font-color: $uclapurpleneon;
 $anchor-font-color-hover: #1e4b87;
@@ -62,9 +65,9 @@ body {
 }
 
 $h1-font-size: 2em;
-$h2-font-size: 1.75em;
-$h3-font-size: 1.5em;
-$h4-font-size: 1.2em;
+$h2-font-size: 1.5em;
+$h3-font-size: 1.25em;
+$h4-font-size: 1.125em;
 
 $p-font-size: 1em;
 $meta-font-size: .75em;

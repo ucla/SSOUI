@@ -166,18 +166,9 @@ button {
 	border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
 	background-color: #E6E6E6;
 	text-decoration: none;
-	border-radius: 2px;
+	border-radius: $global-border-radius;
 }
 
-button:hover,
-button:focus {
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.10)));
-	background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
-	background-image: -moz-linear-gradient(top, rgba(0,0,0, 0.05) 0%, rgba(0,0,0, 0.10));
-	background-image: -o-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
-	background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
-}
 button:focus {
 	outline: 0;
 }
@@ -202,10 +193,14 @@ button.primary {
 	background-color: $uclasafeblue;
 	color: #fff;
 	font-size: $h4-font-size;
+	&:hover {
+		background-color: $uclagold;
+		color: $ucladarkblue;
+	}
 }
 
 /////////////////////////////////////////
-///					 CLASSES/ROLES
+///          CLASSES/ROLES
 /////////////////////////////////////////
 
 header[role="banner"] {
@@ -249,6 +244,14 @@ footer[role="contentinfo"] {
 	}
 }
 
+.footer-meta-info {
+	float: left;
+}
+
+.footer-non-human {
+	float: right;
+}
+
 #sso {
 	overflow: hidden;
 	label {
@@ -265,12 +268,18 @@ footer[role="contentinfo"] {
 }
 
 .sso-submit {
-	@include grid-span(1, 1);
+	@include grid-span(4, 1);
+	@include breakpoint($past-mobile) {
+		@include grid-span(1, 1);
+	}
 	padding-top: 0;
 }
 
 .sso-links {
-	@include grid-span(4, 2);
+	@include grid-span(4, 1);
+	@include breakpoint($past-mobile) {
+		@include grid-span(4, 2);
+	}
 	@include clearfix;
 	font-size: $meta-font-size;
 	margin: 0;

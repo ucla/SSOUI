@@ -15,7 +15,7 @@ html {
 }
 
 body {
-	max-width: 40em;
+	max-width: 36em;
 	margin: 0 auto;
 	color: $body-text-color;
 	font-family: $font-stack;
@@ -131,7 +131,7 @@ legend {
 	font-size: $h2-font-size;
 }
 
-button {
+button, .button {
 	display: inline-block;
 	*display: inline; /*IE 6/7*/
 	zoom: 1;
@@ -145,15 +145,6 @@ button {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-}
-
-/* Firefox: Get rid of the inner focus border */
-button::-moz-focus-inner {
-	padding: 0;
-	border: 0;
-}
-
-button {
 	font-family: inherit;
 	font-size: 100%;
 	*font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
@@ -167,6 +158,12 @@ button {
 	background-color: #E6E6E6;
 	text-decoration: none;
 	border-radius: $global-border-radius;
+}
+
+/* Firefox: Get rid of the inner focus border */
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
 }
 
 button:focus {
@@ -199,6 +196,17 @@ button.primary {
 	}
 }
 
+.secondary-button {
+	background-color: #526991;
+	color: $white;
+	margin-top: 1em;
+	width: 100%;
+	&:hover {
+		background-color: darken(#526991, 10%);
+		color: $white;
+	}
+}
+
 /////////////////////////////////////////
 ///          CLASSES/ROLES
 /////////////////////////////////////////
@@ -211,9 +219,6 @@ header[role="banner"] {
 }
 
 section[role="main"] {
-	background: $body-background-color;
-	box-shadow: 0 1px 1px #347bad;
-	padding: 1em;
 	margin-bottom: 1em;
 }
 
@@ -222,7 +227,7 @@ footer[role="contentinfo"] {
 	bottom: 0;
 	height: 2em;
 	width: 100%;
-	max-width: 40em; 
+	max-width: 36em; 
 	background: $ucladarkblue;
 	border-top: 1px solid darken($ucladarkblue, 20%);
 	padding: $half-spacing;
@@ -252,8 +257,17 @@ footer[role="contentinfo"] {
 	float: right;
 }
 
+article {
+	background: $body-background-color;
+	box-shadow: 0 1px 1px #347bad;
+	padding: 1em;
+}
+
 #sso {
 	overflow: hidden;
+	background: $body-background-color;
+	box-shadow: 0 1px 1px #347bad;
+	padding: 1em;
 	label {
 		display: none;
 	}
@@ -278,7 +292,7 @@ footer[role="contentinfo"] {
 .sso-links {
 	@include grid-span(4, 1);
 	@include breakpoint($past-mobile) {
-		@include grid-span(4, 2);
+		@include grid-span(3, 2);
 	}
 	@include clearfix;
 	font-size: $meta-font-size;

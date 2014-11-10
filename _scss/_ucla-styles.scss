@@ -27,7 +27,7 @@ h1, h2, h3, h4 {
 }
 
 p {
-	line-height: 1.375em;
+	line-height: $base-line-height;
 }
 
 a {
@@ -199,7 +199,7 @@ button.primary {
 .secondary-button {
 	background-color: #526991;
 	color: $white;
-	margin-top: 1em;
+	margin-top: $default-spacing;
 	width: 100%;
 	&:hover {
 		background-color: darken(#526991, 10%);
@@ -299,5 +299,18 @@ article {
 	margin: 0;
 	li {
 		margin-bottom: 0;
+	}
+}
+
+.sp-news {
+	background: rgba($uclagrey, .1);
+	padding: $half-spacing;
+	margin-top: $double-spacing;
+	@include border-radius($global-border-radius);
+	p {
+		font-size: $meta-font-size;
+	}
+	h3 {
+		margin-top: 0;
 	}
 }

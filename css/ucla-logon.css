@@ -162,7 +162,7 @@ optgroup {
   font-weight: bold;
 }
 
-/* line 63, ../_scss/_ucla-vars.scss */
+/* line 64, ../_scss/_ucla-vars.scss */
 body {
   font-size: 100%;
 }
@@ -560,4 +560,22 @@ article {
 /* line 300, ../_scss/_ucla-styles.scss */
 .sso-links li {
   margin-bottom: 0;
+}
+
+/* line 305, ../_scss/_ucla-styles.scss */
+.sp-news {
+  background: rgba(102, 102, 102, 0.1);
+  padding: 0.5em;
+  margin-top: 2em;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 310, ../_scss/_ucla-styles.scss */
+.sp-news p {
+  font-size: 0.75em;
+}
+/* line 313, ../_scss/_ucla-styles.scss */
+.sp-news h3 {
+  margin-top: 0;
 }

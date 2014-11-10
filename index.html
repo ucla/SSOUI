@@ -5,14 +5,21 @@ layout: ucla-logon
 <h1>Pages:</h1>
 
 <h2>UCLA Logon ID</h2>
+
 <ul>
-	<li><a href="/ucla-logon">UCLA Logon ID page</a></li>
-	<li><a href="/ucla-logon/with-medcenter.html">UCLA Logon ID page w/ med center option</a></li>
-	<li><a href="/ucla-logon/with-update.html">UCLA Logon ID page w/ update</a></li>
-	<li><a href="/ucla-logon/with-medcenter+update.html">UCLA Logon ID page w/ med center option & update</a></li>
+  {% for collection in site.ucla-logon-mocks %}
+    <li>
+      <a href="{{ collection.url }}">{{ collection.title }}</a>
+    </li>
+  {% endfor %}
 </ul>
 
 <h2>Med Center ID</h2>
+
 <ul>
-	<li>Coming Soon</li>
+  {% for collection in site.medcenter-mocks %}
+    <li>
+      <a href="{{ collection.url }}">{{ collection.title }}</a>
+    </li>
+  {% endfor %}
 </ul>

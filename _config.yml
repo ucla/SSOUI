@@ -8,4 +8,23 @@ github_username:  erutan
 # Build settings
 markdown: kramdown
 destination: _site
-pages: _pages
+
+collections:
+  ucla-logon-mocks:
+    output: true
+  medcenter-mocks:
+    output: true
+    
+defaults:
+  -
+    scope:
+      path: ""
+      type: "ucla-logon-mocks"
+    values:
+      layout: "ucla-logon"
+  -
+    scope:
+      path: ""
+      type: "medcenter-mocks"
+    values:
+      layout: "medcenter"

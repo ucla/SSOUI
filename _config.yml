@@ -1,7 +1,7 @@
 # Site settings
 title: UCLA Single Sign On Templates
 email: carl@erutan.net
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/SSOUI"
 twitter_username: erutan
 github_username:  erutan
 

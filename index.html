@@ -9,7 +9,7 @@ layout: ucla-logon
 <ul>
   {% for collection in site.ucla-logon-mocks %}
     <li>
-      <a href="{{ collection.url }}">{{ collection.title }}</a>
+      <a href="{{ site.baseurl }}{{ collection.url }}">{{ collection.title }}</a>
     </li>
   {% endfor %}
 </ul>
@@ -19,7 +19,7 @@ layout: ucla-logon
 <ul>
   {% for collection in site.medcenter-mocks %}
     <li>
-      <a href="{{ collection.url }}">{{ collection.title }}</a>
+      <a href="{{ site.baseurl }}{{ collection.url }}">{{ collection.title }}</a>
     </li>
   {% endfor %}
 </ul>

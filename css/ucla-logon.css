@@ -190,7 +190,7 @@ body {
 }
 /* line 5, ../_scss/_ucla-styles.scss */
 html {
-  background: #d1e8f8 url("/images/background.jpg");
+  background: #d1e8f8 url("../images/background.jpg");
   box-sizing: border-box;
   position: relative;
   min-height: 100%;

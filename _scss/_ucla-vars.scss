@@ -98,20 +98,16 @@ $global-border-radius: 3px;
 ///           FONT FACE
 /////////////////////////////////////////
 
+/*
 @font-face {
 	font-family: '../fonts/ProximaNova';src: url('../fonts/ProximaNova-Light.eot');src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),url('../fonts/ProximaNova-Light.woff') format('woff'),url('../fonts/ProximaNova-Light.ttf') format('truetype');
 	font-weight: 300;
 	font-style: normal;
 }
+*/
 
 @font-face {
 	font-family: '../fonts/ProximaNova';src: url('../fonts/ProximaNova-Regular.eot');src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),url('../fonts/ProximaNova-Regular.woff') format('woff'),url('../fonts/ProximaNova-Regular.ttf') format('truetype');
 	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face {
-font-family: '../fonts/ProximaNova';src: url('../fonts/ProximaNova-Semibold.eot');src: url('../fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),url('../fonts/ProximaNova-Semibold.woff') format('woff'),url('../fonts/ProximaNova-Semibold.ttf') format('truetype');
-	font-weight: 600;
 	font-style: normal;
 }

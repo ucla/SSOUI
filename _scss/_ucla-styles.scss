@@ -30,6 +30,10 @@ h1 {
 	font-size: $h1-font-size;
 }
 
+div h1, article h1 {
+		margin: 0;
+}
+
 h2 {
 	font-size: $h2-font-size;
 }
@@ -230,12 +234,12 @@ button.primary {
 header[role="banner"] {
 	img {
 		width: 40%;
-		margin-top: .5em;
+		margin-top: $half-spacing;
 	}
 }
 
 section[role="main"] {
-	margin-bottom: 1em;
+	margin-bottom: $double-spacing * 2;
 }
 
 footer[role="contentinfo"] {
@@ -297,6 +301,19 @@ article {
 	}
 }
 
+#report {
+	overflow: hidden;
+	label {
+		display: block;
+		margin-bottom: $half-spacing / 2;
+	}
+	ol {
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+	}
+}
+
 .sso-submit {
 	@include grid-span(4, 1);
 	@include breakpoint($past-mobile) {
@@ -339,7 +356,6 @@ div[role="alert"] {
 	@include border-radius($global-border-radius);
 	h1 {
 		color: $error-color;
-		margin: 0;
 	}
 }
 

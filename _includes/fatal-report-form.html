@@ -1,0 +1,38 @@
+<form id="report" role="form">
+	
+	<fieldset class="report-submission">
+		<legend>Report Contents</legend>
+		<ol>
+			<li>
+				<label for="name">Name</label>
+				<input id="name" name="name" type="text" placeholder="Joe Bruin" aria-required="true" required>
+			</li>
+			<li>
+				<label for="phone">Phone Number</label>
+				<input id="phone" name="phone" type="tel" placeholder="310-206-9748">
+			</li>
+			<li>
+				<label for="email">Email Address</label>
+				<input id="email" name="email" type="email" placeholder="joe.bruin@ucla.edu">
+			</li>
+			<li>
+				<label for="contact">Preferred Means of Contact</label>
+				<input type="radio" name="contact" value="likes-email">Phone<br>
+				<input type="radio" name="contact" value="likes-phone" checked>Email<br>
+			</li>
+			<li>
+				<label for="contact">Error Number</label>
+				<input id="contact" name="contact" type="text" value="oij2305u0392iroe" aria-required="true" disabled required>
+			</li>
+			<li>
+				<label for="desc">Description</label>
+				<textarea id="desc" name="desc" rows="5" cols="65" placeholder="I was using Firefox 35 on OS X 10.10 and trying to log in to..."></textarea>
+			</li>
+		</ol>
+	</fieldset>
+
+	<fieldset class="report-submit">
+		<button class="primary" type="submit" name="report">Send Report</button>
+	</fieldset>
+	
+</form>

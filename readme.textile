@@ -4,7 +4,7 @@ view last commit @ http://ucla.github.io/SSOUI/
 
 h2. view locally
 
-# download the repo somewhere
+# download/clone the repo somewhere
 # navigate to that somewhere dir on the command line
 # $ @bundle install@
 # $ @bundle exec jekyll serve --baseurl ""@

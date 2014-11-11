@@ -14,6 +14,8 @@ collections:
     output: true
   medcenter-mocks:
     output: true
+  as-app-mocks:
+    output: true
     
 defaults:
   -
@@ -28,3 +30,9 @@ defaults:
       type: "medcenter-mocks"
     values:
       layout: "medcenter"
+  -
+    scope:
+      path: ""
+      type: "as-app-mocks"
+    values:
+      layout: "as-app"

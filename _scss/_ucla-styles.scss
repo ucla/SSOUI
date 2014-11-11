@@ -23,7 +23,7 @@ body {
 
 h1, h2, h3, h4 {
 	font-weight: normal;
-	color: $uclasafeblue;	
+	color: $primary-color;	
 }
 
 h1 {
@@ -74,7 +74,7 @@ section[role="main"] ul {
 		margin-bottom: .5em;
 	}
 	li:before {
-		color: $uclagreenneon;
+		color: $bullet-color;
 		content: "•";
 		position: relative;
 		font-size: 1.2em;
@@ -107,8 +107,8 @@ select:focus {
 	border-color: $uclalightblue;
 }
 
-select[disabled] {
-	cursor: not-allowed;
+select[disabled], input[disabled] {
+	cursor: not-allowed !important;
 	background-color: #eaeded;
 	color: #cad2d3;
 }
@@ -143,7 +143,7 @@ legend {
 	color: #333;
 	border-bottom: 1px solid #e5e5e5;
 	font-weight: normal;
-	color: $uclasafeblue;
+	color: $primary-color;
 	font-size: $h2-font-size;
 }
 
@@ -203,22 +203,22 @@ button[disabled] {
 }
 
 button.primary {
-	background-color: $uclasafeblue;
+	background-color: $primary-color;
 	color: #fff;
 	font-size: $h4-font-size;
 	&:hover {
-		background-color: $uclagold;
-		color: $ucladarkblue;
+		background-color: $secondary-color;
+		color: $primary-color-alternate-state;
 	}
 }
 
 .secondary-button {
-	background-color: #526991;
+	background-color: $secondary-login-option-color;
 	color: $white;
 	margin-top: $default-spacing;
 	width: 100%;
 	&:hover {
-		background-color: darken(#526991, 10%);
+		background-color: darken($secondary-login-option-color, 10%);
 		color: $white;
 	}
 }
@@ -244,8 +244,8 @@ footer[role="contentinfo"] {
 	height: 2em;
 	width: 100%;
 	max-width: 36em; 
-	background: $ucladarkblue;
-	border-top: 1px solid darken($ucladarkblue, 20%);
+	background: $primary-color-alternate-state;
+	border-top: 1px solid darken($primary-color-alternate-state, 20%);
 	padding: $half-spacing;
 	color: lighten($body-text-color, 40%);
 	p {
@@ -254,12 +254,12 @@ footer[role="contentinfo"] {
 	}
 	a {
 		text-decoration: none;
-		color: $body-background-color;
+		color: $footer-link-color;
 		&:visited { 
-			color: $body-background-color;
+			color: $footer-link-color;
 		}
 		&:hover, &:focus {
-			color: $uclayellowneon;
+			color: $footer-link-color-hover;
 			text-decoration: underline;
 		} 
 	}
@@ -319,7 +319,7 @@ article {
 }
 
 .sp-news {
-	background: rgba($uclagrey, .1);
+	background: rgba($neutral, .2);
 	padding: $half-spacing;
 	margin-top: $double-spacing;
 	@include border-radius($global-border-radius);
@@ -328,5 +328,41 @@ article {
 	}
 	h3 {
 		margin-top: 0;
+	}
+}
+
+div[role="alert"] {
+	background: $error-bg-color;
+	color: $error-color;
+	padding: $half-spacing;
+	margin-bottom: $default-spacing;
+	@include border-radius($global-border-radius);
+	h1 {
+		color: $error-color;
+		margin: 0;
+	}
+}
+
+div[role="alert"] {
+	background: $error-bg-color;
+	color: $error-color;
+	padding: $half-spacing;
+	margin-bottom: $default-spacing;
+	@include border-radius($global-border-radius);
+	h1 {
+		color: $error-color;
+		margin: 0;
+	}
+}
+
+.warning {
+	background: $warning-bg-color;
+	color: $warning-color;
+	padding: $half-spacing;
+	margin-bottom: $default-spacing;
+	@include border-radius($global-border-radius);
+	h1 {
+		color: $warning-color;
+		margin: 0;
 	}
 }

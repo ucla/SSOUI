@@ -1,1 +1,11 @@
-github complains too much about readme files
+REAMDE
+
+view last commit @ http://ucla.github.io/SSOUI/
+
+h2. view locally
+
+# download the repo somewhere
+# navigate to that somewhere dir on the command line
+# $ @bundle install@
+# $ @bundle exec jekyll serve --baseurl ""@
+# visit 0.0.0.0:4000 in a browser of your choice

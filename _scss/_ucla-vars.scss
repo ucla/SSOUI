@@ -2,7 +2,7 @@
 ///             LAYOUT
 /////////////////////////////////////////
 
-// typical viewport breakpoints
+// typical viewport breakpoints in px units
 $mobile-only: 1px 320px;
 $past-mobile: 321px;
 $before-tablet: 1px 768px;
@@ -11,7 +11,7 @@ $past-tablet: 769px;
 $tablet-to-laptop: 769px 1024px;
 $wide: 1025px;
 
-// content specific breakpoints
+// content specific breakpoints in em units
 
 // singularity.gs layout
 @include add-grid(4);
@@ -42,11 +42,23 @@ $uclaliteblueneon: #00ffff;
 $uclapurpleneon: #8237ff;
 $uclagrey: #666;
 
-// SSO Colours
+// Semantic Colours
 
-$error: darken($uclapinkneon, 30%);
 $neutral: #ccc;
 $white: #fff;
+$black: #000;
+
+$primary-color: $uclasafeblue;
+$primary-color-alternate-state: $uclasafeblue;
+$secondary-color: $uclagold;
+$warning-color: $ucladarkblue;
+$warning-bg-color: $uclayellowneon;
+$error-color: $uclapinkneon;
+$error-bg-color: darken($uclapinkneon, 42%);
+$bullet-color: $uclagreenneon;
+$footer-link-color: $white;
+$footer-link-color-hover: $uclayellowneon;
+$secondary-login-option-color: #526991;
 
 /////////////////////////////////////////
 ///       TYPOGRAPHY / RHYTHM

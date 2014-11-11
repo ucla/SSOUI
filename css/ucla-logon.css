@@ -162,7 +162,7 @@ optgroup {
   font-weight: bold;
 }
 
-/* line 64, ../_scss/_ucla-vars.scss */
+/* line 76, ../_scss/_ucla-vars.scss */
 body {
   font-size: 100%;
 }
@@ -319,8 +319,8 @@ select:focus {
 }
 
 /* line 110, ../_scss/_ucla-styles.scss */
-select[disabled] {
-  cursor: not-allowed;
+select[disabled], input[disabled] {
+  cursor: not-allowed !important;
   background-color: #eaeded;
   color: #cad2d3;
 }
@@ -440,7 +440,7 @@ button.primary {
 /* line 209, ../_scss/_ucla-styles.scss */
 button.primary:hover {
   background-color: #ffe800;
-  color: #0055a6;
+  color: #347bad;
 }
 
 /* line 215, ../_scss/_ucla-styles.scss */
@@ -474,8 +474,8 @@ footer[role="contentinfo"] {
   height: 2em;
   width: 100%;
   max-width: 36em;
-  background: #0055a6;
-  border-top: 1px solid #002140;
+  background: #347bad;
+  border-top: 1px solid #1c435f;
   padding: 0.5em;
   color: #cccccc;
 }
@@ -584,7 +584,7 @@ article {
 
 /* line 321, ../_scss/_ucla-styles.scss */
 .sp-news {
-  background: rgba(102, 102, 102, 0.1);
+  background: rgba(204, 204, 204, 0.2);
   padding: 0.5em;
   margin-top: 2em;
   -moz-border-radius: 3px;
@@ -598,4 +598,52 @@ article {
 /* line 329, ../_scss/_ucla-styles.scss */
 .sp-news h3 {
   margin-top: 0;
+}
+
+/* line 334, ../_scss/_ucla-styles.scss */
+div[role="alert"] {
+  background: #29001a;
+  color: #ff00a5;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 340, ../_scss/_ucla-styles.scss */
+div[role="alert"] h1 {
+  color: #ff00a5;
+  margin: 0;
+}
+
+/* line 346, ../_scss/_ucla-styles.scss */
+div[role="alert"] {
+  background: #29001a;
+  color: #ff00a5;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 352, ../_scss/_ucla-styles.scss */
+div[role="alert"] h1 {
+  color: #ff00a5;
+  margin: 0;
+}
+
+/* line 358, ../_scss/_ucla-styles.scss */
+.warning {
+  background: #ffff00;
+  color: #0055a6;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 364, ../_scss/_ucla-styles.scss */
+.warning h1 {
+  color: #0055a6;
+  margin: 0;
 }

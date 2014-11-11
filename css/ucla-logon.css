@@ -162,7 +162,7 @@ optgroup {
   font-weight: bold;
 }
 
-/* line 76, ../_scss/_ucla-vars.scss */
+/* line 77, ../_scss/_ucla-vars.scss */
 body {
   font-size: 100%;
 }
@@ -602,7 +602,7 @@ article {
 
 /* line 334, ../_scss/_ucla-styles.scss */
 div[role="alert"] {
-  background: #29001a;
+  background: repeating-linear-gradient(45deg, #1a0010, #1a0010 0.5em, #2e001e 0.5em, #2e001e 1em);
   color: #ff00a5;
   padding: 0.5em;
   margin-bottom: 1em;
@@ -617,22 +617,6 @@ div[role="alert"] h1 {
 }
 
 /* line 346, ../_scss/_ucla-styles.scss */
-div[role="alert"] {
-  background: #29001a;
-  color: #ff00a5;
-  padding: 0.5em;
-  margin-bottom: 1em;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-/* line 352, ../_scss/_ucla-styles.scss */
-div[role="alert"] h1 {
-  color: #ff00a5;
-  margin: 0;
-}
-
-/* line 358, ../_scss/_ucla-styles.scss */
 .warning {
   background: #ffff00;
   color: #0055a6;
@@ -642,7 +626,7 @@ div[role="alert"] h1 {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 364, ../_scss/_ucla-styles.scss */
+/* line 352, ../_scss/_ucla-styles.scss */
 .warning h1 {
   color: #0055a6;
   margin: 0;

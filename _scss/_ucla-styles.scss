@@ -332,19 +332,7 @@ article {
 }
 
 div[role="alert"] {
-	background: $error-bg-color;
-	color: $error-color;
-	padding: $half-spacing;
-	margin-bottom: $default-spacing;
-	@include border-radius($global-border-radius);
-	h1 {
-		color: $error-color;
-		margin: 0;
-	}
-}
-
-div[role="alert"] {
-	background: $error-bg-color;
+	background: repeating-linear-gradient(45deg, $error-bg-color, $error-bg-color $half-spacing, $error-bg-color-alt $half-spacing, $error-bg-color-alt $default-spacing);
 	color: $error-color;
 	padding: $half-spacing;
 	margin-bottom: $default-spacing;

@@ -624,7 +624,7 @@ article {
 
 /* line 215, ../_scss/_sso-styles.scss */
 .error {
-  background: repeating-linear-gradient(45deg, #0a0007, #0a0007 0.5em, #1f0014 0.5em, #1f0014 1em);
+  background: repeating-linear-gradient(45deg, #0a0007, #0a0007 0.5em, #240017 0.5em, #240017 1em);
   color: #ff00a5;
   padding: 1em;
   margin-bottom: 1em;

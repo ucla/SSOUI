@@ -162,7 +162,7 @@ optgroup {
   font-weight: bold;
 }
 
-/* line 77, ../_scss/_ucla-vars.scss */
+/* line 78, ../_scss/_ucla-vars.scss */
 body {
   font-size: 100%;
 }
@@ -554,10 +554,11 @@ article {
 
 /* line 317, ../_scss/_ucla-styles.scss */
 .sso-submit {
-  width: 100%;
+  width: 430%;
   clear: right;
-  float: right;
-  margin-right: 0;
+  float: left;
+  margin-left: 0;
+  margin-right: 10%;
   padding-top: 0;
 }
 @media (min-width: 321px) {
@@ -573,10 +574,11 @@ article {
 
 /* line 325, ../_scss/_ucla-styles.scss */
 .sso-links {
-  width: 100%;
+  width: 430%;
   clear: right;
-  float: right;
-  margin-right: 0;
+  float: left;
+  margin-left: 0;
+  margin-right: 10%;
   overflow: hidden;
   *zoom: 1;
   font-size: 0.75em;

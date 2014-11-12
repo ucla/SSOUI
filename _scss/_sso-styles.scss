@@ -207,6 +207,11 @@ article {
 	}
 }
 
+.loading i {
+	font-size: $h1-font-size;
+	margin: $double-spacing 45%;
+}
+
 .error {
 	background: repeating-linear-gradient(45deg, $error-bg-color, $error-bg-color $half-spacing, $error-bg-color-alt $half-spacing, $error-bg-color-alt $default-spacing);
 	color: $error-color;

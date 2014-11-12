@@ -617,6 +617,12 @@ article {
 }
 
 /* line 210, ../_scss/_sso-styles.scss */
+.loading i {
+  font-size: 2em;
+  margin: 2em 45%;
+}
+
+/* line 215, ../_scss/_sso-styles.scss */
 .error {
   background: repeating-linear-gradient(45deg, #0a0007, #0a0007 0.5em, #1f0014 0.5em, #1f0014 1em);
   color: #ff00a5;
@@ -626,12 +632,12 @@ article {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 216, ../_scss/_sso-styles.scss */
+/* line 221, ../_scss/_sso-styles.scss */
 .error h1 {
   color: #ff00a5;
 }
 
-/* line 221, ../_scss/_sso-styles.scss */
+/* line 226, ../_scss/_sso-styles.scss */
 .alert {
   background: #ffff00;
   color: #0055a6;
@@ -641,7 +647,7 @@ article {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 227, ../_scss/_sso-styles.scss */
+/* line 232, ../_scss/_sso-styles.scss */
 .alert h1 {
   color: #0055a6;
   margin: 0;

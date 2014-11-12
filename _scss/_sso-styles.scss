@@ -208,8 +208,8 @@ article {
 }
 
 .loading i {
-	font-size: $h1-font-size;
-	margin: $double-spacing 45%;
+	font-size: $h1-font-size * 2;
+	margin: $default-spacing 45%;
 }
 
 .error {

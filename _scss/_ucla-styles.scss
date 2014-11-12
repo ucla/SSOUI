@@ -97,7 +97,7 @@ input {
 	@include border-radius($global-border-radius);
 }
 
-select, input {
+select, input, textarea {
 	padding: 0.5em 0.6em;
 	display: inline-block;
 	border: 1px solid $neutral;
@@ -105,7 +105,7 @@ select, input {
 	border-radius: $global-border-radius;
 }
 
-select:focus {
+select:focus, input:focus, textarea:focus {
 	outline: 0;
 	outline: thin dotted \9; /* IE6-9 */
 	border-color: $uclalightblue;
@@ -348,10 +348,10 @@ article {
 	}
 }
 
-div[role="alert"] {
+.error {
 	background: repeating-linear-gradient(45deg, $error-bg-color, $error-bg-color $half-spacing, $error-bg-color-alt $half-spacing, $error-bg-color-alt $default-spacing);
 	color: $error-color;
-	padding: $half-spacing;
+	padding: $default-spacing;
 	margin-bottom: $default-spacing;
 	@include border-radius($global-border-radius);
 	h1 {
@@ -359,10 +359,10 @@ div[role="alert"] {
 	}
 }
 
-.warning {
+.alert {
 	background: $warning-bg-color;
 	color: $warning-color;
-	padding: $half-spacing;
+	padding: $default-spacing;
 	margin-bottom: $default-spacing;
 	@include border-radius($global-border-radius);
 	h1 {

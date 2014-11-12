@@ -1,0 +1,138 @@
+// General form and button elements adapted from http://purecss.io/forms/ & http://purecss.io/buttons/
+
+input {
+	width: 20em;
+	font-size: $h4-font-size;
+	margin-bottom: $default-spacing;
+	@include border-radius($global-border-radius);
+}
+
+select, input, textarea {
+	padding: 0.5em 0.6em;
+	display: inline-block;
+	border: 1px solid $neutral;
+	box-shadow: inset 0 1px 3px #ddd;
+	border-radius: $global-border-radius;
+}
+
+select:focus, input:focus, textarea:focus {
+	outline: 0;
+	outline: thin dotted \9; /* IE6-9 */
+	border-color: $uclalightblue;
+}
+
+select[disabled], input[disabled] {
+	cursor: not-allowed !important;
+	background-color: #eaeded;
+	color: #cad2d3;
+}
+
+input:focus:invalid,
+select:focus:invalid {
+	color: #b94a48;
+	border-color: #ee5f5b;
+}
+
+input:focus:invalid:focus,
+select:focus:invalid:focus {
+	border-color: #e9322d;
+}
+
+select {
+	border: 1px solid $neutral;
+	background-color: $white;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0.5em 0;
+	border: 0;
+}
+
+legend {
+	display: block;
+	width: 100%;
+	padding: 0.25em 0;
+	margin-bottom: 0.5em;
+	color: #333;
+	border-bottom: 1px solid #e5e5e5;
+	font-weight: normal;
+	color: $primary-color;
+	font-size: $h2-font-size;
+}
+
+button, .button {
+	display: inline-block;
+	*display: inline; /*IE 6/7*/
+	zoom: 1;
+	line-height: normal;
+	$white-space: nowrap;
+	vertical-align: baseline;
+	text-align: center;
+	cursor: pointer;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-family: inherit;
+	font-size: 100%;
+	*font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
+	*overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+	padding: 0.5em 1em;
+	color: #444; /* rgba not supported (IE 8) */
+	color: rgba(0, 0, 0, 0.80); /* rgba supported */
+	*color: #444; /* IE 6 & 7 */
+	border: 1px solid #999;  /*IE 6/7/8*/
+	border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
+	background-color: #E6E6E6;
+	text-decoration: none;
+	border-radius: $global-border-radius;
+}
+
+/* Firefox: Get rid of the inner focus border */
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+button:focus {
+	outline: 0;
+}
+
+button:active {
+	box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+}
+
+button[disabled] {
+	border: none;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	filter: alpha(opacity=40);
+	-khtml-opacity: 0.40;
+	-moz-opacity: 0.40;
+	opacity: 0.40;
+	cursor: not-allowed;
+	box-shadow: none;
+}	
+
+.primary-button {
+	background-color: $primary-color;
+	color: #fff;
+	font-size: $h4-font-size;
+	&:hover {
+		background-color: $secondary-color;
+		color: $primary-color-alternate-state;
+	}
+}
+
+.secondary-button {
+	background-color: $secondary-login-option-color;
+	color: $white;
+	margin-top: $default-spacing;
+	width: 100%;
+	&:hover {
+		background-color: darken($secondary-login-option-color, 10%);
+		color: $white;
+	}
+}

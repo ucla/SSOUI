@@ -1,83 +1,641 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
+/* line 9, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 29, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 40, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 47, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
+/* line 11, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_base.scss */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 19, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_base.scss */
+body {
+  margin: 0;
+}
+
+/*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
+/* line 9, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_links.scss */
+a {
+  background: transparent;
+}
+
+/* line 15, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_links.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
+/* line 15, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 27, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button {
+  overflow: visible;
+}
+
+/* line 36, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 47, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 57, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 64, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 73, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input {
+  line-height: normal;
+}
+
+/* line 83, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 93, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 102, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 113, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 120, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 129, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 136, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 143, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 76, ../_scss/_ucla-vars.scss */
+body {
+  font-size: 100%;
+}
+
 /*
-Error: Undefined variable: "$h4-font-size".
-        on line 5 of /Users/erutan/Github/SSOUI/_scss/_pure-forms.scss
-        from line 16 of /Users/erutan/Github/SSOUI/_scss/medcenter.scss
-
-1: // general layout gems
-2: @import 'singularitygs';
-3: @import 'breakpoint';
-4: @import 'compass/css3';
-5: @import 'compass/utilities/general/clearfix';
-6: 
-7: // normalize components, see https://github.com/ksmandersen/compass-normalize
-8: @import 'normalize-version';
-9: @import 'normalize/html5';
-10: @import 'normalize/base';
-
-Backtrace:
-/Users/erutan/Github/SSOUI/_scss/_pure-forms.scss:5
-/Users/erutan/Github/SSOUI/_scss/medcenter.scss:16
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/script/tree/node.rb:50:in `perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:315:in `block (2 levels) in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:315:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:315:in `block in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:88:in `block in with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:88:in `with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/root_node.rb:20:in `render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/engine.rb:268:in `render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:491:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:469:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/listen-2.7.11/lib/listen/listener.rb:282:in `call'
-/Library/Ruby/Gems/2.0.0/gems/listen-2.7.11/lib/listen/listener.rb:282:in `_process_changes'
-/Library/Ruby/Gems/2.0.0/gems/listen-2.7.11/lib/listen/listener.rb:239:in `block in _wait_for_changes'
-/Library/Ruby/Gems/2.0.0/gems/listen-2.7.11/lib/listen/listener.rb:222:in `loop'
-/Library/Ruby/Gems/2.0.0/gems/listen-2.7.11/lib/listen/listener.rb:222:in `_wait_for_changes'
-/Library/Ruby/Gems/2.0.0/gems/listen-2.7.11/lib/listen/listener.rb:318:in `block in _start_wait_thread'
+@font-face {
+	font-family: '../fonts/ProximaNova';src: url('../fonts/ProximaNova-Light.eot');src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),url('../fonts/ProximaNova-Light.woff') format('woff'),url('../fonts/ProximaNova-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$h4-font-size\".\A         on line 5 of /Users/erutan/Github/SSOUI/_scss/_pure-forms.scss\A         from line 16 of /Users/erutan/Github/SSOUI/_scss/medcenter.scss\A \A 1: // general layout gems\A 2: @import 'singularitygs';\A 3: @import 'breakpoint';\A 4: @import 'compass/css3';\A 5: @import 'compass/utilities/general/clearfix';\A 6: \A 7: // normalize components, see https://github.com/ksmandersen/compass-normalize\A 8: @import 'normalize-version';\A 9: @import 'normalize/html5';\A 10: @import 'normalize/base';"; }
+@font-face {
+  font-family: '../fonts/ProximaNova';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+/* line 5, ../_scss/_pure-forms.scss */
+input {
+  width: 20em;
+  font-size: 1.125em;
+  margin-bottom: 1em;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 12, ../_scss/_pure-forms.scss */
+select, input, textarea {
+  padding: 0.5em 0.6em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 3px;
+}
+
+/* line 20, ../_scss/_pure-forms.scss */
+select:focus, input:focus, textarea:focus {
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+  border-color: #00a5e5;
+}
+
+/* line 26, ../_scss/_pure-forms.scss */
+select[disabled], input[disabled] {
+  cursor: not-allowed !important;
+  background-color: #eaeded;
+  color: #cad2d3;
+}
+
+/* line 32, ../_scss/_pure-forms.scss */
+input:focus:invalid,
+select:focus:invalid {
+  color: #b94a48;
+  border-color: #ee5f5b;
+}
+
+/* line 38, ../_scss/_pure-forms.scss */
+input:focus:invalid:focus,
+select:focus:invalid:focus {
+  border-color: #e9322d;
+}
+
+/* line 43, ../_scss/_pure-forms.scss */
+select {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+/* line 48, ../_scss/_pure-forms.scss */
+fieldset {
+  margin: 0;
+  padding: 0.5em 0;
+  border: 0;
+}
+
+/* line 54, ../_scss/_pure-forms.scss */
+legend {
+  display: block;
+  width: 100%;
+  padding: 0.25em 0;
+  margin-bottom: 0.5em;
+  color: #333;
+  border-bottom: 1px solid #e5e5e5;
+  font-weight: normal;
+  color: #347bad;
+  font-size: 1.5em;
+}
+
+/* line 66, ../_scss/_pure-forms.scss */
+button, .button {
+  display: inline-block;
+  *display: inline;
+  /*IE 6/7*/
+  zoom: 1;
+  line-height: normal;
+  vertical-align: baseline;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  font-size: 100%;
+  *font-size: 90%;
+  /*IE 6/7 - To reduce IE's oversized button text*/
+  *overflow: visible;
+  /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+  padding: 0.5em 1em;
+  color: #444;
+  /* rgba not supported (IE 8) */
+  color: rgba(0, 0, 0, 0.8);
+  /* rgba supported */
+  *color: #444;
+  /* IE 6 & 7 */
+  border: 1px solid #999;
+  /*IE 6/7/8*/
+  border: none transparent;
+  /*IE9 + everything else*/
+  background-color: #E6E6E6;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+/* Firefox: Get rid of the inner focus border */
+/* line 96, ../_scss/_pure-forms.scss */
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* line 101, ../_scss/_pure-forms.scss */
+button:focus {
+  outline: 0;
+}
+
+/* line 105, ../_scss/_pure-forms.scss */
+button:active {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+}
+
+/* line 109, ../_scss/_pure-forms.scss */
+button[disabled] {
+  border: none;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: alpha(opacity=40);
+  -khtml-opacity: 0.40;
+  -moz-opacity: 0.40;
+  opacity: 0.40;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* line 121, ../_scss/_pure-forms.scss */
+.primary-button {
+  background-color: #347bad;
+  color: #fff;
+  font-size: 1.125em;
+}
+/* line 125, ../_scss/_pure-forms.scss */
+.primary-button:hover {
+  background-color: #ffe800;
+  color: #0055a6;
+}
+
+/* line 131, ../_scss/_pure-forms.scss */
+.secondary-button {
+  background-color: #526991;
+  color: #fff;
+  margin-top: 1em;
+  width: 100%;
+}
+/* line 136, ../_scss/_pure-forms.scss */
+.secondary-button:hover {
+  background-color: #405170;
+  color: #fff;
+}
+
+/* line 5, ../_scss/_sso-styles.scss */
+html {
+  background: #d1e8f8 url("../images/background.jpg");
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+}
+
+/* line 13, ../_scss/_sso-styles.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 17, ../_scss/_sso-styles.scss */
+body {
+  margin: 0 auto;
+  color: #666;
+  font-family: ProximaNova, Verdana, sans-serif;
+}
+
+/* line 23, ../_scss/_sso-styles.scss */
+h1, h2, h3, h4 {
+  font-weight: normal;
+  color: #347bad;
+}
+
+/* line 28, ../_scss/_sso-styles.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* line 32, ../_scss/_sso-styles.scss */
+div h1, article h1 {
+  margin: 0;
+}
+
+/* line 36, ../_scss/_sso-styles.scss */
+h2 {
+  font-size: 1.5em;
+}
+
+/* line 40, ../_scss/_sso-styles.scss */
+h3 {
+  font-size: 1.25em;
+}
+
+/* line 44, ../_scss/_sso-styles.scss */
+h4 {
+  font-size: 1.125em;
+}
+
+/* line 48, ../_scss/_sso-styles.scss */
+p {
+  line-height: 1.375em;
+}
+
+/* line 52, ../_scss/_sso-styles.scss */
+a {
+  color: #8237ff;
+  text-decoration: underline;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+}
+/* line 57, ../_scss/_sso-styles.scss */
+a:visited {
+  color: #8237ff;
+}
+/* line 60, ../_scss/_sso-styles.scss */
+a:hover, a:focus {
+  text-decoration: underline;
+  color: #1e4b87;
+  outline: 0;
+}
+/* line 65, ../_scss/_sso-styles.scss */
+a:focus {
+  outline: thin dotted;
+}
+/* line 68, ../_scss/_sso-styles.scss */
+a:active {
+  outline: 0;
+}
+
+/* line 73, ../_scss/_sso-styles.scss */
+section[role="main"] ul {
+  list-style: none;
+  padding-left: 1.5em;
+}
+/* line 76, ../_scss/_sso-styles.scss */
+section[role="main"] ul li {
+  margin-bottom: .5em;
+}
+/* line 79, ../_scss/_sso-styles.scss */
+section[role="main"] ul li:before {
+  color: #00ff87;
+  content: "•";
+  position: relative;
+  font-size: 1.2em;
+  left: -.25em;
+}
+
+/* line 92, ../_scss/_sso-styles.scss */
+header[role="banner"] {
+  height: 130px;
+  background: url("../images/header-bg.jpg");
+}
+/* line 95, ../_scss/_sso-styles.scss */
+header[role="banner"] h1 {
+  margin: 0 auto;
+  max-width: 960px;
+}
+/* line 99, ../_scss/_sso-styles.scss */
+header[role="banner"] img {
+  margin-top: 0.5em;
+  width: 40%;
+}
+
+/* line 105, ../_scss/_sso-styles.scss */
+section[role="main"] {
+  margin-bottom: 4em;
+  max-width: 940px;
+  *zoom: 1;
+  overflow: visible;
+  margin: 0 auto;
+}
+/* line 38, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
+section[role="main"]:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 113, ../_scss/_sso-styles.scss */
+article {
+  background: #fff;
+  box-shadow: 0 1px 1px #347bad;
+  padding: 1em;
+}
+
+/* line 119, ../_scss/_sso-styles.scss */
+#sso {
+  width: 75%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+  background: #fff;
+  box-shadow: 0 1px 1px #347bad;
+  padding: 1em;
+  margin: -20px auto 0;
+}
+/* line 125, ../_scss/_sso-styles.scss */
+#sso label {
+  display: none;
+}
+/* line 128, ../_scss/_sso-styles.scss */
+#sso fieldset {
+  border: none;
+  padding-bottom: 0;
+}
+/* line 132, ../_scss/_sso-styles.scss */
+#sso ol {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+/* line 139, ../_scss/_sso-styles.scss */
+.sso-submit {
+  padding-top: 0;
+}
+
+/* line 143, ../_scss/_sso-styles.scss */
+.sso-help {
+  font-size: 0.75em;
+  margin-bottom: 0;
+}
+
+/* line 148, ../_scss/_sso-styles.scss */
+.sp-news {
+  width: 25%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+  min-height: 245px;
+  background: rgba(204, 204, 204, 0.2);
+  padding: 1em;
+}
+/* line 153, ../_scss/_sso-styles.scss */
+.sp-news p {
+  font-size: 0.75em;
+}
+/* line 156, ../_scss/_sso-styles.scss */
+.sp-news h3 {
+  font-size: 1em;
+  margin-top: 0;
+}
+
+/* line 162, ../_scss/_sso-styles.scss */
+.loading i {
+  font-size: 4em;
+  margin: 1em 45%;
+}
+
+/* line 167, ../_scss/_sso-styles.scss */
+.error {
+  background: repeating-linear-gradient(45deg, #0a0007, #0a0007 0.5em, #240017 0.5em, #240017 1em);
+  color: #ff00a5;
+  padding: 1em;
+  margin-bottom: 1em;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 173, ../_scss/_sso-styles.scss */
+.error h1 {
+  color: #ff00a5;
+}
+/* line 176, ../_scss/_sso-styles.scss */
+.error a:hover {
+  color: #fff;
+}
+
+/* line 181, ../_scss/_sso-styles.scss */
+.alert {
+  background: #ffff00;
+  color: #0055a6;
+  padding: 1em;
+  margin-bottom: 1em;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 187, ../_scss/_sso-styles.scss */
+.alert h1 {
+  color: #0055a6;
+  margin: 0;
+}
+
+/* line 193, ../_scss/_sso-styles.scss */
+#report {
+  overflow: hidden;
+}
+/* line 195, ../_scss/_sso-styles.scss */
+#report label {
+  display: block;
+  margin-bottom: 0.25em;
+}
+/* line 199, ../_scss/_sso-styles.scss */
+#report ol {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+/* line 207, ../_scss/_sso-styles.scss */
+footer[role="contentinfo"] {
+  position: absolute;
+  bottom: 0;
+  height: 2em;
+  width: 100%;
+  background: #0055a6 url("../images/footer-bg.jpg");
+  border-top: 1px solid #002140;
+  padding: 0.5em;
+  color: #cccccc;
+}
+/* line 216, ../_scss/_sso-styles.scss */
+footer[role="contentinfo"] p {
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 0.75em;
+}
+/* line 221, ../_scss/_sso-styles.scss */
+footer[role="contentinfo"] a {
+  text-decoration: none;
+  color: #fff;
+}
+/* line 224, ../_scss/_sso-styles.scss */
+footer[role="contentinfo"] a:visited {
+  color: #fff;
+}
+/* line 227, ../_scss/_sso-styles.scss */
+footer[role="contentinfo"] a:hover, footer[role="contentinfo"] a:focus {
+  color: #ffff00;
+  text-decoration: underline;
+}

@@ -1,5 +1,7 @@
 // General form and button elements adapted from http://purecss.io/forms/ & http://purecss.io/buttons/
 
+@import "ucla-vars"; // WHY?!
+
 input {
 	width: 20em;
 	font-size: $h4-font-size;

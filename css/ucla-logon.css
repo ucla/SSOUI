@@ -181,7 +181,26 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-/* line 3, ../_scss/_pure-forms.scss */
+/* line 76, ../_scss/_ucla-vars.scss */
+body {
+  font-size: 100%;
+}
+
+/*
+@font-face {
+	font-family: '../fonts/ProximaNova';src: url('../fonts/ProximaNova-Light.eot');src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),url('../fonts/ProximaNova-Light.woff') format('woff'),url('../fonts/ProximaNova-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+*/
+@font-face {
+  font-family: '../fonts/ProximaNova';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+/* line 5, ../_scss/_pure-forms.scss */
 input {
   width: 20em;
   font-size: 1.125em;
@@ -191,7 +210,7 @@ input {
   border-radius: 3px;
 }
 
-/* line 10, ../_scss/_pure-forms.scss */
+/* line 12, ../_scss/_pure-forms.scss */
 select, input, textarea {
   padding: 0.5em 0.6em;
   display: inline-block;
@@ -200,7 +219,7 @@ select, input, textarea {
   border-radius: 3px;
 }
 
-/* line 18, ../_scss/_pure-forms.scss */
+/* line 20, ../_scss/_pure-forms.scss */
 select:focus, input:focus, textarea:focus {
   outline: 0;
   outline: thin dotted \9;
@@ -208,40 +227,40 @@ select:focus, input:focus, textarea:focus {
   border-color: #00a5e5;
 }
 
-/* line 24, ../_scss/_pure-forms.scss */
+/* line 26, ../_scss/_pure-forms.scss */
 select[disabled], input[disabled] {
   cursor: not-allowed !important;
   background-color: #eaeded;
   color: #cad2d3;
 }
 
-/* line 30, ../_scss/_pure-forms.scss */
+/* line 32, ../_scss/_pure-forms.scss */
 input:focus:invalid,
 select:focus:invalid {
   color: #b94a48;
   border-color: #ee5f5b;
 }
 
-/* line 36, ../_scss/_pure-forms.scss */
+/* line 38, ../_scss/_pure-forms.scss */
 input:focus:invalid:focus,
 select:focus:invalid:focus {
   border-color: #e9322d;
 }
 
-/* line 41, ../_scss/_pure-forms.scss */
+/* line 43, ../_scss/_pure-forms.scss */
 select {
   border: 1px solid #ccc;
   background-color: #fff;
 }
 
-/* line 46, ../_scss/_pure-forms.scss */
+/* line 48, ../_scss/_pure-forms.scss */
 fieldset {
   margin: 0;
   padding: 0.5em 0;
   border: 0;
 }
 
-/* line 52, ../_scss/_pure-forms.scss */
+/* line 54, ../_scss/_pure-forms.scss */
 legend {
   display: block;
   width: 100%;
@@ -254,7 +273,7 @@ legend {
   font-size: 1.5em;
 }
 
-/* line 64, ../_scss/_pure-forms.scss */
+/* line 66, ../_scss/_pure-forms.scss */
 button, .button {
   display: inline-block;
   *display: inline;
@@ -292,23 +311,23 @@ button, .button {
 }
 
 /* Firefox: Get rid of the inner focus border */
-/* line 94, ../_scss/_pure-forms.scss */
+/* line 96, ../_scss/_pure-forms.scss */
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
-/* line 99, ../_scss/_pure-forms.scss */
+/* line 101, ../_scss/_pure-forms.scss */
 button:focus {
   outline: 0;
 }
 
-/* line 103, ../_scss/_pure-forms.scss */
+/* line 105, ../_scss/_pure-forms.scss */
 button:active {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
 }
 
-/* line 107, ../_scss/_pure-forms.scss */
+/* line 109, ../_scss/_pure-forms.scss */
 button[disabled] {
   border: none;
   background-image: none;
@@ -321,26 +340,26 @@ button[disabled] {
   box-shadow: none;
 }
 
-/* line 119, ../_scss/_pure-forms.scss */
+/* line 121, ../_scss/_pure-forms.scss */
 .primary-button {
   background-color: #347bad;
   color: #fff;
   font-size: 1.125em;
 }
-/* line 123, ../_scss/_pure-forms.scss */
+/* line 125, ../_scss/_pure-forms.scss */
 .primary-button:hover {
   background-color: #ffe800;
   color: #0055a6;
 }
 
-/* line 129, ../_scss/_pure-forms.scss */
+/* line 131, ../_scss/_pure-forms.scss */
 .secondary-button {
   background-color: #526991;
   color: #fff;
   margin-top: 1em;
   width: 100%;
 }
-/* line 134, ../_scss/_pure-forms.scss */
+/* line 136, ../_scss/_pure-forms.scss */
 .secondary-button:hover {
   background-color: #405170;
   color: #fff;
@@ -547,7 +566,7 @@ article {
 }
 /* line 156, ../_scss/_sso-styles.scss */
 .sp-news h3 {
-  font-size: 1.125em;
+  font-size: 1em;
   margin-top: 0;
 }
 

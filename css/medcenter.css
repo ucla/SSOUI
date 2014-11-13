@@ -493,7 +493,7 @@ article {
 
 /* line 119, ../_scss/_sso-styles.scss */
 #sso {
-  width: 75%;
+  width: 50%;
   float: left;
   margin-right: -100%;
   margin-left: 0;
@@ -533,12 +533,12 @@ article {
 /* line 148, ../_scss/_sso-styles.scss */
 .sp-news {
   width: 25%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
+  float: left;
+  margin-right: -100%;
+  margin-left: 50%;
   clear: none;
   min-height: 245px;
-  background: rgba(204, 204, 204, 0.2);
+  background: rgba(204, 204, 204, 0.15);
   padding: 1em;
 }
 /* line 153, ../_scss/_sso-styles.scss */

@@ -117,7 +117,7 @@ article {
 }
 
 #sso {
-	@include grid-span(3, 1);
+	@include grid-span(2, 1);
 	background: $body-background-color;
 	box-shadow: 0 1px 1px #347bad;
 	padding: 1em;
@@ -146,9 +146,9 @@ article {
 }
 
 .sp-news {
-	@include grid-span(1, 4);
+	@include grid-span(1, 3);
 	min-height: 245px;
-	background: rgba($neutral, .2);
+	background: rgba($neutral, .15);
 	padding: $default-spacing;
 	p {
 		font-size: $meta-font-size;

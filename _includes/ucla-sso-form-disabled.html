@@ -1,23 +1,32 @@
-<form id="sso" role="form">
+<div class="form-container">
+	<form id="sso" role="form">
+		
+		<fieldset class="login-form">
+			<legend>Sign In with your UCLA Logon ID</legend>
+			<ol>
+				<li>
+					<label for="logon">Account ID</label>
+					<input id="logon" name="logon" type="text" placeholder="Your UCLA Logon ID" aria-required="true" required autofocus disabled>
+				</li>
+				<li>
+					<label for="pass">Password</label>
+					<input id="pass" name="pass" type="text" placeholder="Your UCLA Logon Password" aria-required="true" required disabled>
+				</li>
+			</ol>
+		</fieldset>
 	
-	<fieldset class="login-form">
-		<legend>Sign In with your UCLA Logon ID</legend>
-		<ol>
-			<li>
-				<label for="logon">Account ID</label>
-				<input id="logon" name="logon" type="text" placeholder="Your UCLA Logon ID" aria-required="true" required autofocus disabled>
-			</li>
-			<li>
-				<label for="pass">Password</label>
-				<input id="pass" name="pass" type="text" placeholder="Your UCLA Logon Password" aria-required="true" required disabled>
-			</li>
-		</ol>
-	</fieldset>
-
-	<fieldset class="sso-submit">
-		<button class="primary-button" type="submit" name="sso" disabled>Sign In</button>
-	</fieldset>
+		<fieldset class="sso-submit">
+			<button class="primary-button" type="submit" name="sso" disabled>Sign In</button>
+		</fieldset>
+		
+		<p class="sso-help"><a href="#">Get help with your account or password.</a></p>
+		
+	</form>
 	
-	<p class="sso-help"><a href="#">Get help with your account or password.</a></p>
-	
-</form>
+	<aside class="sp-news">
+		<h3>Lambda Lab</h3>
+		
+		<p>If you're having issues with signing into Lambda Lab in particular, you can email them at <a href="#">foobar@ucla.edu</a> or give them a call at (310) 208-0448.</p>
+			
+	</aside>
+</div>

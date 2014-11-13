@@ -15,7 +15,6 @@ html {
 }
 
 body {
-	max-width: 36em;
 	margin: 0 auto;
 	color: $body-text-color;
 	font-family: $font-stack;
@@ -91,9 +90,14 @@ section[role="main"] ul {
 /////////////////////////////////////////
 
 header[role="banner"] {
+	height: 130px;
+	background: url('../images/header-bg.jpg');
+	h1 {
+		margin: 0 auto;
+		max-width: 960px;
+	}
 	img {
-		width: 60%;
-		margin-top: $half-spacing;
+		width: 40%;
 	}
 }
 
@@ -106,13 +110,13 @@ footer[role="contentinfo"] {
 	bottom: 0;
 	height: 2em;
 	width: 100%;
-	max-width: 36em; 
-	background: $primary-color-alternate-state;
+	background: $primary-color-alternate-state url('../images/footer-bg.jpg');
 	border-top: 1px solid darken($primary-color-alternate-state, 20%);
 	padding: $half-spacing;
 	color: lighten($body-text-color, 40%);
 	p {
-		margin: 0;
+		max-width: 960px;
+		margin: 0 auto;
 		font-size: $meta-font-size;
 	}
 	a {
@@ -128,14 +132,6 @@ footer[role="contentinfo"] {
 	}
 }
 
-.footer-meta-info {
-	float: left;
-}
-
-.footer-non-human {
-	float: right;
-}
-
 article {
 	background: $body-background-color;
 	box-shadow: 0 1px 1px #347bad;
@@ -147,6 +143,8 @@ article {
 	background: $body-background-color;
 	box-shadow: 0 1px 1px #347bad;
 	padding: 1em;
+	max-width: 920px;
+	margin: -20px auto 0;
 	label {
 		display: none;
 	}
@@ -184,7 +182,7 @@ article {
 .sso-links {
 	@include grid-span(4, 1);
 	@include breakpoint($past-mobile) {
-		@include grid-span(3, 2);
+		@include grid-span(1, 2);
 	}
 	@include clearfix;
 	font-size: $meta-font-size;
@@ -199,6 +197,8 @@ article {
 	padding: $half-spacing;
 	margin-top: $double-spacing;
 	@include border-radius($global-border-radius);
+	max-width: 960px;
+	margin: 0 auto;
 	p {
 		font-size: $meta-font-size;
 	}
@@ -220,6 +220,9 @@ article {
 	@include border-radius($global-border-radius);
 	h1 {
 		color: $error-color;
+	}
+	a:hover {
+		color: $white;
 	}
 }
 

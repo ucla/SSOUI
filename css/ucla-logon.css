@@ -362,49 +362,48 @@ html {
 
 /* line 17, ../_scss/_sso-styles.scss */
 body {
-  max-width: 36em;
   margin: 0 auto;
   color: #666;
   font-family: ProximaNova, Verdana, sans-serif;
 }
 
-/* line 24, ../_scss/_sso-styles.scss */
+/* line 23, ../_scss/_sso-styles.scss */
 h1, h2, h3, h4 {
   font-weight: normal;
   color: #347bad;
 }
 
-/* line 29, ../_scss/_sso-styles.scss */
+/* line 28, ../_scss/_sso-styles.scss */
 h1 {
   font-size: 2em;
 }
 
-/* line 33, ../_scss/_sso-styles.scss */
+/* line 32, ../_scss/_sso-styles.scss */
 div h1, article h1 {
   margin: 0;
 }
 
-/* line 37, ../_scss/_sso-styles.scss */
+/* line 36, ../_scss/_sso-styles.scss */
 h2 {
   font-size: 1.5em;
 }
 
-/* line 41, ../_scss/_sso-styles.scss */
+/* line 40, ../_scss/_sso-styles.scss */
 h3 {
   font-size: 1.25em;
 }
 
-/* line 45, ../_scss/_sso-styles.scss */
+/* line 44, ../_scss/_sso-styles.scss */
 h4 {
   font-size: 1.125em;
 }
 
-/* line 49, ../_scss/_sso-styles.scss */
+/* line 48, ../_scss/_sso-styles.scss */
 p {
   line-height: 1.375em;
 }
 
-/* line 53, ../_scss/_sso-styles.scss */
+/* line 52, ../_scss/_sso-styles.scss */
 a {
   color: #8237ff;
   text-decoration: underline;
@@ -417,35 +416,35 @@ a {
   -webkit-transition-duration: 0.15s;
   transition-duration: 0.15s;
 }
-/* line 58, ../_scss/_sso-styles.scss */
+/* line 57, ../_scss/_sso-styles.scss */
 a:visited {
   color: #8237ff;
 }
-/* line 61, ../_scss/_sso-styles.scss */
+/* line 60, ../_scss/_sso-styles.scss */
 a:hover, a:focus {
   text-decoration: underline;
   color: #1e4b87;
   outline: 0;
 }
-/* line 66, ../_scss/_sso-styles.scss */
+/* line 65, ../_scss/_sso-styles.scss */
 a:focus {
   outline: thin dotted;
 }
-/* line 69, ../_scss/_sso-styles.scss */
+/* line 68, ../_scss/_sso-styles.scss */
 a:active {
   outline: 0;
 }
 
-/* line 74, ../_scss/_sso-styles.scss */
+/* line 73, ../_scss/_sso-styles.scss */
 section[role="main"] ul {
   list-style: none;
   padding-left: 1.5em;
 }
-/* line 77, ../_scss/_sso-styles.scss */
+/* line 76, ../_scss/_sso-styles.scss */
 section[role="main"] ul li {
   margin-bottom: .5em;
 }
-/* line 80, ../_scss/_sso-styles.scss */
+/* line 79, ../_scss/_sso-styles.scss */
 section[role="main"] ul li:before {
   color: #00ff87;
   content: "•";
@@ -454,105 +453,106 @@ section[role="main"] ul li:before {
   left: -.25em;
 }
 
-/* line 94, ../_scss/_sso-styles.scss */
+/* line 92, ../_scss/_sso-styles.scss */
+header[role="banner"] {
+  height: 130px;
+  background: url("../images/header-bg.jpg");
+}
+/* line 95, ../_scss/_sso-styles.scss */
+header[role="banner"] h1 {
+  margin: 0 auto;
+  max-width: 960px;
+}
+/* line 99, ../_scss/_sso-styles.scss */
 header[role="banner"] img {
-  width: 60%;
-  margin-top: 0.5em;
+  width: 40%;
 }
 
-/* line 100, ../_scss/_sso-styles.scss */
+/* line 104, ../_scss/_sso-styles.scss */
 section[role="main"] {
   margin-bottom: 4em;
 }
 
-/* line 104, ../_scss/_sso-styles.scss */
+/* line 108, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] {
   position: absolute;
   bottom: 0;
   height: 2em;
   width: 100%;
-  max-width: 36em;
-  background: #0055a6;
+  background: #0055a6 url("../images/footer-bg.jpg");
   border-top: 1px solid #002140;
   padding: 0.5em;
   color: #cccccc;
 }
-/* line 114, ../_scss/_sso-styles.scss */
+/* line 117, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] p {
-  margin: 0;
+  max-width: 960px;
+  margin: 0 auto;
   font-size: 0.75em;
 }
-/* line 118, ../_scss/_sso-styles.scss */
+/* line 122, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] a {
   text-decoration: none;
   color: #fff;
 }
-/* line 121, ../_scss/_sso-styles.scss */
+/* line 125, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] a:visited {
   color: #fff;
 }
-/* line 124, ../_scss/_sso-styles.scss */
+/* line 128, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] a:hover, footer[role="contentinfo"] a:focus {
   color: #ffff00;
   text-decoration: underline;
 }
 
-/* line 131, ../_scss/_sso-styles.scss */
-.footer-meta-info {
-  float: left;
-}
-
 /* line 135, ../_scss/_sso-styles.scss */
-.footer-non-human {
-  float: right;
-}
-
-/* line 139, ../_scss/_sso-styles.scss */
 article {
   background: #fff;
   box-shadow: 0 1px 1px #347bad;
   padding: 1em;
 }
 
-/* line 145, ../_scss/_sso-styles.scss */
+/* line 141, ../_scss/_sso-styles.scss */
 #sso {
   overflow: hidden;
   background: #fff;
   box-shadow: 0 1px 1px #347bad;
   padding: 1em;
+  max-width: 920px;
+  margin: -20px auto 0;
 }
-/* line 150, ../_scss/_sso-styles.scss */
+/* line 148, ../_scss/_sso-styles.scss */
 #sso label {
   display: none;
 }
-/* line 153, ../_scss/_sso-styles.scss */
+/* line 151, ../_scss/_sso-styles.scss */
 #sso fieldset {
   border: none;
 }
-/* line 156, ../_scss/_sso-styles.scss */
+/* line 154, ../_scss/_sso-styles.scss */
 #sso ol {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-/* line 163, ../_scss/_sso-styles.scss */
+/* line 161, ../_scss/_sso-styles.scss */
 #report {
   overflow: hidden;
 }
-/* line 165, ../_scss/_sso-styles.scss */
+/* line 163, ../_scss/_sso-styles.scss */
 #report label {
   display: block;
   margin-bottom: 0.25em;
 }
-/* line 169, ../_scss/_sso-styles.scss */
+/* line 167, ../_scss/_sso-styles.scss */
 #report ol {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-/* line 176, ../_scss/_sso-styles.scss */
+/* line 174, ../_scss/_sso-styles.scss */
 .sso-submit {
   width: 430%;
   clear: right;
@@ -562,7 +562,7 @@ article {
   padding-top: 0;
 }
 @media (min-width: 321px) {
-  /* line 176, ../_scss/_sso-styles.scss */
+  /* line 174, ../_scss/_sso-styles.scss */
   .sso-submit {
     width: 23.25581%;
     clear: right;
@@ -572,7 +572,7 @@ article {
   }
 }
 
-/* line 184, ../_scss/_sso-styles.scss */
+/* line 182, ../_scss/_sso-styles.scss */
 .sso-links {
   width: 430%;
   clear: right;
@@ -585,20 +585,20 @@ article {
   margin: 0;
 }
 @media (min-width: 321px) {
-  /* line 184, ../_scss/_sso-styles.scss */
+  /* line 182, ../_scss/_sso-styles.scss */
   .sso-links {
-    width: 74.4186%;
+    width: 23.25581%;
     clear: right;
-    float: right;
-    margin-right: 0;
+    float: left;
+    margin-right: 2.32558%;
   }
 }
-/* line 192, ../_scss/_sso-styles.scss */
+/* line 190, ../_scss/_sso-styles.scss */
 .sso-links li {
   margin-bottom: 0;
 }
 
-/* line 197, ../_scss/_sso-styles.scss */
+/* line 195, ../_scss/_sso-styles.scss */
 .sp-news {
   background: rgba(204, 204, 204, 0.2);
   padding: 0.5em;
@@ -606,6 +606,8 @@ article {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+  max-width: 960px;
+  margin: 0 auto;
 }
 /* line 202, ../_scss/_sso-styles.scss */
 .sp-news p {
@@ -636,8 +638,12 @@ article {
 .error h1 {
   color: #ff00a5;
 }
+/* line 224, ../_scss/_sso-styles.scss */
+.error a:hover {
+  color: #fff;
+}
 
-/* line 226, ../_scss/_sso-styles.scss */
+/* line 229, ../_scss/_sso-styles.scss */
 .alert {
   background: #ffff00;
   color: #0055a6;
@@ -647,7 +653,7 @@ article {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 232, ../_scss/_sso-styles.scss */
+/* line 235, ../_scss/_sso-styles.scss */
 .alert h1 {
   color: #0055a6;
   margin: 0;

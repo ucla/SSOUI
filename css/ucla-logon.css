@@ -162,7 +162,7 @@ optgroup {
   font-weight: bold;
 }
 
-/* line 78, ../_scss/_ucla-vars.scss */
+/* line 76, ../_scss/_ucla-vars.scss */
 body {
   font-size: 100%;
 }
@@ -465,15 +465,150 @@ header[role="banner"] h1 {
 }
 /* line 99, ../_scss/_sso-styles.scss */
 header[role="banner"] img {
+  margin-top: 0.5em;
   width: 40%;
 }
 
-/* line 104, ../_scss/_sso-styles.scss */
+/* line 105, ../_scss/_sso-styles.scss */
 section[role="main"] {
   margin-bottom: 4em;
+  max-width: 940px;
+  *zoom: 1;
+  overflow: visible;
+  margin: 0 auto;
+}
+/* line 38, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
+section[role="main"]:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-/* line 108, ../_scss/_sso-styles.scss */
+/* line 113, ../_scss/_sso-styles.scss */
+article {
+  background: #fff;
+  box-shadow: 0 1px 1px #347bad;
+  padding: 1em;
+}
+
+/* line 119, ../_scss/_sso-styles.scss */
+#sso {
+  width: 75%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+  background: #fff;
+  box-shadow: 0 1px 1px #347bad;
+  padding: 1em;
+  margin: -20px auto 0;
+}
+/* line 125, ../_scss/_sso-styles.scss */
+#sso label {
+  display: none;
+}
+/* line 128, ../_scss/_sso-styles.scss */
+#sso fieldset {
+  border: none;
+  padding-bottom: 0;
+}
+/* line 132, ../_scss/_sso-styles.scss */
+#sso ol {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+/* line 139, ../_scss/_sso-styles.scss */
+.sso-submit {
+  padding-top: 0;
+}
+
+/* line 143, ../_scss/_sso-styles.scss */
+.sso-help {
+  font-size: 0.75em;
+  margin-bottom: 0;
+}
+
+/* line 148, ../_scss/_sso-styles.scss */
+.sp-news {
+  width: 25%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+  min-height: 245px;
+  background: rgba(204, 204, 204, 0.2);
+  padding: 1em;
+}
+/* line 153, ../_scss/_sso-styles.scss */
+.sp-news p {
+  font-size: 0.75em;
+}
+/* line 156, ../_scss/_sso-styles.scss */
+.sp-news h3 {
+  font-size: 1.125em;
+  margin-top: 0;
+}
+
+/* line 162, ../_scss/_sso-styles.scss */
+.loading i {
+  font-size: 4em;
+  margin: 1em 45%;
+}
+
+/* line 167, ../_scss/_sso-styles.scss */
+.error {
+  background: repeating-linear-gradient(45deg, #0a0007, #0a0007 0.5em, #240017 0.5em, #240017 1em);
+  color: #ff00a5;
+  padding: 1em;
+  margin-bottom: 1em;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 173, ../_scss/_sso-styles.scss */
+.error h1 {
+  color: #ff00a5;
+}
+/* line 176, ../_scss/_sso-styles.scss */
+.error a:hover {
+  color: #fff;
+}
+
+/* line 181, ../_scss/_sso-styles.scss */
+.alert {
+  background: #ffff00;
+  color: #0055a6;
+  padding: 1em;
+  margin-bottom: 1em;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 187, ../_scss/_sso-styles.scss */
+.alert h1 {
+  color: #0055a6;
+  margin: 0;
+}
+
+/* line 193, ../_scss/_sso-styles.scss */
+#report {
+  overflow: hidden;
+}
+/* line 195, ../_scss/_sso-styles.scss */
+#report label {
+  display: block;
+  margin-bottom: 0.25em;
+}
+/* line 199, ../_scss/_sso-styles.scss */
+#report ol {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+/* line 207, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] {
   position: absolute;
   bottom: 0;
@@ -484,177 +619,23 @@ footer[role="contentinfo"] {
   padding: 0.5em;
   color: #cccccc;
 }
-/* line 117, ../_scss/_sso-styles.scss */
+/* line 216, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] p {
   max-width: 960px;
   margin: 0 auto;
   font-size: 0.75em;
 }
-/* line 122, ../_scss/_sso-styles.scss */
+/* line 221, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] a {
   text-decoration: none;
   color: #fff;
 }
-/* line 125, ../_scss/_sso-styles.scss */
+/* line 224, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] a:visited {
   color: #fff;
 }
-/* line 128, ../_scss/_sso-styles.scss */
+/* line 227, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] a:hover, footer[role="contentinfo"] a:focus {
   color: #ffff00;
   text-decoration: underline;
-}
-
-/* line 135, ../_scss/_sso-styles.scss */
-article {
-  background: #fff;
-  box-shadow: 0 1px 1px #347bad;
-  padding: 1em;
-}
-
-/* line 141, ../_scss/_sso-styles.scss */
-#sso {
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0 1px 1px #347bad;
-  padding: 1em;
-  max-width: 920px;
-  margin: -20px auto 0;
-}
-/* line 148, ../_scss/_sso-styles.scss */
-#sso label {
-  display: none;
-}
-/* line 151, ../_scss/_sso-styles.scss */
-#sso fieldset {
-  border: none;
-}
-/* line 154, ../_scss/_sso-styles.scss */
-#sso ol {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-/* line 161, ../_scss/_sso-styles.scss */
-#report {
-  overflow: hidden;
-}
-/* line 163, ../_scss/_sso-styles.scss */
-#report label {
-  display: block;
-  margin-bottom: 0.25em;
-}
-/* line 167, ../_scss/_sso-styles.scss */
-#report ol {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-/* line 174, ../_scss/_sso-styles.scss */
-.sso-submit {
-  width: 430%;
-  clear: right;
-  float: left;
-  margin-left: 0;
-  margin-right: 10%;
-  padding-top: 0;
-}
-@media (min-width: 321px) {
-  /* line 174, ../_scss/_sso-styles.scss */
-  .sso-submit {
-    width: 23.25581%;
-    clear: right;
-    float: left;
-    margin-left: 0;
-    margin-right: 2.32558%;
-  }
-}
-
-/* line 182, ../_scss/_sso-styles.scss */
-.sso-links {
-  width: 430%;
-  clear: right;
-  float: left;
-  margin-left: 0;
-  margin-right: 10%;
-  overflow: hidden;
-  *zoom: 1;
-  font-size: 0.75em;
-  margin: 0;
-}
-@media (min-width: 321px) {
-  /* line 182, ../_scss/_sso-styles.scss */
-  .sso-links {
-    width: 23.25581%;
-    clear: right;
-    float: left;
-    margin-right: 2.32558%;
-  }
-}
-/* line 190, ../_scss/_sso-styles.scss */
-.sso-links li {
-  margin-bottom: 0;
-}
-
-/* line 195, ../_scss/_sso-styles.scss */
-.sp-news {
-  background: rgba(204, 204, 204, 0.2);
-  padding: 0.5em;
-  margin-top: 2em;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  max-width: 960px;
-  margin: 0 auto;
-}
-/* line 202, ../_scss/_sso-styles.scss */
-.sp-news p {
-  font-size: 0.75em;
-}
-/* line 205, ../_scss/_sso-styles.scss */
-.sp-news h3 {
-  margin-top: 0;
-}
-
-/* line 210, ../_scss/_sso-styles.scss */
-.loading i {
-  font-size: 4em;
-  margin: 1em 45%;
-}
-
-/* line 215, ../_scss/_sso-styles.scss */
-.error {
-  background: repeating-linear-gradient(45deg, #0a0007, #0a0007 0.5em, #240017 0.5em, #240017 1em);
-  color: #ff00a5;
-  padding: 1em;
-  margin-bottom: 1em;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-/* line 221, ../_scss/_sso-styles.scss */
-.error h1 {
-  color: #ff00a5;
-}
-/* line 224, ../_scss/_sso-styles.scss */
-.error a:hover {
-  color: #fff;
-}
-
-/* line 229, ../_scss/_sso-styles.scss */
-.alert {
-  background: #ffff00;
-  color: #0055a6;
-  padding: 1em;
-  margin-bottom: 1em;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-/* line 235, ../_scss/_sso-styles.scss */
-.alert h1 {
-  color: #0055a6;
-  margin: 0;
 }

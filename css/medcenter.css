@@ -338,7 +338,7 @@ button[disabled] {
   background-color: #526991;
   color: #fff;
   margin-top: 1em;
-  width: 100%;
+  width: 60%;
 }
 /* line 136, ../_scss/_pure-forms.scss */
 .secondary-button:hover {
@@ -492,8 +492,14 @@ article {
 }
 
 /* line 119, ../_scss/_sso-styles.scss */
+.form-container {
+  max-width: 920px;
+  margin-left: 40px;
+}
+
+/* line 124, ../_scss/_sso-styles.scss */
 #sso {
-  width: 50%;
+  width: 60%;
   float: left;
   margin-right: -100%;
   margin-left: 0;
@@ -503,112 +509,107 @@ article {
   padding: 1em;
   margin: -20px auto 0;
 }
-/* line 125, ../_scss/_sso-styles.scss */
+/* line 130, ../_scss/_sso-styles.scss */
 #sso label {
   display: none;
 }
-/* line 128, ../_scss/_sso-styles.scss */
+/* line 133, ../_scss/_sso-styles.scss */
 #sso fieldset {
   border: none;
   padding-bottom: 0;
 }
-/* line 132, ../_scss/_sso-styles.scss */
+/* line 137, ../_scss/_sso-styles.scss */
 #sso ol {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-/* line 139, ../_scss/_sso-styles.scss */
+/* line 144, ../_scss/_sso-styles.scss */
 .sso-submit {
   padding-top: 0;
 }
 
-/* line 143, ../_scss/_sso-styles.scss */
+/* line 148, ../_scss/_sso-styles.scss */
 .sso-help {
   font-size: 0.75em;
   margin-bottom: 0;
 }
 
-/* line 148, ../_scss/_sso-styles.scss */
+/* line 153, ../_scss/_sso-styles.scss */
 .sp-news {
-  width: 25%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 50%;
+  width: 40%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
   clear: none;
   min-height: 245px;
   background: rgba(204, 204, 204, 0.15);
   padding: 1em;
 }
-/* line 153, ../_scss/_sso-styles.scss */
+/* line 158, ../_scss/_sso-styles.scss */
 .sp-news p {
   font-size: 0.75em;
 }
-/* line 156, ../_scss/_sso-styles.scss */
+/* line 161, ../_scss/_sso-styles.scss */
 .sp-news h3 {
   font-size: 1em;
   margin-top: 0;
 }
 
-/* line 162, ../_scss/_sso-styles.scss */
+/* line 167, ../_scss/_sso-styles.scss */
 .loading i {
   font-size: 4em;
   margin: 1em 45%;
 }
 
-/* line 167, ../_scss/_sso-styles.scss */
+/* line 172, ../_scss/_sso-styles.scss */
 .error {
   background: repeating-linear-gradient(45deg, #0a0007, #0a0007 0.5em, #240017 0.5em, #240017 1em);
+  margin-top: -20px;
   color: #ff00a5;
   padding: 1em;
   margin-bottom: 1em;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
 }
-/* line 173, ../_scss/_sso-styles.scss */
+/* line 178, ../_scss/_sso-styles.scss */
 .error h1 {
   color: #ff00a5;
 }
-/* line 176, ../_scss/_sso-styles.scss */
+/* line 181, ../_scss/_sso-styles.scss */
 .error a:hover {
   color: #fff;
 }
 
-/* line 181, ../_scss/_sso-styles.scss */
+/* line 186, ../_scss/_sso-styles.scss */
 .alert {
   background: #ffff00;
+  margin-top: -20px;
   color: #0055a6;
   padding: 1em;
   margin-bottom: 1em;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
 }
-/* line 187, ../_scss/_sso-styles.scss */
+/* line 192, ../_scss/_sso-styles.scss */
 .alert h1 {
   color: #0055a6;
-  margin: 0;
 }
 
-/* line 193, ../_scss/_sso-styles.scss */
+/* line 197, ../_scss/_sso-styles.scss */
 #report {
   overflow: hidden;
 }
-/* line 195, ../_scss/_sso-styles.scss */
+/* line 199, ../_scss/_sso-styles.scss */
 #report label {
   display: block;
   margin-bottom: 0.25em;
 }
-/* line 199, ../_scss/_sso-styles.scss */
+/* line 203, ../_scss/_sso-styles.scss */
 #report ol {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-/* line 207, ../_scss/_sso-styles.scss */
+/* line 210, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] {
   position: absolute;
   bottom: 0;
@@ -619,22 +620,22 @@ footer[role="contentinfo"] {
   padding: 0.5em;
   color: #cccccc;
 }
-/* line 216, ../_scss/_sso-styles.scss */
+/* line 219, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] p {
   max-width: 960px;
   margin: 0 auto;
   font-size: 0.75em;
 }
-/* line 221, ../_scss/_sso-styles.scss */
+/* line 224, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] a {
   text-decoration: none;
   color: #fff;
 }
-/* line 224, ../_scss/_sso-styles.scss */
+/* line 227, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] a:visited {
   color: #fff;
 }
-/* line 227, ../_scss/_sso-styles.scss */
+/* line 230, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] a:hover, footer[role="contentinfo"] a:focus {
   color: #ffff00;
   text-decoration: underline;

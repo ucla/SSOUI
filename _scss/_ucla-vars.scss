@@ -14,7 +14,7 @@ $wide: 1025px;
 // content specific breakpoints in em units
 
 // singularity.gs layout
-@include add-grid(3);
+@include add-grid(5);
 @include add-gutter(0);
 
 /////////////////////////////////////////

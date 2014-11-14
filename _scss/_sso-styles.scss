@@ -3,7 +3,8 @@
 /////////////////////////////////////////
 
 html {
-	background: #d1e8f8 url('../images/skyline.jpg');
+	background: #d1e8f8 url('../images/skyline.jpg') no-repeat;
+  background-size: cover;
 	box-sizing: border-box;
 	position: relative; 
 	min-height: 100%;

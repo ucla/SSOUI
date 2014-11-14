@@ -365,63 +365,64 @@ button[disabled] {
 
 /* line 5, ../_scss/_sso-styles.scss */
 html {
-  background: #d1e8f8 url("../images/skyline.jpg");
+  background: #d1e8f8 url("../images/skyline.jpg") no-repeat;
+  background-size: cover;
   box-sizing: border-box;
   position: relative;
   min-height: 100%;
   width: 100%;
 }
 
-/* line 13, ../_scss/_sso-styles.scss */
+/* line 14, ../_scss/_sso-styles.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 17, ../_scss/_sso-styles.scss */
+/* line 18, ../_scss/_sso-styles.scss */
 body {
   color: #666;
   font-family: ProximaNova, Verdana, sans-serif;
   letter-spacing: 0.5px;
 }
 
-/* line 23, ../_scss/_sso-styles.scss */
+/* line 24, ../_scss/_sso-styles.scss */
 h1, h2, h3, h4 {
   font-weight: normal;
   color: #347bad;
 }
 
-/* line 28, ../_scss/_sso-styles.scss */
+/* line 29, ../_scss/_sso-styles.scss */
 h1 {
   font-size: 2em;
   line-height: 1.5125em;
 }
 
-/* line 33, ../_scss/_sso-styles.scss */
+/* line 34, ../_scss/_sso-styles.scss */
 div h1, article h1 {
   margin: 0;
 }
 
-/* line 37, ../_scss/_sso-styles.scss */
+/* line 38, ../_scss/_sso-styles.scss */
 h2 {
   font-size: 1.5em;
 }
 
-/* line 41, ../_scss/_sso-styles.scss */
+/* line 42, ../_scss/_sso-styles.scss */
 h3 {
   font-size: 1.25em;
 }
 
-/* line 45, ../_scss/_sso-styles.scss */
+/* line 46, ../_scss/_sso-styles.scss */
 h4 {
   font-size: 1.125em;
 }
 
-/* line 49, ../_scss/_sso-styles.scss */
+/* line 50, ../_scss/_sso-styles.scss */
 p {
   line-height: 1.375em;
 }
 
-/* line 53, ../_scss/_sso-styles.scss */
+/* line 54, ../_scss/_sso-styles.scss */
 a {
   color: #8237ff;
   text-decoration: underline;
@@ -434,35 +435,35 @@ a {
   -webkit-transition-duration: 0.15s;
   transition-duration: 0.15s;
 }
-/* line 58, ../_scss/_sso-styles.scss */
+/* line 59, ../_scss/_sso-styles.scss */
 a:visited {
   color: #8237ff;
 }
-/* line 61, ../_scss/_sso-styles.scss */
+/* line 62, ../_scss/_sso-styles.scss */
 a:hover, a:focus {
   text-decoration: underline;
   color: #1e4b87;
   outline: 0;
 }
-/* line 66, ../_scss/_sso-styles.scss */
+/* line 67, ../_scss/_sso-styles.scss */
 a:focus {
   outline: thin dotted;
 }
-/* line 69, ../_scss/_sso-styles.scss */
+/* line 70, ../_scss/_sso-styles.scss */
 a:active {
   outline: 0;
 }
 
-/* line 74, ../_scss/_sso-styles.scss */
+/* line 75, ../_scss/_sso-styles.scss */
 section[role="main"] ul {
   list-style: none;
   padding-left: 1.5em;
 }
-/* line 77, ../_scss/_sso-styles.scss */
+/* line 78, ../_scss/_sso-styles.scss */
 section[role="main"] ul li {
   margin-bottom: .5em;
 }
-/* line 80, ../_scss/_sso-styles.scss */
+/* line 81, ../_scss/_sso-styles.scss */
 section[role="main"] ul li:before {
   color: #00ff87;
   content: "•";
@@ -471,20 +472,20 @@ section[role="main"] ul li:before {
   left: -.25em;
 }
 
-/* line 93, ../_scss/_sso-styles.scss */
+/* line 94, ../_scss/_sso-styles.scss */
 section[role="main"] {
   margin: 4em auto 3em;
   width: 42em;
 }
 
-/* line 98, ../_scss/_sso-styles.scss */
+/* line 99, ../_scss/_sso-styles.scss */
 .logo {
   display: block;
   margin: 0 auto;
   width: 70%;
 }
 
-/* line 104, ../_scss/_sso-styles.scss */
+/* line 105, ../_scss/_sso-styles.scss */
 #sso {
   background: #fff;
   box-shadow: 0 1px 1px #347bad;
@@ -496,38 +497,38 @@ section[role="main"] {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 112, ../_scss/_sso-styles.scss */
+/* line 113, ../_scss/_sso-styles.scss */
 #sso label {
   display: none;
 }
-/* line 115, ../_scss/_sso-styles.scss */
+/* line 116, ../_scss/_sso-styles.scss */
 #sso fieldset {
   border: none;
 }
-/* line 118, ../_scss/_sso-styles.scss */
+/* line 119, ../_scss/_sso-styles.scss */
 #sso ol {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-/* line 125, ../_scss/_sso-styles.scss */
+/* line 126, ../_scss/_sso-styles.scss */
 #report {
   overflow: hidden;
 }
-/* line 127, ../_scss/_sso-styles.scss */
+/* line 128, ../_scss/_sso-styles.scss */
 #report label {
   display: block;
   margin-bottom: 0.25em;
 }
-/* line 131, ../_scss/_sso-styles.scss */
+/* line 132, ../_scss/_sso-styles.scss */
 #report ol {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-/* line 138, ../_scss/_sso-styles.scss */
+/* line 139, ../_scss/_sso-styles.scss */
 .sso-submit {
   width: 100%;
   float: right;
@@ -537,7 +538,7 @@ section[role="main"] {
   padding-top: 0;
 }
 @media (min-width: 321px) {
-  /* line 138, ../_scss/_sso-styles.scss */
+  /* line 139, ../_scss/_sso-styles.scss */
   .sso-submit {
     width: 23.25581%;
     float: left;
@@ -547,7 +548,7 @@ section[role="main"] {
   }
 }
 
-/* line 146, ../_scss/_sso-styles.scss */
+/* line 147, ../_scss/_sso-styles.scss */
 .sso-links {
   width: 100%;
   float: right;
@@ -560,7 +561,7 @@ section[role="main"] {
   margin: 0;
 }
 @media (min-width: 321px) {
-  /* line 146, ../_scss/_sso-styles.scss */
+  /* line 147, ../_scss/_sso-styles.scss */
   .sso-links {
     width: 74.4186%;
     float: right;
@@ -569,12 +570,12 @@ section[role="main"] {
     clear: none;
   }
 }
-/* line 154, ../_scss/_sso-styles.scss */
+/* line 155, ../_scss/_sso-styles.scss */
 .sso-links li {
   margin-bottom: 0;
 }
 
-/* line 159, ../_scss/_sso-styles.scss */
+/* line 160, ../_scss/_sso-styles.scss */
 .sp-news {
   background: rgba(204, 204, 204, 0.15);
   padding: 0.5em;
@@ -584,22 +585,22 @@ section[role="main"] {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 165, ../_scss/_sso-styles.scss */
+/* line 166, ../_scss/_sso-styles.scss */
 .sp-news p {
   font-size: 0.75em;
 }
-/* line 168, ../_scss/_sso-styles.scss */
+/* line 169, ../_scss/_sso-styles.scss */
 .sp-news h3 {
   font-size: 1em;
   margin-top: 0;
 }
 
-/* line 174, ../_scss/_sso-styles.scss */
+/* line 175, ../_scss/_sso-styles.scss */
 .error ~ #sso, .alert ~ #sso, .error ~ article, .alert ~ article {
   margin-top: -1em;
 }
 
-/* line 178, ../_scss/_sso-styles.scss */
+/* line 179, ../_scss/_sso-styles.scss */
 .error {
   width: 40em;
   background: repeating-linear-gradient(45deg, #0a0007, #0a0007 0.5em, #240017 0.5em, #240017 1em);
@@ -610,13 +611,13 @@ section[role="main"] {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 185, ../_scss/_sso-styles.scss */
+/* line 186, ../_scss/_sso-styles.scss */
 .error h1 {
   color: #ff00a5;
   padding-bottom: 1em;
 }
 
-/* line 191, ../_scss/_sso-styles.scss */
+/* line 192, ../_scss/_sso-styles.scss */
 .alert {
   width: 40em;
   background: #ffff00;
@@ -627,12 +628,12 @@ section[role="main"] {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 198, ../_scss/_sso-styles.scss */
+/* line 199, ../_scss/_sso-styles.scss */
 .alert h1 {
   color: #0055a6;
 }
 
-/* line 203, ../_scss/_sso-styles.scss */
+/* line 204, ../_scss/_sso-styles.scss */
 article {
   background: #fff;
   box-shadow: 0 1px 1px #347bad;
@@ -641,14 +642,14 @@ article {
   padding: 1em;
 }
 
-/* line 211, ../_scss/_sso-styles.scss */
+/* line 212, ../_scss/_sso-styles.scss */
 .loading i {
   margin: 1em auto 0;
   font-size: 4em;
   margin: 1em 45%;
 }
 
-/* line 217, ../_scss/_sso-styles.scss */
+/* line 218, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] {
   position: absolute;
   bottom: 0;
@@ -659,28 +660,28 @@ footer[role="contentinfo"] {
   padding: 0.5em;
   color: #cccccc;
 }
-/* line 226, ../_scss/_sso-styles.scss */
+/* line 227, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] p {
   width: 48em;
   margin: 0 auto;
   font-size: 0.75em;
 }
-/* line 231, ../_scss/_sso-styles.scss */
+/* line 232, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] a {
   text-decoration: none;
   color: #fff;
 }
-/* line 234, ../_scss/_sso-styles.scss */
+/* line 235, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] a:visited {
   color: #fff;
 }
-/* line 237, ../_scss/_sso-styles.scss */
+/* line 238, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] a:hover, footer[role="contentinfo"] a:focus {
   color: #ffff00;
   text-decoration: underline;
 }
 
-/* line 244, ../_scss/_sso-styles.scss */
+/* line 245, ../_scss/_sso-styles.scss */
 .non-human {
   float: right;
 }

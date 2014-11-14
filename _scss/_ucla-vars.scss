@@ -14,8 +14,8 @@ $wide: 1025px;
 // content specific breakpoints in em units
 
 // singularity.gs layout
-@include add-grid(5);
-@include add-gutter(0);
+@include add-grid(4);
+@include add-gutter(1/10);
 
 /////////////////////////////////////////
 ///            COLOURS
@@ -92,7 +92,7 @@ $half-spacing: .5em;
 $default-spacing: 1em;
 $double-spacing: 2em;
 
-$global-border-radius: 4px;
+$global-border-radius: 3px;
 
 /////////////////////////////////////////
 ///           FONT FACE

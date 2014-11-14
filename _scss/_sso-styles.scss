@@ -91,6 +91,8 @@ section[role="main"] ul {
 
 section[role="main"] {
 	margin-bottom: $double-spacing * 2;
+	max-width: 960px;
+	margin: 0 auto 3em;
 }
 
 .logo {
@@ -161,7 +163,7 @@ article {
 }
 
 .sp-news {
-	background: rgba($neutral, .2);
+	background: rgba($neutral, .15);
 	padding: $half-spacing;
 	margin-top: $double-spacing;
 	@include border-radius($global-border-radius);
@@ -169,6 +171,7 @@ article {
 		font-size: $meta-font-size;
 	}
 	h3 {
+		font-size: $p-font-size;
 		margin-top: 0;
 	}
 }

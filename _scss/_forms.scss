@@ -128,8 +128,9 @@ button[disabled] {
 .secondary-button {
 	background-color: $secondary-login-option-color;
 	color: $white;
-	margin-top: $default-spacing;
-	width: 60%;
+	margin: $default-spacing auto 0;
+	display: block;
+	width: 36em;
 	&:hover {
 		background-color: darken($secondary-login-option-color, 10%);
 		color: $white;

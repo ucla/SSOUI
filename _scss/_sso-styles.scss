@@ -158,7 +158,8 @@ section[role="main"] {
 .sp-news {
 	background: rgba($neutral, .15);
 	padding: $half-spacing;
-	margin-top: $double-spacing;
+	width: 36em;
+	margin: $default-spacing auto 0;
 	@include border-radius($global-border-radius);
 	p {
 		font-size: $meta-font-size;

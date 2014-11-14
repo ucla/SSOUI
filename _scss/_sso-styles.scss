@@ -219,9 +219,8 @@ footer[role="contentinfo"] {
 	bottom: 0;
 	height: 2em;
 	width: 100%;
-	background: $black;
-	opacity: .6;
-	border-top: 1px solid darken($primary-color-alternate-state, 20%);
+	background: rgba($black, .75);
+	border-top: 1px solid $primary-color-alternate-state;
 	padding: $half-spacing;
 	color: lighten($body-text-color, 40%);
 	p {

@@ -185,7 +185,6 @@ section[role="main"] {
 	@include border-radius($global-border-radius);
 	h1 {
 		color: $error-color;
-		padding-bottom: $default-spacing;
 	}
 }
 

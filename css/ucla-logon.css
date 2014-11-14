@@ -614,10 +614,9 @@ section[role="main"] {
 /* line 186, ../_scss/_sso-styles.scss */
 .error h1 {
   color: #ff00a5;
-  padding-bottom: 1em;
 }
 
-/* line 192, ../_scss/_sso-styles.scss */
+/* line 191, ../_scss/_sso-styles.scss */
 .alert {
   width: 40em;
   background: #ffff00;
@@ -628,12 +627,12 @@ section[role="main"] {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 199, ../_scss/_sso-styles.scss */
+/* line 198, ../_scss/_sso-styles.scss */
 .alert h1 {
   color: #0055a6;
 }
 
-/* line 204, ../_scss/_sso-styles.scss */
+/* line 203, ../_scss/_sso-styles.scss */
 article {
   background: #fff;
   box-shadow: 0 1px 1px #347bad;
@@ -642,14 +641,14 @@ article {
   padding: 1em;
 }
 
-/* line 212, ../_scss/_sso-styles.scss */
+/* line 211, ../_scss/_sso-styles.scss */
 .loading i {
   margin: 1em auto 0;
   font-size: 4em;
   margin: 1em 45%;
 }
 
-/* line 218, ../_scss/_sso-styles.scss */
+/* line 217, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] {
   position: absolute;
   bottom: 0;
@@ -660,28 +659,28 @@ footer[role="contentinfo"] {
   padding: 0.5em;
   color: #cccccc;
 }
-/* line 227, ../_scss/_sso-styles.scss */
+/* line 226, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] p {
   width: 48em;
   margin: 0 auto;
   font-size: 0.75em;
 }
-/* line 232, ../_scss/_sso-styles.scss */
+/* line 231, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] a {
   text-decoration: none;
   color: #fff;
 }
-/* line 235, ../_scss/_sso-styles.scss */
+/* line 234, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] a:visited {
   color: #fff;
 }
-/* line 238, ../_scss/_sso-styles.scss */
+/* line 237, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] a:hover, footer[role="contentinfo"] a:focus {
   color: #ffff00;
   text-decoration: underline;
 }
 
-/* line 245, ../_scss/_sso-styles.scss */
+/* line 244, ../_scss/_sso-styles.scss */
 .non-human {
   float: right;
 }

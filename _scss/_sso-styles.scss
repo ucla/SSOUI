@@ -27,6 +27,7 @@ h1, h2, h3, h4 {
 
 h1 {
 	font-size: $h1-font-size;
+	line-height: $base-line-height * 1.1;
 }
 
 div h1, article h1 {
@@ -90,15 +91,13 @@ section[role="main"] ul {
 /////////////////////////////////////////
 
 section[role="main"] {
-	margin-bottom: $double-spacing * 2;
-	max-width: 960px;
-	margin: 0 auto 3em;
+	margin: $triple-spacing auto 3em;
+	width: 42em; 
 }
 
 .logo {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 #sso {
@@ -156,12 +155,6 @@ section[role="main"] {
 	}
 }
 
-article {
-	background: $body-background-color;
-	box-shadow: 0 1px 1px #347bad;
-	padding: 1em;
-}
-
 .sp-news {
 	background: rgba($neutral, .15);
 	padding: $half-spacing;
@@ -177,31 +170,47 @@ article {
 }
 
 .loading i {
+	width: 39em;
+	margin: $default-spacing auto 0;
 	font-size: $h1-font-size * 2;
 	margin: $default-spacing 45%;
 }
 
+.error ~ #sso, .alert ~ #sso, .error ~ article, .alert ~ article {
+	margin-top: -$default-spacing;
+}
+
 .error {
+	width: 40em;
 	background: repeating-linear-gradient(45deg, $error-bg-color, $error-bg-color $half-spacing, $error-bg-color-alt $half-spacing, $error-bg-color-alt $default-spacing);
 	color: $error-color;
 	padding: $default-spacing;
-	margin-bottom: $default-spacing;
+	margin-right: 2em;
 	@include border-radius($global-border-radius);
 	h1 {
 		color: $error-color;
+		padding-bottom: $default-spacing;
 	}
 }
 
 .alert {
+	width: 40em;
 	background: $warning-bg-color;
 	color: $warning-color;
 	padding: $default-spacing;
-	margin-bottom: $default-spacing;
+	margin-right: 2em;
 	@include border-radius($global-border-radius);
 	h1 {
 		color: $warning-color;
-		margin: 0;
 	}
+}
+
+article {
+	background: $body-background-color;
+	box-shadow: 0 1px 1px #347bad;
+	margin: 0 auto;
+	width: 36em;
+	padding: 1em;
 }
 
 footer[role="contentinfo"] {

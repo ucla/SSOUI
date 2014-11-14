@@ -1,5 +1,7 @@
 // General form and button elements adapted from http://purecss.io/forms/ & http://purecss.io/buttons/
 
+@import "ucla-vars"; // WHY?!
+
 input {
 	width: 21em;
 	font-size: $h3-font-size;
@@ -127,7 +129,7 @@ button[disabled] {
 	background-color: $secondary-login-option-color;
 	color: $white;
 	margin-top: $default-spacing;
-	width: 100%;
+	width: 60%;
 	&:hover {
 		background-color: darken($secondary-login-option-color, 10%);
 		color: $white;

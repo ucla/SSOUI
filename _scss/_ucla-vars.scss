@@ -14,10 +14,8 @@ $wide: 1025px;
 // content specific breakpoints in em units
 
 // singularity.gs layout
-@include add-grid(1);
-@include add-grid(4 at $past-mobile);
-@include add-gutter(1/10);
-@include sgs-change('output', 'float');
+@include add-grid(5);
+@include add-gutter(0);
 
 /////////////////////////////////////////
 ///            COLOURS

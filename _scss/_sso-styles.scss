@@ -3,7 +3,7 @@
 /////////////////////////////////////////
 
 html {
-	background: #d1e8f8 url('../images/background.jpg');
+	background: #d1e8f8 url('../images/skyline.jpg');
 	box-sizing: border-box;
 	position: relative; 
 	min-height: 100%;
@@ -219,7 +219,8 @@ footer[role="contentinfo"] {
 	bottom: 0;
 	height: 2em;
 	width: 100%;
-	background: $primary-color-alternate-state;
+	background: $black;
+	opacity: .6;
 	border-top: 1px solid darken($primary-color-alternate-state, 20%);
 	padding: $half-spacing;
 	color: lighten($body-text-color, 40%);

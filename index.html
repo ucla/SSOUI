@@ -2,34 +2,38 @@
 layout: ucla-logon
 ---
 
-<h1>Mockup screens for logging in...</h1>
+<article>
 
-<h2>w/ UCLA Logon ID</h2>
+	<h1>Mockup screens for logging in...</h1>
+	
+	<h2>w/ UCLA Logon ID</h2>
+	
+	<ul>
+	  {% for collection in site.ucla-logon-mocks %}
+	    <li>
+	      <a href="{{ site.baseurl }}{{ collection.url }}">{{ collection.title }}</a>
+	    </li>
+	  {% endfor %}
+	</ul>
+	
+	<h2>w/ Med Center ID</h2>
+	
+	<ul>
+	  {% for collection in site.medcenter-mocks %}
+	    <li>
+	      <a href="{{ site.baseurl }}{{ collection.url }}">{{ collection.title }}</a>
+	    </li>
+	  {% endfor %}
+	</ul>
+	
+	<h2>As an Application </h2>
+	
+	<ul>
+	  {% for collection in site.as-app-mocks %}
+	    <li>
+	      <a href="{{ site.baseurl }}{{ collection.url }}">{{ collection.title }}</a>
+	    </li>
+	  {% endfor %}
+	</ul>
 
-<ul>
-  {% for collection in site.ucla-logon-mocks %}
-    <li>
-      <a href="{{ site.baseurl }}{{ collection.url }}">{{ collection.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
-
-<h2>w/ Med Center ID</h2>
-
-<ul>
-  {% for collection in site.medcenter-mocks %}
-    <li>
-      <a href="{{ site.baseurl }}{{ collection.url }}">{{ collection.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
-
-<h2>As an Application </h2>
-
-<ul>
-  {% for collection in site.as-app-mocks %}
-    <li>
-      <a href="{{ site.baseurl }}{{ collection.url }}">{{ collection.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+</article>

@@ -1,8 +1,8 @@
 // General form and button elements adapted from http://purecss.io/forms/ & http://purecss.io/buttons/
 
 input {
-	width: 20em;
-	font-size: $h4-font-size;
+	width: 21em;
+	font-size: $h3-font-size;
 	margin-bottom: $default-spacing;
 	@include border-radius($global-border-radius);
 }
@@ -52,10 +52,7 @@ fieldset {
 legend {
 	display: block;
 	width: 100%;
-	padding: 0.25em 0;
-	margin-bottom: 0.5em;
-	color: #333;
-	border-bottom: 1px solid #e5e5e5;
+	padding: $half-spacing 0;
 	font-weight: normal;
 	color: $primary-color;
 	font-size: $h2-font-size;
@@ -79,7 +76,7 @@ button, .button {
 	font-size: 100%;
 	*font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
 	*overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
-	padding: 0.5em 1em;
+	padding: 0.75em 1em;
 	color: #444; /* rgba not supported (IE 8) */
 	color: rgba(0, 0, 0, 0.80); /* rgba supported */
 	*color: #444; /* IE 6 & 7 */

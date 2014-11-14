@@ -15,10 +15,9 @@ html {
 }
 
 body {
-	max-width: 36em;
-	margin: 0 auto;
 	color: $body-text-color;
 	font-family: $font-stack;
+	letter-spacing: $global-letter-spacing;
 }
 
 h1, h2, h3, h4 {
@@ -90,63 +89,24 @@ section[role="main"] ul {
 ///          CLASSES/ROLES
 /////////////////////////////////////////
 
-header[role="banner"] {
-	img {
-		width: 60%;
-		margin-top: $half-spacing;
-	}
-}
-
 section[role="main"] {
 	margin-bottom: $double-spacing * 2;
 }
 
-footer[role="contentinfo"] {
-	position: absolute;
-	bottom: 0;
-	height: 2em;
-	width: 100%;
-	max-width: 36em; 
-	background: $primary-color-alternate-state;
-	border-top: 1px solid darken($primary-color-alternate-state, 20%);
-	padding: $half-spacing;
-	color: lighten($body-text-color, 40%);
-	p {
-		margin: 0;
-		font-size: $meta-font-size;
-	}
-	a {
-		text-decoration: none;
-		color: $footer-link-color;
-		&:visited { 
-			color: $footer-link-color;
-		}
-		&:hover, &:focus {
-			color: $footer-link-color-hover;
-			text-decoration: underline;
-		} 
-	}
-}
-
-.footer-meta-info {
-	float: left;
-}
-
-.footer-non-human {
-	float: right;
-}
-
-article {
-	background: $body-background-color;
-	box-shadow: 0 1px 1px #347bad;
-	padding: 1em;
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #sso {
-	overflow: hidden;
 	background: $body-background-color;
 	box-shadow: 0 1px 1px #347bad;
-	padding: 1em;
+	margin: $double-spacing auto 0;
+	width: 36em;
+	padding: 0 4em 1em;
+	overflow: hidden;
+	@include border-radius($global-border-radius);
 	label {
 		display: none;
 	}
@@ -194,6 +154,12 @@ article {
 	}
 }
 
+article {
+	background: $body-background-color;
+	box-shadow: 0 1px 1px #347bad;
+	padding: 1em;
+}
+
 .sp-news {
 	background: rgba($neutral, .2);
 	padding: $half-spacing;
@@ -233,4 +199,35 @@ article {
 		color: $warning-color;
 		margin: 0;
 	}
+}
+
+footer[role="contentinfo"] {
+	position: absolute;
+	bottom: 0;
+	height: 2em;
+	width: 100%;
+	background: $primary-color-alternate-state;
+	border-top: 1px solid darken($primary-color-alternate-state, 20%);
+	padding: $half-spacing;
+	color: lighten($body-text-color, 40%);
+	p {
+		width: 48em;
+		margin: 0 auto;
+		font-size: $meta-font-size;
+	}
+	a {
+		text-decoration: none;
+		color: $footer-link-color;
+		&:visited { 
+			color: $footer-link-color;
+		}
+		&:hover, &:focus {
+			color: $footer-link-color-hover;
+			text-decoration: underline;
+		} 
+	}
+}
+
+.non-human {
+	float: right;
 }

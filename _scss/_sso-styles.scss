@@ -3,7 +3,7 @@
 /////////////////////////////////////////
 
 html {
-	background: #d1e8f8 url('../images/skyline.jpg') no-repeat;
+	background: $html-background;
   background-size: cover;
 	box-sizing: border-box;
 	position: relative; 
@@ -105,7 +105,7 @@ section[role="main"] {
 #sso {
 	background: $body-background-color;
 	box-shadow: 0 1px 1px #347bad;
-	margin: $quad-spacing auto 0;
+	margin: 0 auto;
 	width: 36em;
 	padding: 0 4em 1em;
 	overflow: hidden;
@@ -115,19 +115,6 @@ section[role="main"] {
 	}
 	fieldset {
 		border: none;
-	}
-	ol {
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
-	}
-}
-
-#report {
-	overflow: hidden;
-	label {
-		display: block;
-		margin-bottom: $half-spacing / 2;
 	}
 	ol {
 		list-style: none;
@@ -151,14 +138,14 @@ section[role="main"] {
 	}
 	@include clearfix;
 	font-size: $meta-font-size;
-	margin: 0;
+	margin: .25em;
 	li {
 		margin-bottom: 0;
 	}
 }
 
 .sp-news {
-	background: rgba($neutral, .15);
+	background: rgba($neutral, .4);
 	padding: $half-spacing;
 	width: 36em;
 	margin: $default-spacing auto 0;
@@ -176,6 +163,40 @@ section[role="main"] {
 	margin-top: -$default-spacing;
 }
 
+.badge {
+	width: 8em;
+	height: 4em;
+	background: $alert-bg-color;
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -1em;
+		width: 0;
+		height: 0;
+		border-top: 2em solid transparent;
+		border-right: 1em solid $alert-bg-color;
+		border-bottom: 2em solid transparent;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		right: -1em;
+		width: 0;
+		height: 0;
+		border-top: 2em solid transparent;
+		border-left: 1em solid $alert-bg-color;
+		border-bottom: 2em solid transparent;
+	}
+	span {
+		font-size: $h1-font-size;
+		color: $alert-color;
+		line-height: 2em;
+		padding-left: .7em;
+	}
+}
+
 .error {
 	width: 40em;
 	background: repeating-linear-gradient(45deg, $error-bg-color, $error-bg-color $half-spacing, $error-bg-color-alt $half-spacing, $error-bg-color-alt $default-spacing);
@@ -190,13 +211,13 @@ section[role="main"] {
 
 .alert {
 	width: 40em;
-	background: $warning-bg-color;
-	color: $warning-color;
+	background: $alert-bg-color;
+	color: $alert-color;
 	padding: $default-spacing;
 	margin-right: 2em;
 	@include border-radius($global-border-radius);
 	h1 {
-		color: $warning-color;
+		color: $alert-color;
 	}
 }
 
@@ -206,6 +227,19 @@ article {
 	margin: 0 auto;
 	width: 36em;
 	padding: 1em;
+}
+
+#report {
+	overflow: hidden;
+	label {
+		display: block;
+		margin-bottom: $half-spacing / 2;
+	}
+	ol {
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+	}
 }
 
 .loading i {

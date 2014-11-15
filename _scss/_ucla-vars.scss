@@ -50,8 +50,8 @@ $black: #000;
 $primary-color: $uclasafeblue;
 $primary-color-alternate-state: $ucladarkblue;
 $secondary-color: $uclagold;
-$warning-color: $ucladarkblue;
-$warning-bg-color: $uclayellowneon;
+$alert-color: $ucladarkblue;
+$alert-bg-color: $uclayellowneon;
 $error-color: $uclapinkneon;
 $error-bg-color: darken($uclapinkneon, 48%);
 $error-bg-color-alt: darken($uclapinkneon, 43%);
@@ -63,6 +63,8 @@ $secondary-login-option-color: #526991;
 /////////////////////////////////////////
 ///       TYPOGRAPHY / RHYTHM
 /////////////////////////////////////////
+
+$html-background: #d1e8f8 url('../images/skyline.jpg') no-repeat;
 
 $body-text-color: #666;
 $body-background-color: $white;

@@ -90,10 +90,12 @@ $meta-font-size: .75em;
 
 $base-line-height: 1.375em;
 
-$half-spacing: .5em;
 $default-spacing: 1em;
-$double-spacing: 2em;
-$quad-spacing: 4em;
+$half-spacing: $default-spacing / 2;
+$double-spacing: $default-spacing * 2;
+$triple-spacing: $default-spacing * 3;
+$quad-spacing: $default-spacing * 4;
+$page-top-spacing: $default-spacing * 8;
 
 $global-border-radius: 3px;
 

@@ -92,7 +92,7 @@ section[role="main"] ul {
 /////////////////////////////////////////
 
 section[role="main"] {
-	margin: $quad-spacing auto 3em;
+	margin: $page-top-spacing auto $triple-spacing;
 	width: 42em; 
 }
 
@@ -163,11 +163,22 @@ section[role="main"] {
 	margin-top: -$default-spacing;
 }
 
-.badge {
+article {
+	background: $body-background-color;
+	position: relative;
+	box-shadow: 0 1px 1px #347bad;
+	margin: 0 auto;
+	width: 36em;
+	padding: 1em;
+}
+
+.badge-alert {
+	position: absolute;
+	top: -$default-spacing;
+	right: -$quad-spacing;
 	width: 8em;
 	height: 4em;
 	background: $alert-bg-color;
-	position: relative;
 	&:before {
 		content: "";
 		position: absolute;
@@ -197,36 +208,41 @@ section[role="main"] {
 	}
 }
 
-.error {
-	width: 40em;
+.badge-error {
+	position: absolute;
+	top: -$default-spacing;
+	right: -$quad-spacing;
+	width: 8em;
+	height: 4em;
 	background: repeating-linear-gradient(45deg, $error-bg-color, $error-bg-color $half-spacing, $error-bg-color-alt $half-spacing, $error-bg-color-alt $default-spacing);
 	color: $error-color;
-	padding: $default-spacing;
-	margin-right: 2em;
-	@include border-radius($global-border-radius);
-	h1 {
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -1em;
+		width: 0;
+		height: 0;
+		border-top: 2em solid transparent;
+		border-right: 1em solid $error-bg-color-alt;
+		border-bottom: 2em solid transparent;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		right: -1em;
+		width: 0;
+		height: 0;
+		border-top: 2em solid transparent;
+		border-left: 1em solid $error-bg-color-alt;
+		border-bottom: 2em solid transparent;
+	}
+	span {
+		font-size: $h1-font-size;
 		color: $error-color;
+		line-height: 2em;
+		padding-left: .7em;
 	}
-}
-
-.alert {
-	width: 40em;
-	background: $alert-bg-color;
-	color: $alert-color;
-	padding: $default-spacing;
-	margin-right: 2em;
-	@include border-radius($global-border-radius);
-	h1 {
-		color: $alert-color;
-	}
-}
-
-article {
-	background: $body-background-color;
-	box-shadow: 0 1px 1px #347bad;
-	margin: 0 auto;
-	width: 36em;
-	padding: 1em;
 }
 
 #report {

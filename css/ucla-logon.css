@@ -474,7 +474,7 @@ section[role="main"] ul li:before {
 
 /* line 94, ../_scss/_sso-styles.scss */
 section[role="main"] {
-  margin: 4em auto 3em;
+  margin: 8em auto 3em;
   width: 42em;
 }
 
@@ -585,14 +585,26 @@ section[role="main"] {
 }
 
 /* line 166, ../_scss/_sso-styles.scss */
-.badge {
+article {
+  background: #fff;
+  position: relative;
+  box-shadow: 0 1px 1px #347bad;
+  margin: 0 auto;
+  width: 36em;
+  padding: 1em;
+}
+
+/* line 175, ../_scss/_sso-styles.scss */
+.badge-alert {
+  position: absolute;
+  top: -1em;
+  right: -4em;
   width: 8em;
   height: 4em;
   background: #ffff00;
-  position: relative;
 }
-/* line 171, ../_scss/_sso-styles.scss */
-.badge:before {
+/* line 182, ../_scss/_sso-styles.scss */
+.badge-alert:before {
   content: "";
   position: absolute;
   top: 0;
@@ -603,8 +615,8 @@ section[role="main"] {
   border-right: 1em solid #ffff00;
   border-bottom: 2em solid transparent;
 }
-/* line 182, ../_scss/_sso-styles.scss */
-.badge:after {
+/* line 193, ../_scss/_sso-styles.scss */
+.badge-alert:after {
   content: "";
   position: absolute;
   right: -1em;
@@ -614,79 +626,79 @@ section[role="main"] {
   border-left: 1em solid #ffff00;
   border-bottom: 2em solid transparent;
 }
-/* line 192, ../_scss/_sso-styles.scss */
-.badge span {
+/* line 203, ../_scss/_sso-styles.scss */
+.badge-alert span {
   font-size: 2em;
   color: #0055a6;
   line-height: 2em;
   padding-left: .7em;
 }
 
-/* line 200, ../_scss/_sso-styles.scss */
-.error {
-  width: 40em;
+/* line 211, ../_scss/_sso-styles.scss */
+.badge-error {
+  position: absolute;
+  top: -1em;
+  right: -4em;
+  width: 8em;
+  height: 4em;
   background: repeating-linear-gradient(45deg, #0a0007, #0a0007 0.5em, #240017 0.5em, #240017 1em);
   color: #ff00a5;
-  padding: 1em;
-  margin-right: 2em;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-/* line 207, ../_scss/_sso-styles.scss */
-.error h1 {
-  color: #ff00a5;
-}
-
-/* line 212, ../_scss/_sso-styles.scss */
-.alert {
-  width: 40em;
-  background: #ffff00;
-  color: #0055a6;
-  padding: 1em;
-  margin-right: 2em;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
 }
 /* line 219, ../_scss/_sso-styles.scss */
-.alert h1 {
-  color: #0055a6;
+.badge-error:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1em;
+  width: 0;
+  height: 0;
+  border-top: 2em solid transparent;
+  border-right: 1em solid #240017;
+  border-bottom: 2em solid transparent;
+}
+/* line 230, ../_scss/_sso-styles.scss */
+.badge-error:after {
+  content: "";
+  position: absolute;
+  right: -1em;
+  width: 0;
+  height: 0;
+  border-top: 2em solid transparent;
+  border-left: 1em solid #240017;
+  border-bottom: 2em solid transparent;
+}
+/* line 240, ../_scss/_sso-styles.scss */
+.badge-error span {
+  font-size: 2em;
+  color: #ff00a5;
+  line-height: 2em;
+  padding-left: .7em;
 }
 
-/* line 224, ../_scss/_sso-styles.scss */
-article {
-  background: #fff;
-  box-shadow: 0 1px 1px #347bad;
-  margin: 0 auto;
-  width: 36em;
-  padding: 1em;
-}
-
-/* line 232, ../_scss/_sso-styles.scss */
+/* line 248, ../_scss/_sso-styles.scss */
 #report {
   overflow: hidden;
 }
-/* line 234, ../_scss/_sso-styles.scss */
+/* line 250, ../_scss/_sso-styles.scss */
 #report label {
   display: block;
   margin-bottom: 0.25em;
 }
-/* line 238, ../_scss/_sso-styles.scss */
+/* line 254, ../_scss/_sso-styles.scss */
 #report ol {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-/* line 245, ../_scss/_sso-styles.scss */
+/* line 261, ../_scss/_sso-styles.scss */
 .loading i {
   margin: 1em auto 0;
   font-size: 4em;
   margin: 1em 45%;
 }
 
-/* line 251, ../_scss/_sso-styles.scss */
+/* line 267, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] {
   position: absolute;
   bottom: 0;
@@ -697,28 +709,28 @@ footer[role="contentinfo"] {
   padding: 0.5em;
   color: #cccccc;
 }
-/* line 260, ../_scss/_sso-styles.scss */
+/* line 276, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] p {
   width: 48em;
   margin: 0 auto;
   font-size: 0.75em;
 }
-/* line 265, ../_scss/_sso-styles.scss */
+/* line 281, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] a {
   text-decoration: none;
   color: #fff;
 }
-/* line 268, ../_scss/_sso-styles.scss */
+/* line 284, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] a:visited {
   color: #fff;
 }
-/* line 271, ../_scss/_sso-styles.scss */
+/* line 287, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] a:hover, footer[role="contentinfo"] a:focus {
   color: #ffff00;
   text-decoration: underline;
 }
 
-/* line 278, ../_scss/_sso-styles.scss */
+/* line 294, ../_scss/_sso-styles.scss */
 .non-human {
   float: right;
 }

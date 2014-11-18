@@ -170,79 +170,15 @@ article {
 	margin: 0 auto;
 	width: 36em;
 	padding: 1em;
+	@include border-radius($global-border-radius);
 }
 
 .badge-alert {
-	position: absolute;
-	top: -$default-spacing;
-	right: -$quad-spacing;
-	width: 8em;
-	height: 4em;
-	background: $alert-bg-color;
-	&:before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: -1em;
-		width: 0;
-		height: 0;
-		border-top: 2em solid transparent;
-		border-right: 1em solid $alert-bg-color;
-		border-bottom: 2em solid transparent;
-	}
-	&:after {
-		content: "";
-		position: absolute;
-		right: -1em;
-		width: 0;
-		height: 0;
-		border-top: 2em solid transparent;
-		border-left: 1em solid $alert-bg-color;
-		border-bottom: 2em solid transparent;
-	}
-	span {
-		font-size: $h1-font-size;
-		color: $alert-color;
-		line-height: 2em;
-		padding-left: .7em;
-	}
+	@include badge();
 }
 
 .badge-error {
-	position: absolute;
-	top: -$default-spacing;
-	right: -$quad-spacing;
-	width: 8em;
-	height: 4em;
-	background: repeating-linear-gradient(45deg, $error-bg-color, $error-bg-color $half-spacing, $error-bg-color-alt $half-spacing, $error-bg-color-alt $default-spacing);
-	color: $error-color;
-	&:before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: -1em;
-		width: 0;
-		height: 0;
-		border-top: 2em solid transparent;
-		border-right: 1em solid $error-bg-color-alt;
-		border-bottom: 2em solid transparent;
-	}
-	&:after {
-		content: "";
-		position: absolute;
-		right: -1em;
-		width: 0;
-		height: 0;
-		border-top: 2em solid transparent;
-		border-left: 1em solid $error-bg-color-alt;
-		border-bottom: 2em solid transparent;
-	}
-	span {
-		font-size: $h1-font-size;
-		color: $error-color;
-		line-height: 2em;
-		padding-left: .7em;
-	}
+	@include badge($error-bg-color, $error-color);
 }
 
 #report {

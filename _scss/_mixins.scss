@@ -1,0 +1,36 @@
+@mixin badge($background: $alert-bg-color, $color: $alert-color, $base-size: 2.5em) {
+	position: absolute;
+	top: -$default-spacing;
+	right: -$quad-spacing;
+	width: $base-size * 2.5;
+	height: $base-size * 2;
+	background: $background;
+//	background: repeating-linear-gradient(45deg, $error-bg-color, $error-bg-color $half-spacing, $error-bg-color-alt $half-spacing, $error-bg-color-alt $default-spacing);
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -($base-size / 2);
+		width: 0;
+		height: 0;
+		border-top: $base-size solid transparent;
+		border-right: ($base-size / 2) solid $background;
+		border-bottom: $base-size solid transparent;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		right: -($base-size / 2);
+		width: 0;
+		height: 0;
+		border-top: $base-size solid transparent;
+		border-left: ($base-size / 2) solid $background;
+		border-bottom: $base-size solid transparent;
+	}
+	i {
+		font-size: $base-size * 1.7;
+		color: $color;
+		line-height: $base-size / 2;
+		padding-left: $base-size / 10;
+	}
+}

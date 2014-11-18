@@ -53,8 +53,7 @@ $secondary-color: $uclagold;
 $alert-color: $ucladarkblue;
 $alert-bg-color: $uclayellowneon;
 $error-color: $uclapinkneon;
-$error-bg-color: darken($uclapinkneon, 48%);
-$error-bg-color-alt: darken($uclapinkneon, 43%);
+$error-bg-color: darken($uclapinkneon, 43%);
 $bullet-color: $uclagreenneon;
 $footer-link-color: $white;
 $footer-link-color-hover: $uclayellowneon;
@@ -80,7 +79,8 @@ body {
 	font-size: 100%;
 }
 
-$h1-font-size: 2em;
+$badge-font-size: 3em;
+$h1-font-size: 2em; 
 $h2-font-size: 1.5em;
 $h3-font-size: 1.25em;
 $h4-font-size: 1.125em;
@@ -95,7 +95,7 @@ $half-spacing: $default-spacing / 2;
 $double-spacing: $default-spacing * 2;
 $triple-spacing: $default-spacing * 3;
 $quad-spacing: $default-spacing * 4;
-$page-top-spacing: $default-spacing * 8;
+$page-top-spacing: $default-spacing * 6;
 
 $global-border-radius: 3px;
 

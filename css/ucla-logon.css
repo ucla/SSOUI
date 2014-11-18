@@ -575,7 +575,7 @@ section[role="main"] {
 
 /* line 158, ../_scss/_sso-styles.scss */
 .sp-support {
-  background: rgba(204, 204, 204, 0.4);
+  background: rgba(204, 204, 204, 0.25);
   padding: 1em;
   width: 36em;
   margin: 1em auto 0;

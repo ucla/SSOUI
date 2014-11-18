@@ -291,7 +291,7 @@ button, .button {
   /*IE 6/7 - To reduce IE's oversized button text*/
   *overflow: visible;
   /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
-  padding: 0.75em 1em;
+  padding: 0.8em 0.95em;
   color: #444;
   /* rgba not supported (IE 8) */
   color: rgba(0, 0, 0, 0.8);

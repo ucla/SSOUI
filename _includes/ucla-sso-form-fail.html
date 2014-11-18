@@ -4,6 +4,9 @@
 	
 	<fieldset class="login-form">
 		<legend>Sign In with your UCLA Logon ID</legend>
+		
+		<p class="login-fail">Your ID and/or password were incorrect.</p>
+		
 		<ol>
 			<li>
 				<label for="logon">Account ID</label>
@@ -11,11 +14,11 @@
 			</li>
 			<li>
 				<label for="pass">Password</label>
-				<input id="pass" name="pass" type="text" placeholder="Your UCLA Logon Password" aria-required="true" required>
+				<input id="pass" name="pass" type="password" placeholder="Your UCLA Logon Password" aria-required="true" pattern=".{8,128}" required>
 			</li>
 		</ol>
 	</fieldset>
-
+	
 	<fieldset class="sso-submit">
 		<button class="primary-button" type="submit" name="sso">Sign In</button>
 	</fieldset>

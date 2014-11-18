@@ -5,7 +5,6 @@
 	width: $base-size * 2.5;
 	height: $base-size * 2;
 	background: $background;
-//	background: repeating-linear-gradient(45deg, $error-bg-color, $error-bg-color $half-spacing, $error-bg-color-alt $half-spacing, $error-bg-color-alt $default-spacing);
 	&:before {
 		content: "";
 		position: absolute;

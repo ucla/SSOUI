@@ -144,6 +144,16 @@ section[role="main"] {
 	}
 }
 
+.login-fail {
+	background: repeating-linear-gradient(45deg, $error-bg-color, $error-bg-color $half-spacing, $error-bg-color-alt $half-spacing, $error-bg-color-alt $default-spacing);
+	color: $uclapinkneon;
+	padding: $half-spacing;
+	@include border-radius($global-border-radius);
+	width: 26.3em;
+	text-align: center;
+	margin-top: 0;
+}
+
 .sp-news {
 	background: rgba($neutral, .4);
 	padding: $half-spacing;
@@ -170,6 +180,7 @@ article {
 	margin: 0 auto;
 	width: 36em;
 	padding: 1em;
+	min-height: 15em;
 	@include border-radius($global-border-radius);
 }
 

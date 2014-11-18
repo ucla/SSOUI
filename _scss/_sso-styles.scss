@@ -74,7 +74,8 @@ a {
 
 section[role="main"] ul {
 	list-style: none;
-	padding-left: 1.5em;
+	padding-left: .25em;
+	margin-bottom: 0;
 	li {
 		margin-bottom: .5em;
 	}
@@ -154,14 +155,18 @@ section[role="main"] {
 	margin-top: 0;
 }
 
-.sp-news {
+.sp-support {
 	background: rgba($neutral, .4);
-	padding: $half-spacing;
+	padding: $default-spacing;
 	width: 36em;
 	margin: $default-spacing auto 0;
 	@include border-radius($global-border-radius);
-	p {
+	p, li {
 		font-size: $meta-font-size;
+	}
+	h2 {
+		font-size: $h4-font-size;
+		margin-top: 0;
 	}
 	h3 {
 		font-size: $p-font-size;
@@ -180,7 +185,7 @@ article {
 	margin: 0 auto;
 	width: 36em;
 	padding: 1em;
-	min-height: 15em;
+	min-height: 12em;
 	@include border-radius($global-border-radius);
 }
 

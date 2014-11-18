@@ -457,13 +457,14 @@ a:active {
 /* line 75, ../_scss/_sso-styles.scss */
 section[role="main"] ul {
   list-style: none;
-  padding-left: 1.5em;
+  padding-left: .25em;
+  margin-bottom: 0;
 }
-/* line 78, ../_scss/_sso-styles.scss */
+/* line 79, ../_scss/_sso-styles.scss */
 section[role="main"] ul li {
   margin-bottom: .5em;
 }
-/* line 81, ../_scss/_sso-styles.scss */
+/* line 82, ../_scss/_sso-styles.scss */
 section[role="main"] ul li:before {
   color: #00ff87;
   content: "•";
@@ -472,20 +473,20 @@ section[role="main"] ul li:before {
   left: -.25em;
 }
 
-/* line 94, ../_scss/_sso-styles.scss */
+/* line 95, ../_scss/_sso-styles.scss */
 section[role="main"] {
   margin: 6em auto 3em;
   width: 42em;
 }
 
-/* line 99, ../_scss/_sso-styles.scss */
+/* line 100, ../_scss/_sso-styles.scss */
 .logo {
   display: block;
   margin: 0 auto;
   width: 70%;
 }
 
-/* line 105, ../_scss/_sso-styles.scss */
+/* line 106, ../_scss/_sso-styles.scss */
 #sso {
   background: #fff;
   box-shadow: 0 1px 1px #347bad;
@@ -497,22 +498,22 @@ section[role="main"] {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 113, ../_scss/_sso-styles.scss */
+/* line 114, ../_scss/_sso-styles.scss */
 #sso label {
   display: none;
 }
-/* line 116, ../_scss/_sso-styles.scss */
+/* line 117, ../_scss/_sso-styles.scss */
 #sso fieldset {
   border: none;
 }
-/* line 119, ../_scss/_sso-styles.scss */
+/* line 120, ../_scss/_sso-styles.scss */
 #sso ol {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-/* line 126, ../_scss/_sso-styles.scss */
+/* line 127, ../_scss/_sso-styles.scss */
 .sso-submit {
   width: 100%;
   float: right;
@@ -522,7 +523,7 @@ section[role="main"] {
   padding-top: 0;
 }
 @media (min-width: 321px) {
-  /* line 126, ../_scss/_sso-styles.scss */
+  /* line 127, ../_scss/_sso-styles.scss */
   .sso-submit {
     width: 23.25581%;
     float: left;
@@ -532,7 +533,7 @@ section[role="main"] {
   }
 }
 
-/* line 134, ../_scss/_sso-styles.scss */
+/* line 135, ../_scss/_sso-styles.scss */
 .sso-links {
   width: 100%;
   float: right;
@@ -545,7 +546,7 @@ section[role="main"] {
   margin: .25em;
 }
 @media (min-width: 321px) {
-  /* line 134, ../_scss/_sso-styles.scss */
+  /* line 135, ../_scss/_sso-styles.scss */
   .sso-links {
     width: 74.4186%;
     float: right;
@@ -554,12 +555,12 @@ section[role="main"] {
     clear: none;
   }
 }
-/* line 142, ../_scss/_sso-styles.scss */
+/* line 143, ../_scss/_sso-styles.scss */
 .sso-links li {
   margin-bottom: 0;
 }
 
-/* line 147, ../_scss/_sso-styles.scss */
+/* line 148, ../_scss/_sso-styles.scss */
 .login-fail {
   background: repeating-linear-gradient(45deg, #29001a, #29001a 0.5em, #14000d 0.5em, #14000d 1em);
   color: #ff00a5;
@@ -572,32 +573,37 @@ section[role="main"] {
   margin-top: 0;
 }
 
-/* line 157, ../_scss/_sso-styles.scss */
-.sp-news {
+/* line 158, ../_scss/_sso-styles.scss */
+.sp-support {
   background: rgba(204, 204, 204, 0.4);
-  padding: 0.5em;
+  padding: 1em;
   width: 36em;
   margin: 1em auto 0;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 163, ../_scss/_sso-styles.scss */
-.sp-news p {
+/* line 164, ../_scss/_sso-styles.scss */
+.sp-support p, .sp-support li {
   font-size: 0.75em;
 }
-/* line 166, ../_scss/_sso-styles.scss */
-.sp-news h3 {
+/* line 167, ../_scss/_sso-styles.scss */
+.sp-support h2 {
+  font-size: 1.125em;
+  margin-top: 0;
+}
+/* line 171, ../_scss/_sso-styles.scss */
+.sp-support h3 {
   font-size: 1em;
   margin-top: 0;
 }
 
-/* line 172, ../_scss/_sso-styles.scss */
+/* line 177, ../_scss/_sso-styles.scss */
 .error ~ #sso, .alert ~ #sso, .error ~ article, .alert ~ article {
   margin-top: -1em;
 }
 
-/* line 176, ../_scss/_sso-styles.scss */
+/* line 181, ../_scss/_sso-styles.scss */
 article {
   background: #fff;
   position: relative;
@@ -605,13 +611,13 @@ article {
   margin: 0 auto;
   width: 36em;
   padding: 1em;
-  min-height: 15em;
+  min-height: 12em;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 
-/* line 187, ../_scss/_sso-styles.scss */
+/* line 192, ../_scss/_sso-styles.scss */
 .badge-alert {
   position: absolute;
   top: -1em;
@@ -651,7 +657,7 @@ article {
   padding-left: 0.27778em;
 }
 
-/* line 191, ../_scss/_sso-styles.scss */
+/* line 196, ../_scss/_sso-styles.scss */
 .badge-error {
   position: absolute;
   top: -1em;
@@ -691,30 +697,30 @@ article {
   padding-left: 0.27778em;
 }
 
-/* line 195, ../_scss/_sso-styles.scss */
+/* line 200, ../_scss/_sso-styles.scss */
 #report {
   overflow: hidden;
 }
-/* line 197, ../_scss/_sso-styles.scss */
+/* line 202, ../_scss/_sso-styles.scss */
 #report label {
   display: block;
   margin-bottom: 0.25em;
 }
-/* line 201, ../_scss/_sso-styles.scss */
+/* line 206, ../_scss/_sso-styles.scss */
 #report ol {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-/* line 208, ../_scss/_sso-styles.scss */
+/* line 213, ../_scss/_sso-styles.scss */
 .loading i {
   margin: 1em auto 0;
   font-size: 4em;
   margin: 1em 45%;
 }
 
-/* line 214, ../_scss/_sso-styles.scss */
+/* line 219, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] {
   position: absolute;
   bottom: 0;
@@ -725,28 +731,28 @@ footer[role="contentinfo"] {
   padding: 0.5em;
   color: #cccccc;
 }
-/* line 223, ../_scss/_sso-styles.scss */
+/* line 228, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] p {
   width: 48em;
   margin: 0 auto;
   font-size: 0.75em;
 }
-/* line 228, ../_scss/_sso-styles.scss */
+/* line 233, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] a {
   text-decoration: none;
   color: #fff;
 }
-/* line 231, ../_scss/_sso-styles.scss */
+/* line 236, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] a:visited {
   color: #fff;
 }
-/* line 234, ../_scss/_sso-styles.scss */
+/* line 239, ../_scss/_sso-styles.scss */
 footer[role="contentinfo"] a:hover, footer[role="contentinfo"] a:focus {
   color: #ffff00;
   text-decoration: underline;
 }
 
-/* line 241, ../_scss/_sso-styles.scss */
+/* line 246, ../_scss/_sso-styles.scss */
 .non-human {
   float: right;
 }

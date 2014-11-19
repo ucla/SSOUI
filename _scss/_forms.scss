@@ -51,7 +51,7 @@ select {
 
 fieldset {
 	margin: 0;
-	padding: 0.5em 0;
+	padding: $half-spacing 0;
 	border: 0;
 }
 
@@ -90,7 +90,7 @@ button, .button {
 	font-size: 100%;
 	*font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
 	*overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
-	padding: 0.8em 0.95em;
+	padding: 0.6em 0.95em;
 	color: #444; /* rgba not supported (IE 8) */
 	color: rgba(0, 0, 0, 0.80); /* rgba supported */
 	*color: #444; /* IE 6 & 7 */

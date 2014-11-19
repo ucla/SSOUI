@@ -1,7 +1,7 @@
 @mixin badge($background: $alert-bg-color, $color: $alert-color, $base-size: 2.5em) {
 	position: absolute;
 	bottom: -$quad-spacing;
-	right: 35%;
+	right: $double-spacing;
 	width: $base-size * 2.5;
 	height: $base-size * 2;
 	background: $background;

@@ -185,7 +185,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 	}
 	@include clearfix;
 	font-size: $meta-font-size;
-	margin: .25em;
+	margin: 0;
 }
 
 .login-fail {
@@ -199,7 +199,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 }
 
 .sp-support {
-	background: rgba($neutral, .25);
+	background: rgba($neutral, .35);
 	padding: $default-spacing;
 	margin: $default-spacing auto 0;
 	@include border-radius($global-border-radius);
@@ -231,6 +231,9 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 	color: $white;
 	margin: $default-spacing auto 0;
 	display: block;
+	@include breakpoint($mobile-only) {
+		font-size: $meta-font-size;
+	}
 	&:hover {
 		background-color: darken($secondary-login-option-color, 10%);
 		color: $white;
@@ -244,7 +247,12 @@ article {
 	padding: 1em;
 	min-height: 12em;
 	@include border-radius($global-border-radius);
+	legend {
+		display: none;
+	}
 }
+
+
 
 .badge-alert {
 	@include badge();

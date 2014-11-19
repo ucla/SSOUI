@@ -306,7 +306,7 @@ button, .button {
   /*IE 6/7 - To reduce IE's oversized button text*/
   *overflow: visible;
   /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
-  padding: 0.8em 0.95em;
+  padding: 0.6em 0.95em;
   color: #444;
   /* rgba not supported (IE 8) */
   color: rgba(0, 0, 0, 0.8);
@@ -597,7 +597,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
   overflow: hidden;
   *zoom: 1;
   font-size: 0.75em;
-  margin: .25em;
+  margin: 0;
 }
 @media (min-width: 28.01em) {
   /* line 181, ../_scss/_sso-styles.scss */
@@ -625,7 +625,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 
 /* line 201, ../_scss/_sso-styles.scss */
 .sp-support {
-  background: rgba(204, 204, 204, 0.25);
+  background: rgba(204, 204, 204, 0.35);
   padding: 1em;
   margin: 1em auto 0;
   -moz-border-radius: 3px;
@@ -666,13 +666,19 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
   margin: 1em auto 0;
   display: block;
 }
-/* line 234, ../_scss/_sso-styles.scss */
+@media (min-width: 0) and (max-width: 28em) {
+  /* line 229, ../_scss/_sso-styles.scss */
+  .secondary-button {
+    font-size: 0.75em;
+  }
+}
+/* line 237, ../_scss/_sso-styles.scss */
 .secondary-button:hover {
   background-color: #405170;
   color: #fff;
 }
 
-/* line 240, ../_scss/_sso-styles.scss */
+/* line 243, ../_scss/_sso-styles.scss */
 article {
   position: relative;
   background: #fff;
@@ -683,18 +689,22 @@ article {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
+/* line 250, ../_scss/_sso-styles.scss */
+article legend {
+  display: none;
+}
 
-/* line 249, ../_scss/_sso-styles.scss */
+/* line 257, ../_scss/_sso-styles.scss */
 .badge-alert {
   position: absolute;
   bottom: -4em;
-  right: 35%;
+  right: 2em;
   width: 6.25em;
   height: 5em;
   background: #ffff00;
 }
 @media (min-width: 28.01em) {
-  /* line 249, ../_scss/_sso-styles.scss */
+  /* line 257, ../_scss/_sso-styles.scss */
   .badge-alert {
     top: -1em;
     right: -4em;
@@ -731,17 +741,17 @@ article {
   padding-left: 0.27778em;
 }
 
-/* line 253, ../_scss/_sso-styles.scss */
+/* line 261, ../_scss/_sso-styles.scss */
 .badge-error {
   position: absolute;
   bottom: -4em;
-  right: 35%;
+  right: 2em;
   width: 6.25em;
   height: 5em;
   background: #29001a;
 }
 @media (min-width: 28.01em) {
-  /* line 253, ../_scss/_sso-styles.scss */
+  /* line 261, ../_scss/_sso-styles.scss */
   .badge-error {
     top: -1em;
     right: -4em;
@@ -778,30 +788,30 @@ article {
   padding-left: 0.27778em;
 }
 
-/* line 257, ../_scss/_sso-styles.scss */
+/* line 265, ../_scss/_sso-styles.scss */
 #report {
   overflow: hidden;
 }
-/* line 259, ../_scss/_sso-styles.scss */
+/* line 267, ../_scss/_sso-styles.scss */
 #report label {
   display: block;
   margin-bottom: 0.25em;
 }
-/* line 263, ../_scss/_sso-styles.scss */
+/* line 271, ../_scss/_sso-styles.scss */
 #report ol {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-/* line 270, ../_scss/_sso-styles.scss */
+/* line 278, ../_scss/_sso-styles.scss */
 .loading i {
   margin: 1em auto 0;
   font-size: 4em;
   margin: 1em 45%;
 }
 
-/* line 276, ../_scss/_sso-styles.scss */
+/* line 284, ../_scss/_sso-styles.scss */
 .tertiary-links {
   background: rgba(0, 0, 0, 0.75);
   border-top: 1px solid #0055a6;
@@ -809,21 +819,21 @@ article {
   color: #cccccc;
 }
 
-/* line 284, ../_scss/_sso-styles.scss */
+/* line 292, ../_scss/_sso-styles.scss */
 .tertiary-links-wrapper p {
   margin: 0 auto;
   font-size: 0.75em;
 }
-/* line 288, ../_scss/_sso-styles.scss */
+/* line 296, ../_scss/_sso-styles.scss */
 .tertiary-links-wrapper a {
   text-decoration: none;
   color: #fff;
 }
-/* line 291, ../_scss/_sso-styles.scss */
+/* line 299, ../_scss/_sso-styles.scss */
 .tertiary-links-wrapper a:visited {
   color: #fff;
 }
-/* line 294, ../_scss/_sso-styles.scss */
+/* line 302, ../_scss/_sso-styles.scss */
 .tertiary-links-wrapper a:hover, .tertiary-links-wrapper a:focus {
   color: #ffff00;
   text-decoration: underline;

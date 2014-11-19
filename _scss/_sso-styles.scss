@@ -116,7 +116,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 		height: $double-spacing;
 	}
 	a, span {
-		@include breakpoint($mobile) {
+		@include breakpoint($mobile-only) {
 			width: 100%;
 			display: block;
 		}
@@ -134,10 +134,14 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 .logo {
 	display: block;
 	margin: 0 auto;
-	width: 100%;
+	width: 90%;
 	@include breakpoint($past-mobile) {
 		width: 70%;
 	}
+}
+
+.login-form {
+	padding-bottom: 0;
 }
 
 #sso {
@@ -163,7 +167,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 }
 
 .sso-submit {
-	@include grid-span(4, 1);
+	width: 100%;
 	@include breakpoint($past-mobile) {
 		@include grid-span(1, 1);
 	}
@@ -171,7 +175,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 }
 
 .sso-links {
-	@include grid-span(4, 1);
+	width: 100%;
 	@include breakpoint($past-mobile) {
 		@include grid-span(3, 2);
 	}
@@ -208,6 +212,27 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 	h3 {
 		font-size: $p-font-size;
 		margin-top: 0;
+	}
+}
+
+.primary-button {
+	background-color: $primary-color;
+	color: #fff;
+	font-size: $h4-font-size;
+	&:hover {
+		background-color: $secondary-color;
+		color: $primary-color-alternate-state;
+	}
+}
+
+.secondary-button {
+	background-color: $secondary-login-option-color;
+	color: $white;
+	margin: $default-spacing auto 0;
+	display: block;
+	&:hover {
+		background-color: darken($secondary-login-option-color, 10%);
+		color: $white;
 	}
 }
 

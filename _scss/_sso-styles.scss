@@ -188,14 +188,20 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 	margin: 0;
 }
 
-.login-fail {
+.error-box {
 	background: repeating-linear-gradient(45deg, $error-color-dark, $error-color-dark $half-spacing, $error-color-dark-alt $half-spacing, $error-color-dark-alt $default-spacing);
 	color: $uclapinkneon;
 	padding: $half-spacing;
 	@include border-radius($global-border-radius);
-	width: 26.3em;
 	text-align: center;
 	margin-top: 0;
+}
+
+#sso .error-box {
+	width: 100%;
+	@include breakpoint($past-mobile) {
+		width: 26.3em;
+	}
 }
 
 .sp-support {

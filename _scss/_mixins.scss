@@ -7,7 +7,7 @@
 	background: $background;
 	@include breakpoint($past-mobile) {
 		top: -$double-spacing;
-		right: -$double-spacing;
+		right: -$triple-spacing;
 	}
 	&:before {
 		content: "";

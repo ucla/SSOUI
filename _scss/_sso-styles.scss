@@ -97,7 +97,7 @@ li {
 /////////////////////////////////////////
 
 section[role="main"] {
-	margin: $default-spacing auto $page-spacing;
+	margin: $double-spacing auto $page-spacing;
 	@include breakpoint($past-mobile) {
 		margin: $page-spacing auto $triple-spacing;
 	}
@@ -189,7 +189,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 }
 
 .login-fail {
-	background: repeating-linear-gradient(45deg, $error-bg-color, $error-bg-color $half-spacing, $error-bg-color-alt $half-spacing, $error-bg-color-alt $default-spacing);
+	background: repeating-linear-gradient(45deg, $error-color-dark, $error-color-dark $half-spacing, $error-color-dark-alt $half-spacing, $error-color-dark-alt $default-spacing);
 	color: $uclapinkneon;
 	padding: $half-spacing;
 	@include border-radius($global-border-radius);
@@ -252,14 +252,8 @@ article {
 	}
 }
 
-
-
-.badge-alert {
+.badge {
 	@include badge();
-}
-
-.badge-error {
-	@include badge($error-bg-color, $error-color);
 }
 
 #report {

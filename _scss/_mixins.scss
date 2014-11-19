@@ -1,4 +1,4 @@
-@mixin badge($background: $alert-bg-color, $color: $alert-color, $base-size: 2.5em) {
+@mixin badge($background: $error-color, $color: $error-color-dark, $base-size: 2.5em) {
 	position: absolute;
 	bottom: -$quad-spacing;
 	right: $double-spacing;
@@ -6,8 +6,8 @@
 	height: $base-size * 2;
 	background: $background;
 	@include breakpoint($past-mobile) {
-		top: -$default-spacing;
-		right: -$quad-spacing;
+		top: -$double-spacing;
+		right: -$double-spacing;
 	}
 	&:before {
 		content: "";
@@ -34,6 +34,6 @@
 		font-size: $base-size * 1.7;
 		color: $color;
 		line-height: $base-size / 2;
-		padding-left: $base-size / 9;
+		padding-left: $base-size / 10.5;
 	}
 }

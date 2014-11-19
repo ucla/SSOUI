@@ -93,13 +93,13 @@ section[role="main"] ul {
 /////////////////////////////////////////
 
 section[role="main"] {
-	margin: $page-top-spacing auto;
+	margin: $default-spacing auto $page-spacing;
 	@include breakpoint($past-mobile) {
-		margin: $page-top-spacing auto $triple-spacing;
+		margin: $page-spacing auto $triple-spacing;
 	}
 }
 
-article, #sso, .sp-support, .tertiary-links-wrapper {
+article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 	width: 94%;
 	margin: 0 auto;
 	@include breakpoint($elastic) {
@@ -132,15 +132,21 @@ article, #sso, .sp-support, .tertiary-links-wrapper {
 /////////////////////////////////////////
 
 .logo {
-  display: block;
-  margin: 0 auto;
-  width: 70%;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	@include breakpoint($past-mobile) {
+		width: 70%;
+	}
 }
 
 #sso {
 	background: $body-background-color;
 	box-shadow: 0 1px 1px #347bad;
-	padding: 0 4em 1em;
+	padding: 1em;
+	@include breakpoint($past-mobile) {
+		padding: 0 4em 1em;
+	}
 	overflow: hidden;
 	@include border-radius($global-border-radius);
 	label {
@@ -203,10 +209,6 @@ article, #sso, .sp-support, .tertiary-links-wrapper {
 		font-size: $p-font-size;
 		margin-top: 0;
 	}
-}
-
-.error ~ #sso, .alert ~ #sso, .error ~ article, .alert ~ article {
-	margin-top: -$default-spacing;
 }
 
 article {

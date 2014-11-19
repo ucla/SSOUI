@@ -202,15 +202,22 @@ body {
 }
 /* line 5, ../_scss/_forms.scss */
 input {
-  width: 21em;
-  font-size: 1.25em;
+  width: 100%;
+  font-size: 1.125em;
   margin-bottom: 1em;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
+@media (min-width: 22.01em) {
+  /* line 5, ../_scss/_forms.scss */
+  input {
+    width: 21em;
+    font-size: 1.25em;
+  }
+}
 
-/* line 12, ../_scss/_forms.scss */
+/* line 16, ../_scss/_forms.scss */
 select, input, textarea {
   padding: 0.5em 0.6em;
   display: inline-block;
@@ -219,7 +226,7 @@ select, input, textarea {
   border-radius: 3px;
 }
 
-/* line 20, ../_scss/_forms.scss */
+/* line 24, ../_scss/_forms.scss */
 select:focus, input:focus, textarea:focus {
   outline: 0;
   outline: thin dotted \9;
@@ -227,40 +234,40 @@ select:focus, input:focus, textarea:focus {
   border-color: #00a5e5;
 }
 
-/* line 26, ../_scss/_forms.scss */
+/* line 30, ../_scss/_forms.scss */
 select[disabled], input[disabled] {
   cursor: not-allowed !important;
   background-color: #eaeded;
   color: #cad2d3;
 }
 
-/* line 32, ../_scss/_forms.scss */
+/* line 36, ../_scss/_forms.scss */
 input:focus:invalid,
 select:focus:invalid {
   color: #b30073;
   border-color: #ff00a5;
 }
 
-/* line 38, ../_scss/_forms.scss */
+/* line 42, ../_scss/_forms.scss */
 input:focus:invalid:focus,
 select:focus:invalid:focus {
   border-color: #ff00a5;
 }
 
-/* line 43, ../_scss/_forms.scss */
+/* line 47, ../_scss/_forms.scss */
 select {
   border: 1px solid #ccc;
   background-color: #fff;
 }
 
-/* line 48, ../_scss/_forms.scss */
+/* line 52, ../_scss/_forms.scss */
 fieldset {
   margin: 0;
   padding: 0.5em 0;
   border: 0;
 }
 
-/* line 54, ../_scss/_forms.scss */
+/* line 58, ../_scss/_forms.scss */
 legend {
   display: block;
   width: 100%;
@@ -270,7 +277,7 @@ legend {
   font-size: 1.5em;
 }
 
-/* line 63, ../_scss/_forms.scss */
+/* line 67, ../_scss/_forms.scss */
 button, .button {
   display: inline-block;
   *display: inline;
@@ -308,23 +315,23 @@ button, .button {
 }
 
 /* Firefox: Get rid of the inner focus border */
-/* line 93, ../_scss/_forms.scss */
+/* line 97, ../_scss/_forms.scss */
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
-/* line 98, ../_scss/_forms.scss */
+/* line 102, ../_scss/_forms.scss */
 button:focus {
   outline: 0;
 }
 
-/* line 102, ../_scss/_forms.scss */
+/* line 106, ../_scss/_forms.scss */
 button:active {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
 }
 
-/* line 106, ../_scss/_forms.scss */
+/* line 110, ../_scss/_forms.scss */
 button[disabled] {
   border: none;
   background-image: none;
@@ -337,27 +344,26 @@ button[disabled] {
   box-shadow: none;
 }
 
-/* line 118, ../_scss/_forms.scss */
+/* line 122, ../_scss/_forms.scss */
 .primary-button {
   background-color: #347bad;
   color: #fff;
   font-size: 1.125em;
 }
-/* line 122, ../_scss/_forms.scss */
+/* line 126, ../_scss/_forms.scss */
 .primary-button:hover {
   background-color: #ffe800;
   color: #0055a6;
 }
 
-/* line 128, ../_scss/_forms.scss */
+/* line 132, ../_scss/_forms.scss */
 .secondary-button {
   background-color: #526991;
   color: #fff;
   margin: 1em auto 0;
   display: block;
-  width: 36em;
 }
-/* line 134, ../_scss/_forms.scss */
+/* line 137, ../_scss/_forms.scss */
 .secondary-button:hover {
   background-color: #405170;
   color: #fff;
@@ -475,7 +481,7 @@ section[role="main"] ul li:before {
 
 /* line 95, ../_scss/_sso-styles.scss */
 section[role="main"] {
-  margin: 6em auto;
+  margin: 1em auto 6em;
 }
 @media (min-width: 22.01em) {
   /* line 95, ../_scss/_sso-styles.scss */
@@ -485,13 +491,13 @@ section[role="main"] {
 }
 
 /* line 102, ../_scss/_sso-styles.scss */
-article, #sso, .sp-support, .tertiary-links-wrapper {
+article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
   width: 94%;
   margin: 0 auto;
 }
 @media (min-width: 42.01em) {
   /* line 102, ../_scss/_sso-styles.scss */
-  article, #sso, .sp-support, .tertiary-links-wrapper {
+  article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
     width: 36em;
   }
 }
@@ -526,35 +532,47 @@ article, #sso, .sp-support, .tertiary-links-wrapper {
 .logo {
   display: block;
   margin: 0 auto;
-  width: 70%;
+  width: 100%;
+}
+@media (min-width: 22.01em) {
+  /* line 134, ../_scss/_sso-styles.scss */
+  .logo {
+    width: 70%;
+  }
 }
 
-/* line 140, ../_scss/_sso-styles.scss */
+/* line 143, ../_scss/_sso-styles.scss */
 #sso {
   background: #fff;
   box-shadow: 0 1px 1px #347bad;
-  padding: 0 4em 1em;
+  padding: 1em;
   overflow: hidden;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 146, ../_scss/_sso-styles.scss */
+@media (min-width: 22.01em) {
+  /* line 143, ../_scss/_sso-styles.scss */
+  #sso {
+    padding: 0 4em 1em;
+  }
+}
+/* line 152, ../_scss/_sso-styles.scss */
 #sso label {
   display: none;
 }
-/* line 149, ../_scss/_sso-styles.scss */
+/* line 155, ../_scss/_sso-styles.scss */
 #sso fieldset {
   border: none;
 }
-/* line 152, ../_scss/_sso-styles.scss */
+/* line 158, ../_scss/_sso-styles.scss */
 #sso ol {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-/* line 159, ../_scss/_sso-styles.scss */
+/* line 165, ../_scss/_sso-styles.scss */
 .sso-submit {
   width: 100%;
   float: right;
@@ -564,7 +582,7 @@ article, #sso, .sp-support, .tertiary-links-wrapper {
   padding-top: 0;
 }
 @media (min-width: 22.01em) and (max-width: 42em) {
-  /* line 159, ../_scss/_sso-styles.scss */
+  /* line 165, ../_scss/_sso-styles.scss */
   .sso-submit {
     width: 23.25581%;
     float: left;
@@ -574,7 +592,7 @@ article, #sso, .sp-support, .tertiary-links-wrapper {
   }
 }
 
-/* line 167, ../_scss/_sso-styles.scss */
+/* line 173, ../_scss/_sso-styles.scss */
 .sso-links {
   width: 100%;
   float: right;
@@ -587,7 +605,7 @@ article, #sso, .sp-support, .tertiary-links-wrapper {
   margin: .25em;
 }
 @media (min-width: 22.01em) and (max-width: 42em) {
-  /* line 167, ../_scss/_sso-styles.scss */
+  /* line 173, ../_scss/_sso-styles.scss */
   .sso-links {
     width: 74.4186%;
     float: right;
@@ -596,12 +614,12 @@ article, #sso, .sp-support, .tertiary-links-wrapper {
     clear: none;
   }
 }
-/* line 175, ../_scss/_sso-styles.scss */
+/* line 181, ../_scss/_sso-styles.scss */
 .sso-links li {
   margin-bottom: 0;
 }
 
-/* line 180, ../_scss/_sso-styles.scss */
+/* line 186, ../_scss/_sso-styles.scss */
 .login-fail {
   background: repeating-linear-gradient(45deg, #29001a, #29001a 0.5em, #14000d 0.5em, #14000d 1em);
   color: #ff00a5;
@@ -614,7 +632,7 @@ article, #sso, .sp-support, .tertiary-links-wrapper {
   margin-top: 0;
 }
 
-/* line 190, ../_scss/_sso-styles.scss */
+/* line 196, ../_scss/_sso-styles.scss */
 .sp-support {
   background: rgba(204, 204, 204, 0.25);
   padding: 1em;
@@ -623,27 +641,22 @@ article, #sso, .sp-support, .tertiary-links-wrapper {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 195, ../_scss/_sso-styles.scss */
+/* line 201, ../_scss/_sso-styles.scss */
 .sp-support p, .sp-support li {
   font-size: 0.75em;
 }
-/* line 198, ../_scss/_sso-styles.scss */
+/* line 204, ../_scss/_sso-styles.scss */
 .sp-support h2 {
   font-size: 1.125em;
   margin-top: 0;
 }
-/* line 202, ../_scss/_sso-styles.scss */
+/* line 208, ../_scss/_sso-styles.scss */
 .sp-support h3 {
   font-size: 1em;
   margin-top: 0;
 }
 
-/* line 208, ../_scss/_sso-styles.scss */
-.error ~ #sso, .alert ~ #sso, .error ~ article, .alert ~ article {
-  margin-top: -1em;
-}
-
-/* line 212, ../_scss/_sso-styles.scss */
+/* line 214, ../_scss/_sso-styles.scss */
 article {
   position: relative;
   background: #fff;
@@ -655,7 +668,7 @@ article {
   border-radius: 3px;
 }
 
-/* line 221, ../_scss/_sso-styles.scss */
+/* line 223, ../_scss/_sso-styles.scss */
 .badge-alert {
   position: absolute;
   bottom: -3em;
@@ -665,7 +678,7 @@ article {
   background: #ffff00;
 }
 @media (min-width: 22.01em) {
-  /* line 221, ../_scss/_sso-styles.scss */
+  /* line 223, ../_scss/_sso-styles.scss */
   .badge-alert {
     top: -1em;
     right: -4em;
@@ -702,7 +715,7 @@ article {
   padding-left: 0.27778em;
 }
 
-/* line 225, ../_scss/_sso-styles.scss */
+/* line 227, ../_scss/_sso-styles.scss */
 .badge-error {
   position: absolute;
   bottom: -3em;
@@ -712,7 +725,7 @@ article {
   background: #29001a;
 }
 @media (min-width: 22.01em) {
-  /* line 225, ../_scss/_sso-styles.scss */
+  /* line 227, ../_scss/_sso-styles.scss */
   .badge-error {
     top: -1em;
     right: -4em;
@@ -749,30 +762,30 @@ article {
   padding-left: 0.27778em;
 }
 
-/* line 229, ../_scss/_sso-styles.scss */
+/* line 231, ../_scss/_sso-styles.scss */
 #report {
   overflow: hidden;
 }
-/* line 231, ../_scss/_sso-styles.scss */
+/* line 233, ../_scss/_sso-styles.scss */
 #report label {
   display: block;
   margin-bottom: 0.25em;
 }
-/* line 235, ../_scss/_sso-styles.scss */
+/* line 237, ../_scss/_sso-styles.scss */
 #report ol {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-/* line 242, ../_scss/_sso-styles.scss */
+/* line 244, ../_scss/_sso-styles.scss */
 .loading i {
   margin: 1em auto 0;
   font-size: 4em;
   margin: 1em 45%;
 }
 
-/* line 248, ../_scss/_sso-styles.scss */
+/* line 250, ../_scss/_sso-styles.scss */
 .tertiary-links {
   background: rgba(0, 0, 0, 0.75);
   border-top: 1px solid #0055a6;
@@ -780,21 +793,21 @@ article {
   color: #cccccc;
 }
 
-/* line 256, ../_scss/_sso-styles.scss */
+/* line 258, ../_scss/_sso-styles.scss */
 .tertiary-links-wrapper p {
   margin: 0 auto;
   font-size: 0.75em;
 }
-/* line 260, ../_scss/_sso-styles.scss */
+/* line 262, ../_scss/_sso-styles.scss */
 .tertiary-links-wrapper a {
   text-decoration: none;
   color: #fff;
 }
-/* line 263, ../_scss/_sso-styles.scss */
+/* line 265, ../_scss/_sso-styles.scss */
 .tertiary-links-wrapper a:visited {
   color: #fff;
 }
-/* line 266, ../_scss/_sso-styles.scss */
+/* line 268, ../_scss/_sso-styles.scss */
 .tertiary-links-wrapper a:hover, .tertiary-links-wrapper a:focus {
   color: #ffff00;
   text-decoration: underline;

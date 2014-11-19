@@ -269,6 +269,7 @@ fieldset {
 
 /* line 58, ../_scss/_forms.scss */
 legend {
+  line-height: 1.5125em;
   display: block;
   width: 100%;
   padding: 0.5em 0;
@@ -284,7 +285,7 @@ legend {
   }
 }
 
-/* line 71, ../_scss/_forms.scss */
+/* line 72, ../_scss/_forms.scss */
 button, .button {
   display: inline-block;
   *display: inline;
@@ -321,30 +322,30 @@ button, .button {
   border-radius: 3px;
 }
 @media (min-width: 0) and (max-width: 28em) {
-  /* line 71, ../_scss/_forms.scss */
+  /* line 72, ../_scss/_forms.scss */
   button, .button {
     width: 100%;
   }
 }
 
 /* Firefox: Get rid of the inner focus border */
-/* line 104, ../_scss/_forms.scss */
+/* line 105, ../_scss/_forms.scss */
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
-/* line 109, ../_scss/_forms.scss */
+/* line 110, ../_scss/_forms.scss */
 button:focus {
   outline: 0;
 }
 
-/* line 113, ../_scss/_forms.scss */
+/* line 114, ../_scss/_forms.scss */
 button:active {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
 }
 
-/* line 117, ../_scss/_forms.scss */
+/* line 118, ../_scss/_forms.scss */
 button[disabled] {
   border: none;
   background-image: none;
@@ -388,35 +389,43 @@ h1, h2, h3, h4 {
 /* line 29, ../_scss/_sso-styles.scss */
 h1 {
   font-size: 2em;
-  line-height: 1.5125em;
-}
-
-/* line 34, ../_scss/_sso-styles.scss */
-div h1, article h1 {
+  line-height: 1.2375em;
   margin: 0;
+}
+@media (min-width: 0) and (max-width: 28em) {
+  /* line 29, ../_scss/_sso-styles.scss */
+  h1 {
+    font-size: 1.5em;
+  }
 }
 
 /* line 38, ../_scss/_sso-styles.scss */
 h2 {
   font-size: 1.5em;
 }
+@media (min-width: 0) and (max-width: 28em) {
+  /* line 38, ../_scss/_sso-styles.scss */
+  h2 {
+    font-size: 1.25em;
+  }
+}
 
-/* line 42, ../_scss/_sso-styles.scss */
+/* line 45, ../_scss/_sso-styles.scss */
 h3 {
   font-size: 1.25em;
 }
 
-/* line 46, ../_scss/_sso-styles.scss */
+/* line 49, ../_scss/_sso-styles.scss */
 h4 {
   font-size: 1.125em;
 }
 
-/* line 50, ../_scss/_sso-styles.scss */
+/* line 53, ../_scss/_sso-styles.scss */
 p {
   line-height: 1.375em;
 }
 
-/* line 54, ../_scss/_sso-styles.scss */
+/* line 57, ../_scss/_sso-styles.scss */
 a {
   color: #8237ff;
   text-decoration: underline;
@@ -429,34 +438,30 @@ a {
   -webkit-transition-duration: 0.15s;
   transition-duration: 0.15s;
 }
-/* line 59, ../_scss/_sso-styles.scss */
+/* line 62, ../_scss/_sso-styles.scss */
 a:visited {
   color: #8237ff;
 }
-/* line 62, ../_scss/_sso-styles.scss */
+/* line 65, ../_scss/_sso-styles.scss */
 a:hover, a:focus {
   text-decoration: underline;
   color: #1e4b87;
   outline: 0;
 }
-/* line 67, ../_scss/_sso-styles.scss */
+/* line 70, ../_scss/_sso-styles.scss */
 a:focus {
   outline: thin dotted;
 }
-/* line 70, ../_scss/_sso-styles.scss */
+/* line 73, ../_scss/_sso-styles.scss */
 a:active {
   outline: 0;
 }
 
-/* line 75, ../_scss/_sso-styles.scss */
+/* line 78, ../_scss/_sso-styles.scss */
 section[role="main"] ul {
   list-style: none;
   padding-left: .25em;
   margin-bottom: 0;
-}
-/* line 79, ../_scss/_sso-styles.scss */
-section[role="main"] ul li {
-  margin-bottom: .5em;
 }
 /* line 82, ../_scss/_sso-styles.scss */
 section[role="main"] ul li:before {
@@ -467,30 +472,35 @@ section[role="main"] ul li:before {
   left: -.25em;
 }
 
-/* line 95, ../_scss/_sso-styles.scss */
+/* line 91, ../_scss/_sso-styles.scss */
+li {
+  margin-bottom: .5em;
+}
+
+/* line 99, ../_scss/_sso-styles.scss */
 section[role="main"] {
   margin: 1em auto 6em;
 }
 @media (min-width: 28.01em) {
-  /* line 95, ../_scss/_sso-styles.scss */
+  /* line 99, ../_scss/_sso-styles.scss */
   section[role="main"] {
     margin: 6em auto 3em;
   }
 }
 
-/* line 102, ../_scss/_sso-styles.scss */
+/* line 106, ../_scss/_sso-styles.scss */
 article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
   width: 94%;
   margin: 0 auto;
 }
 @media (min-width: 38.01em) {
-  /* line 102, ../_scss/_sso-styles.scss */
+  /* line 106, ../_scss/_sso-styles.scss */
   article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
     width: 36em;
   }
 }
 
-/* line 110, ../_scss/_sso-styles.scss */
+/* line 114, ../_scss/_sso-styles.scss */
 .tertiary-links {
   position: absolute;
   bottom: 0;
@@ -498,43 +508,43 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
   height: 4em;
 }
 @media (min-width: 28.01em) {
-  /* line 110, ../_scss/_sso-styles.scss */
+  /* line 114, ../_scss/_sso-styles.scss */
   .tertiary-links {
     height: 2em;
   }
 }
 @media (min-width: 0) and (max-width: 28em) {
-  /* line 118, ../_scss/_sso-styles.scss */
+  /* line 122, ../_scss/_sso-styles.scss */
   .tertiary-links a, .tertiary-links span {
     width: 100%;
     display: block;
   }
 }
 
-/* line 126, ../_scss/_sso-styles.scss */
+/* line 130, ../_scss/_sso-styles.scss */
 .right {
   float: right;
 }
 
-/* line 134, ../_scss/_sso-styles.scss */
+/* line 138, ../_scss/_sso-styles.scss */
 .logo {
   display: block;
   margin: 0 auto;
   width: 90%;
 }
 @media (min-width: 28.01em) {
-  /* line 134, ../_scss/_sso-styles.scss */
+  /* line 138, ../_scss/_sso-styles.scss */
   .logo {
     width: 70%;
   }
 }
 
-/* line 143, ../_scss/_sso-styles.scss */
+/* line 147, ../_scss/_sso-styles.scss */
 .login-form {
   padding-bottom: 0;
 }
 
-/* line 147, ../_scss/_sso-styles.scss */
+/* line 151, ../_scss/_sso-styles.scss */
 #sso {
   background: #fff;
   box-shadow: 0 1px 1px #347bad;
@@ -545,33 +555,33 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
   border-radius: 3px;
 }
 @media (min-width: 28.01em) {
-  /* line 147, ../_scss/_sso-styles.scss */
+  /* line 151, ../_scss/_sso-styles.scss */
   #sso {
     padding: 0 4em 1em;
   }
 }
-/* line 156, ../_scss/_sso-styles.scss */
+/* line 160, ../_scss/_sso-styles.scss */
 #sso label {
   display: none;
 }
-/* line 159, ../_scss/_sso-styles.scss */
+/* line 163, ../_scss/_sso-styles.scss */
 #sso fieldset {
   border: none;
 }
-/* line 162, ../_scss/_sso-styles.scss */
+/* line 166, ../_scss/_sso-styles.scss */
 #sso ol {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-/* line 169, ../_scss/_sso-styles.scss */
+/* line 173, ../_scss/_sso-styles.scss */
 .sso-submit {
   width: 100%;
   padding-top: 0;
 }
 @media (min-width: 28.01em) {
-  /* line 169, ../_scss/_sso-styles.scss */
+  /* line 173, ../_scss/_sso-styles.scss */
   .sso-submit {
     width: 23.25581%;
     float: left;
@@ -581,7 +591,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
   }
 }
 
-/* line 177, ../_scss/_sso-styles.scss */
+/* line 181, ../_scss/_sso-styles.scss */
 .sso-links {
   width: 100%;
   overflow: hidden;
@@ -590,7 +600,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
   margin: .25em;
 }
 @media (min-width: 28.01em) {
-  /* line 177, ../_scss/_sso-styles.scss */
+  /* line 181, ../_scss/_sso-styles.scss */
   .sso-links {
     width: 74.4186%;
     float: right;
@@ -599,12 +609,8 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
     clear: none;
   }
 }
-/* line 185, ../_scss/_sso-styles.scss */
-.sso-links li {
-  margin-bottom: 0;
-}
 
-/* line 190, ../_scss/_sso-styles.scss */
+/* line 191, ../_scss/_sso-styles.scss */
 .login-fail {
   background: repeating-linear-gradient(45deg, #29001a, #29001a 0.5em, #14000d 0.5em, #14000d 1em);
   color: #ff00a5;
@@ -617,7 +623,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
   margin-top: 0;
 }
 
-/* line 200, ../_scss/_sso-styles.scss */
+/* line 201, ../_scss/_sso-styles.scss */
 .sp-support {
   background: rgba(204, 204, 204, 0.25);
   padding: 1em;
@@ -626,47 +632,47 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 205, ../_scss/_sso-styles.scss */
+/* line 206, ../_scss/_sso-styles.scss */
 .sp-support p, .sp-support li {
   font-size: 0.75em;
 }
-/* line 208, ../_scss/_sso-styles.scss */
+/* line 209, ../_scss/_sso-styles.scss */
 .sp-support h2 {
   font-size: 1.125em;
   margin-top: 0;
 }
-/* line 212, ../_scss/_sso-styles.scss */
+/* line 213, ../_scss/_sso-styles.scss */
 .sp-support h3 {
   font-size: 1em;
   margin-top: 0;
 }
 
-/* line 218, ../_scss/_sso-styles.scss */
+/* line 219, ../_scss/_sso-styles.scss */
 .primary-button {
   background-color: #347bad;
   color: #fff;
   font-size: 1.125em;
 }
-/* line 222, ../_scss/_sso-styles.scss */
+/* line 223, ../_scss/_sso-styles.scss */
 .primary-button:hover {
   background-color: #ffe800;
   color: #0055a6;
 }
 
-/* line 228, ../_scss/_sso-styles.scss */
+/* line 229, ../_scss/_sso-styles.scss */
 .secondary-button {
   background-color: #526991;
   color: #fff;
   margin: 1em auto 0;
   display: block;
 }
-/* line 233, ../_scss/_sso-styles.scss */
+/* line 234, ../_scss/_sso-styles.scss */
 .secondary-button:hover {
   background-color: #405170;
   color: #fff;
 }
 
-/* line 239, ../_scss/_sso-styles.scss */
+/* line 240, ../_scss/_sso-styles.scss */
 article {
   position: relative;
   background: #fff;
@@ -678,17 +684,17 @@ article {
   border-radius: 3px;
 }
 
-/* line 248, ../_scss/_sso-styles.scss */
+/* line 249, ../_scss/_sso-styles.scss */
 .badge-alert {
   position: absolute;
-  bottom: -3em;
+  bottom: -4em;
   right: 35%;
   width: 6.25em;
   height: 5em;
   background: #ffff00;
 }
 @media (min-width: 28.01em) {
-  /* line 248, ../_scss/_sso-styles.scss */
+  /* line 249, ../_scss/_sso-styles.scss */
   .badge-alert {
     top: -1em;
     right: -4em;
@@ -725,17 +731,17 @@ article {
   padding-left: 0.27778em;
 }
 
-/* line 252, ../_scss/_sso-styles.scss */
+/* line 253, ../_scss/_sso-styles.scss */
 .badge-error {
   position: absolute;
-  bottom: -3em;
+  bottom: -4em;
   right: 35%;
   width: 6.25em;
   height: 5em;
   background: #29001a;
 }
 @media (min-width: 28.01em) {
-  /* line 252, ../_scss/_sso-styles.scss */
+  /* line 253, ../_scss/_sso-styles.scss */
   .badge-error {
     top: -1em;
     right: -4em;
@@ -772,30 +778,30 @@ article {
   padding-left: 0.27778em;
 }
 
-/* line 256, ../_scss/_sso-styles.scss */
+/* line 257, ../_scss/_sso-styles.scss */
 #report {
   overflow: hidden;
 }
-/* line 258, ../_scss/_sso-styles.scss */
+/* line 259, ../_scss/_sso-styles.scss */
 #report label {
   display: block;
   margin-bottom: 0.25em;
 }
-/* line 262, ../_scss/_sso-styles.scss */
+/* line 263, ../_scss/_sso-styles.scss */
 #report ol {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-/* line 269, ../_scss/_sso-styles.scss */
+/* line 270, ../_scss/_sso-styles.scss */
 .loading i {
   margin: 1em auto 0;
   font-size: 4em;
   margin: 1em 45%;
 }
 
-/* line 275, ../_scss/_sso-styles.scss */
+/* line 276, ../_scss/_sso-styles.scss */
 .tertiary-links {
   background: rgba(0, 0, 0, 0.75);
   border-top: 1px solid #0055a6;
@@ -803,21 +809,21 @@ article {
   color: #cccccc;
 }
 
-/* line 283, ../_scss/_sso-styles.scss */
+/* line 284, ../_scss/_sso-styles.scss */
 .tertiary-links-wrapper p {
   margin: 0 auto;
   font-size: 0.75em;
 }
-/* line 287, ../_scss/_sso-styles.scss */
+/* line 288, ../_scss/_sso-styles.scss */
 .tertiary-links-wrapper a {
   text-decoration: none;
   color: #fff;
 }
-/* line 290, ../_scss/_sso-styles.scss */
+/* line 291, ../_scss/_sso-styles.scss */
 .tertiary-links-wrapper a:visited {
   color: #fff;
 }
-/* line 293, ../_scss/_sso-styles.scss */
+/* line 294, ../_scss/_sso-styles.scss */
 .tertiary-links-wrapper a:hover, .tertiary-links-wrapper a:focus {
   color: #ffff00;
   text-decoration: underline;

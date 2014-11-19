@@ -1,32 +1,34 @@
 @mixin badge($background: $alert-bg-color, $color: $alert-color, $base-size: 2.5em) {
+	position: absolute;
+	bottom: -$triple-spacing;
+	right: 35%;
+	width: $base-size * 2.5;
+	height: $base-size * 2;
 	background: $background;
 	@include breakpoint($past-mobile) {
-		position: absolute;
 		top: -$default-spacing;
 		right: -$quad-spacing;
-		width: $base-size * 2.5;
-		height: $base-size * 2;
-		&:before {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: -($base-size / 2);
-			width: 0;
-			height: 0;
-			border-top: $base-size solid transparent;
-			border-right: ($base-size / 2) solid $background;
-			border-bottom: $base-size solid transparent;
-		}
-		&:after {
-			content: "";
-			position: absolute;
-			right: -($base-size / 2);
-			width: 0;
-			height: 0;
-			border-top: $base-size solid transparent;
-			border-left: ($base-size / 2) solid $background;
-			border-bottom: $base-size solid transparent;
-		}
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -($base-size / 2);
+		width: 0;
+		height: 0;
+		border-top: $base-size solid transparent;
+		border-right: ($base-size / 2) solid $background;
+		border-bottom: $base-size solid transparent;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		right: -($base-size / 2);
+		width: 0;
+		height: 0;
+		border-top: $base-size solid transparent;
+		border-left: ($base-size / 2) solid $background;
+		border-bottom: $base-size solid transparent;
 	}
 	i {
 		font-size: $base-size * 1.7;

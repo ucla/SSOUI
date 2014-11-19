@@ -89,13 +89,47 @@ section[role="main"] ul {
 }
 
 /////////////////////////////////////////
-///          CLASSES/ROLES
+///             LAYOUT
 /////////////////////////////////////////
 
 section[role="main"] {
-	margin: $page-top-spacing auto $triple-spacing;
-	width: 42em; 
+	margin: $page-top-spacing auto;
+	@include breakpoint($past-mobile) {
+		margin: $page-top-spacing auto $triple-spacing;
+	}
 }
+
+article, #sso, .sp-support, .tertiary-links-wrapper {
+	width: 94%;
+	margin: 0 auto;
+	@include breakpoint($elastic) {
+		width: 36em;
+	}
+}
+
+.tertiary-links {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: $quad-spacing;
+	@include breakpoint($past-mobile) {
+		height: $double-spacing;
+	}
+	a, span {
+		@include breakpoint($mobile) {
+			width: 100%;
+			display: block;
+		}
+	}
+}
+
+.right {
+	float: right;
+}
+
+/////////////////////////////////////////
+///          CLASSES/ROLES
+/////////////////////////////////////////
 
 .logo {
   display: block;
@@ -106,8 +140,6 @@ section[role="main"] {
 #sso {
 	background: $body-background-color;
 	box-shadow: 0 1px 1px #347bad;
-	margin: 0 auto;
-	width: 36em;
 	padding: 0 4em 1em;
 	overflow: hidden;
 	@include border-radius($global-border-radius);
@@ -126,7 +158,7 @@ section[role="main"] {
 
 .sso-submit {
 	@include grid-span(4, 1);
-	@include breakpoint($past-mobile) {
+	@include breakpoint($liquid) {
 		@include grid-span(1, 1);
 	}
 	padding-top: 0;
@@ -134,7 +166,7 @@ section[role="main"] {
 
 .sso-links {
 	@include grid-span(4, 1);
-	@include breakpoint($past-mobile) {
+	@include breakpoint($liquid) {
 		@include grid-span(3, 2);
 	}
 	@include clearfix;
@@ -158,7 +190,6 @@ section[role="main"] {
 .sp-support {
 	background: rgba($neutral, .25);
 	padding: $default-spacing;
-	width: 36em;
 	margin: $default-spacing auto 0;
 	@include border-radius($global-border-radius);
 	p, li {
@@ -179,11 +210,9 @@ section[role="main"] {
 }
 
 article {
-	background: $body-background-color;
 	position: relative;
+	background: $body-background-color;
 	box-shadow: 0 1px 1px #347bad;
-	margin: 0 auto;
-	width: 36em;
 	padding: 1em;
 	min-height: 12em;
 	@include border-radius($global-border-radius);
@@ -216,17 +245,15 @@ article {
 	margin: $default-spacing 45%;
 }
 
-footer[role="contentinfo"] {
-	position: absolute;
-	bottom: 0;
-	height: 2em;
-	width: 100%;
+.tertiary-links {
 	background: rgba($black, .75);
 	border-top: 1px solid $primary-color-alternate-state;
 	padding: $half-spacing;
 	color: lighten($body-text-color, 40%);
+}
+
+.tertiary-links-wrapper {
 	p {
-		width: 48em;
 		margin: 0 auto;
 		font-size: $meta-font-size;
 	}
@@ -241,8 +268,4 @@ footer[role="contentinfo"] {
 			text-decoration: underline;
 		} 
 	}
-}
-
-.non-human {
-	float: right;
 }

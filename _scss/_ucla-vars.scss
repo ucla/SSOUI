@@ -2,16 +2,11 @@
 ///             LAYOUT
 /////////////////////////////////////////
 
-// typical viewport breakpoints in px units
-$mobile-only: 1px 320px;
-$past-mobile: 321px;
-$before-tablet: 1px 768px;
-$mobile-to-tablet: 321px 768px;
-$past-tablet: 769px;
-$tablet-to-laptop: 769px 1024px;
-$wide: 1025px;
-
-// content specific breakpoints in em units
+// breakpoints
+$mobile: 0 22em;
+$past-mobile: 22.01em;
+$liquid: 22.01em 42em;
+$elastic: 42.01em;
 
 // singularity.gs layout
 @include add-grid(4);

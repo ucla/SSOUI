@@ -244,7 +244,7 @@ select[disabled], input[disabled] {
 /* line 36, ../_scss/_forms.scss */
 input:focus:invalid,
 select:focus:invalid {
-  color: #b30073;
+  color: #e60094;
   border-color: #ff00a5;
 }
 
@@ -670,15 +670,16 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
   /* line 229, ../_scss/_sso-styles.scss */
   .secondary-button {
     font-size: 0.75em;
+    padding: 1em;
   }
 }
-/* line 237, ../_scss/_sso-styles.scss */
+/* line 238, ../_scss/_sso-styles.scss */
 .secondary-button:hover {
   background-color: #405170;
   color: #fff;
 }
 
-/* line 243, ../_scss/_sso-styles.scss */
+/* line 244, ../_scss/_sso-styles.scss */
 article {
   position: relative;
   background: #fff;
@@ -689,12 +690,12 @@ article {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 250, ../_scss/_sso-styles.scss */
+/* line 251, ../_scss/_sso-styles.scss */
 article legend {
   display: none;
 }
 
-/* line 255, ../_scss/_sso-styles.scss */
+/* line 256, ../_scss/_sso-styles.scss */
 .badge {
   position: absolute;
   bottom: -4em;
@@ -704,7 +705,7 @@ article legend {
   background: #ff00a5;
 }
 @media (min-width: 28.01em) {
-  /* line 255, ../_scss/_sso-styles.scss */
+  /* line 256, ../_scss/_sso-styles.scss */
   .badge {
     top: -2em;
     right: -2em;
@@ -741,30 +742,36 @@ article legend {
   padding-left: 0.2381em;
 }
 
-/* line 259, ../_scss/_sso-styles.scss */
+/* line 260, ../_scss/_sso-styles.scss */
 #report {
   overflow: hidden;
 }
-/* line 261, ../_scss/_sso-styles.scss */
+/* line 262, ../_scss/_sso-styles.scss */
 #report label {
   display: block;
   margin-bottom: 0.25em;
 }
-/* line 265, ../_scss/_sso-styles.scss */
+/* line 266, ../_scss/_sso-styles.scss */
 #report ol {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-/* line 272, ../_scss/_sso-styles.scss */
+/* line 273, ../_scss/_sso-styles.scss */
 .loading i {
   margin: 1em auto 0;
   font-size: 4em;
   margin: 1em 45%;
 }
+@media (min-width: 0) and (max-width: 28em) {
+  /* line 273, ../_scss/_sso-styles.scss */
+  .loading i {
+    margin: 0.5em 40%;
+  }
+}
 
-/* line 278, ../_scss/_sso-styles.scss */
+/* line 282, ../_scss/_sso-styles.scss */
 .tertiary-links {
   background: rgba(0, 0, 0, 0.75);
   border-top: 1px solid #0055a6;
@@ -772,21 +779,21 @@ article legend {
   color: #cccccc;
 }
 
-/* line 286, ../_scss/_sso-styles.scss */
+/* line 290, ../_scss/_sso-styles.scss */
 .tertiary-links-wrapper p {
   margin: 0 auto;
   font-size: 0.75em;
 }
-/* line 290, ../_scss/_sso-styles.scss */
+/* line 294, ../_scss/_sso-styles.scss */
 .tertiary-links-wrapper a {
   text-decoration: none;
   color: #fff;
 }
-/* line 293, ../_scss/_sso-styles.scss */
+/* line 297, ../_scss/_sso-styles.scss */
 .tertiary-links-wrapper a:visited {
   color: #fff;
 }
-/* line 296, ../_scss/_sso-styles.scss */
+/* line 300, ../_scss/_sso-styles.scss */
 .tertiary-links-wrapper a:hover, .tertiary-links-wrapper a:focus {
   color: #ffff00;
   text-decoration: underline;

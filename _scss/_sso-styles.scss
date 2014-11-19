@@ -233,6 +233,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 	display: block;
 	@include breakpoint($mobile-only) {
 		font-size: $meta-font-size;
+		padding: $default-spacing;
 	}
 	&:hover {
 		background-color: darken($secondary-login-option-color, 10%);
@@ -272,6 +273,9 @@ article {
 .loading i {
 	margin: $default-spacing auto 0;
 	font-size: $h1-font-size * 2;
+	@include breakpoint($mobile-only) {
+		margin: $half-spacing 40%;
+	}
 	margin: $default-spacing 45%;
 }
 

@@ -35,7 +35,7 @@ select[disabled], input[disabled] {
 
 input:focus:invalid,
 select:focus:invalid {
-	color: darken($uclapinkneon, 15%);
+	color: darken($uclapinkneon, 5%);
 	border-color: $uclapinkneon;
 }
 

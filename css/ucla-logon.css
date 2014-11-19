@@ -657,37 +657,42 @@ article {
 
 /* line 221, ../_scss/_sso-styles.scss */
 .badge-alert {
-  position: absolute;
-  top: -1em;
-  right: -4em;
-  width: 6.25em;
-  height: 5em;
   background: #ffff00;
 }
-/* line 8, ../_scss/_mixins.scss */
-.badge-alert:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -1.25em;
-  width: 0;
-  height: 0;
-  border-top: 2.5em solid transparent;
-  border-right: 1.25em solid #ffff00;
-  border-bottom: 2.5em solid transparent;
+@media (min-width: 22.01em) {
+  /* line 221, ../_scss/_sso-styles.scss */
+  .badge-alert {
+    position: absolute;
+    top: -1em;
+    right: -4em;
+    width: 6.25em;
+    height: 5em;
+  }
+  /* line 9, ../_scss/_mixins.scss */
+  .badge-alert:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1.25em;
+    width: 0;
+    height: 0;
+    border-top: 2.5em solid transparent;
+    border-right: 1.25em solid #ffff00;
+    border-bottom: 2.5em solid transparent;
+  }
+  /* line 20, ../_scss/_mixins.scss */
+  .badge-alert:after {
+    content: "";
+    position: absolute;
+    right: -1.25em;
+    width: 0;
+    height: 0;
+    border-top: 2.5em solid transparent;
+    border-left: 1.25em solid #ffff00;
+    border-bottom: 2.5em solid transparent;
+  }
 }
-/* line 19, ../_scss/_mixins.scss */
-.badge-alert:after {
-  content: "";
-  position: absolute;
-  right: -1.25em;
-  width: 0;
-  height: 0;
-  border-top: 2.5em solid transparent;
-  border-left: 1.25em solid #ffff00;
-  border-bottom: 2.5em solid transparent;
-}
-/* line 29, ../_scss/_mixins.scss */
+/* line 31, ../_scss/_mixins.scss */
 .badge-alert i {
   font-size: 4.25em;
   color: #0055a6;
@@ -697,37 +702,42 @@ article {
 
 /* line 225, ../_scss/_sso-styles.scss */
 .badge-error {
-  position: absolute;
-  top: -1em;
-  right: -4em;
-  width: 6.25em;
-  height: 5em;
   background: #29001a;
 }
-/* line 8, ../_scss/_mixins.scss */
-.badge-error:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -1.25em;
-  width: 0;
-  height: 0;
-  border-top: 2.5em solid transparent;
-  border-right: 1.25em solid #29001a;
-  border-bottom: 2.5em solid transparent;
+@media (min-width: 22.01em) {
+  /* line 225, ../_scss/_sso-styles.scss */
+  .badge-error {
+    position: absolute;
+    top: -1em;
+    right: -4em;
+    width: 6.25em;
+    height: 5em;
+  }
+  /* line 9, ../_scss/_mixins.scss */
+  .badge-error:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1.25em;
+    width: 0;
+    height: 0;
+    border-top: 2.5em solid transparent;
+    border-right: 1.25em solid #29001a;
+    border-bottom: 2.5em solid transparent;
+  }
+  /* line 20, ../_scss/_mixins.scss */
+  .badge-error:after {
+    content: "";
+    position: absolute;
+    right: -1.25em;
+    width: 0;
+    height: 0;
+    border-top: 2.5em solid transparent;
+    border-left: 1.25em solid #29001a;
+    border-bottom: 2.5em solid transparent;
+  }
 }
-/* line 19, ../_scss/_mixins.scss */
-.badge-error:after {
-  content: "";
-  position: absolute;
-  right: -1.25em;
-  width: 0;
-  height: 0;
-  border-top: 2.5em solid transparent;
-  border-left: 1.25em solid #29001a;
-  border-bottom: 2.5em solid transparent;
-}
-/* line 29, ../_scss/_mixins.scss */
+/* line 31, ../_scss/_mixins.scss */
 .badge-error i {
   font-size: 4.25em;
   color: #ff00a5;

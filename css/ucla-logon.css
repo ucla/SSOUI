@@ -209,7 +209,7 @@ input {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-@media (min-width: 22.01em) {
+@media (min-width: 28.01em) {
   /* line 5, ../_scss/_forms.scss */
   input {
     width: 21em;
@@ -483,7 +483,7 @@ section[role="main"] ul li:before {
 section[role="main"] {
   margin: 1em auto 6em;
 }
-@media (min-width: 22.01em) {
+@media (min-width: 28.01em) {
   /* line 95, ../_scss/_sso-styles.scss */
   section[role="main"] {
     margin: 6em auto 3em;
@@ -495,7 +495,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
   width: 94%;
   margin: 0 auto;
 }
-@media (min-width: 42.01em) {
+@media (min-width: 38.01em) {
   /* line 102, ../_scss/_sso-styles.scss */
   article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
     width: 36em;
@@ -509,13 +509,13 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
   width: 100%;
   height: 4em;
 }
-@media (min-width: 22.01em) {
+@media (min-width: 28.01em) {
   /* line 110, ../_scss/_sso-styles.scss */
   .tertiary-links {
     height: 2em;
   }
 }
-@media (min-width: 0) and (max-width: 22em) {
+@media (min-width: 0) and (max-width: 28em) {
   /* line 118, ../_scss/_sso-styles.scss */
   .tertiary-links a, .tertiary-links span {
     width: 100%;
@@ -534,7 +534,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
   margin: 0 auto;
   width: 100%;
 }
-@media (min-width: 22.01em) {
+@media (min-width: 28.01em) {
   /* line 134, ../_scss/_sso-styles.scss */
   .logo {
     width: 70%;
@@ -551,7 +551,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-@media (min-width: 22.01em) {
+@media (min-width: 28.01em) {
   /* line 143, ../_scss/_sso-styles.scss */
   #sso {
     padding: 0 4em 1em;
@@ -581,7 +581,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
   clear: none;
   padding-top: 0;
 }
-@media (min-width: 22.01em) and (max-width: 42em) {
+@media (min-width: 28.01em) {
   /* line 165, ../_scss/_sso-styles.scss */
   .sso-submit {
     width: 23.25581%;
@@ -604,7 +604,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
   font-size: 0.75em;
   margin: .25em;
 }
-@media (min-width: 22.01em) and (max-width: 42em) {
+@media (min-width: 28.01em) {
   /* line 173, ../_scss/_sso-styles.scss */
   .sso-links {
     width: 74.4186%;
@@ -677,7 +677,7 @@ article {
   height: 5em;
   background: #ffff00;
 }
-@media (min-width: 22.01em) {
+@media (min-width: 28.01em) {
   /* line 223, ../_scss/_sso-styles.scss */
   .badge-alert {
     top: -1em;
@@ -724,7 +724,7 @@ article {
   height: 5em;
   background: #29001a;
 }
-@media (min-width: 22.01em) {
+@media (min-width: 28.01em) {
   /* line 227, ../_scss/_sso-styles.scss */
   .badge-error {
     top: -1em;

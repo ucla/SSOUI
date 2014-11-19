@@ -3,10 +3,10 @@
 /////////////////////////////////////////
 
 // breakpoints
-$mobile: 0 22em;
-$past-mobile: 22.01em;
-$liquid: 22.01em 42em;
-$elastic: 42.01em;
+$mobile: 0 28em;
+$past-mobile: 28.01em;
+$liquid: 28.01em 38em;
+$elastic: 38.01em;
 
 // singularity.gs layout
 @include add-grid(4);

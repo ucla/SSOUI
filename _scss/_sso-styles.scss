@@ -164,7 +164,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 
 .sso-submit {
 	@include grid-span(4, 1);
-	@include breakpoint($liquid) {
+	@include breakpoint($past-mobile) {
 		@include grid-span(1, 1);
 	}
 	padding-top: 0;
@@ -172,7 +172,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 
 .sso-links {
 	@include grid-span(4, 1);
-	@include breakpoint($liquid) {
+	@include breakpoint($past-mobile) {
 		@include grid-span(3, 2);
 	}
 	@include clearfix;

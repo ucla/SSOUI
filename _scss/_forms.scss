@@ -2,7 +2,7 @@
 
 @import "ucla-vars"; // WHY?!
 
-input {
+input, textarea {
 	width: 100%;
 	font-size: $h4-font-size;
 	@include breakpoint($past-mobile) {
@@ -58,12 +58,11 @@ fieldset {
 legend {
 	@include breakpoint($mobile-only) {
 		text-align: center;
-		padding-top: 0;
+		font-size: $h4-font-size;
 	}
 	line-height: $base-line-height * 1.1;
 	display: block;
 	width: 100%;
-	padding: $half-spacing 0;
 	font-weight: normal;
 	color: $primary-color;
 	font-size: $h2-font-size;

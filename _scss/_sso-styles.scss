@@ -245,7 +245,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 	padding: $default-spacing;
 	@include breakpoint($grid-liquid) {
 		font-size: $p-font-size;
-		padding: 0;
+		padding: $half-spacing;
 	}
 	&:hover {
 		background-color: darken($secondary-login-option-color, 10%);
@@ -278,11 +278,11 @@ article {
 }
 
 .loading i {
-	margin: $default-spacing 45%;
-	@include breakpoint($grid-liquid) {
-			margin: $default-spacing auto 0;
-	}
 	font-size: $h1-font-size * 2;
+	margin: $default-spacing 40%;
+	@include breakpoint($grid-liquid) {
+		margin: $default-spacing 45%;
+	}
 }
 
 .tertiary-links {

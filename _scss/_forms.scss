@@ -10,7 +10,7 @@ input {
 		font-size: $h3-font-size;
 	}
 	margin-bottom: $default-spacing;
-	@include border-radius($global-border-radius);
+	border-radius: $global-border-radius;
 }
 
 select, input, textarea {

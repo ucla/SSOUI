@@ -152,21 +152,16 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 	background: $body-background-color;
 	box-shadow: 0 1px 1px #347bad;
 	padding: 1em;
+	overflow: hidden;
+	border-radius: $global-border-radius;
 	@include breakpoint($past-mobile) {
 		padding: 0 4em 1em;
 	}
-	overflow: hidden;
-	@include border-radius($global-border-radius);
 	label {
 		display: none;
 	}
 	fieldset {
 		border: none;
-	}
-	ol {
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
 	}
 }
 
@@ -192,7 +187,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 	background: repeating-linear-gradient(45deg, $error-color-dark, $error-color-dark $half-spacing, $error-color-dark-alt $half-spacing, $error-color-dark-alt $default-spacing);
 	color: $uclapinkneon;
 	padding: $half-spacing;
-	@include border-radius($global-border-radius);
+	border-radius: $global-border-radius;
 	text-align: center;
 	margin-top: 0;
 }
@@ -208,7 +203,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 	background: rgba($neutral, .35);
 	padding: $default-spacing;
 	margin: $default-spacing auto 0;
-	@include border-radius($global-border-radius);
+	border-radius: $global-border-radius;
 	p, li {
 		font-size: $meta-font-size;
 	}
@@ -253,7 +248,7 @@ article {
 	box-shadow: 0 1px 1px #347bad;
 	padding: 1em;
 	min-height: 12em;
-	@include border-radius($global-border-radius);
+	border-radius: $global-border-radius;
 	legend {
 		display: none;
 	}
@@ -268,11 +263,6 @@ article {
 	label {
 		display: block;
 		margin-bottom: $half-spacing / 2;
-	}
-	ol {
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
 	}
 }
 

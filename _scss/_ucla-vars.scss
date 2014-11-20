@@ -73,7 +73,6 @@ body {
 	font-size: 100%;
 }
 
-$badge-font-size: 3em;
 $h1-font-size: 2em; 
 $h2-font-size: 1.5em;
 $h3-font-size: 1.25em;
@@ -96,14 +95,6 @@ $global-border-radius: 3px;
 /////////////////////////////////////////
 ///           FONT FACE
 /////////////////////////////////////////
-
-/*
-@font-face {
-	font-family: '../fonts/ProximaNova';src: url('../fonts/ProximaNova-Light.eot');src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),url('../fonts/ProximaNova-Light.woff') format('woff'),url('../fonts/ProximaNova-Light.ttf') format('truetype');
-	font-weight: 300;
-	font-style: normal;
-}
-*/
 
 @font-face {
 	font-family: '../fonts/ProximaNova';src: url('../fonts/ProximaNova-Regular.eot');src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),url('../fonts/ProximaNova-Regular.woff') format('woff'),url('../fonts/ProximaNova-Regular.ttf') format('truetype');

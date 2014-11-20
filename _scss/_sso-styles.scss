@@ -30,14 +30,14 @@ h1 {
 	font-size: $h1-font-size;
 	line-height: $base-line-height * .9;
 	margin: 0;
-	@include breakpoint($mobile-only) {
+	@include breakpoint($one-col-only) {
 		font-size: $h2-font-size;
 	}
 }
 
 h2 {
 	font-size: $h2-font-size;
-	@include breakpoint($mobile-only) {
+	@include breakpoint($one-col-only) {
 		font-size: $h3-font-size;
 	}
 }
@@ -97,8 +97,8 @@ li {
 /////////////////////////////////////////
 
 section[role="main"] {
-	margin: $double-spacing auto $page-spacing;
-	@include breakpoint($past-mobile) {
+	margin: $double-spacing auto $page-spacing * 1.5;
+	@include breakpoint($past-one-col) {
 		margin: $page-spacing auto $triple-spacing;
 	}
 }
@@ -106,7 +106,7 @@ section[role="main"] {
 article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 	width: 94%;
 	margin: 0 auto;
-	@include breakpoint($elastic) {
+	@include breakpoint($grid-elastic) {
 		width: 36em;
 	}
 }
@@ -116,11 +116,11 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 	bottom: 0;
 	width: 100%;
 	height: $quad-spacing;
-	@include breakpoint($past-mobile) {
+	@include breakpoint($past-one-col) {
 		height: $double-spacing;
 	}
 	a, span {
-		@include breakpoint($mobile-only) {
+		@include breakpoint($one-col-only) {
 			width: 100%;
 			display: block;
 		}
@@ -139,7 +139,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 	display: block;
 	margin: 0 auto;
 	width: 80%;
-	@include breakpoint($past-mobile) {
+	@include breakpoint($past-one-col) {
 		width: 70%;
 	}
 }
@@ -151,10 +151,10 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 #sso {
 	background: $body-background-color;
 	box-shadow: 0 1px 1px #347bad;
-	padding: 1em;
 	overflow: hidden;
 	border-radius: $global-border-radius;
-	@include breakpoint($past-mobile) {
+	padding: 0 7.5% 2.5%;
+	@include breakpoint($grid-elastic) {
 		padding: 0 4em 1em;
 	}
 	label {
@@ -167,7 +167,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 
 .sso-submit {
 	width: 100%;
-	@include breakpoint($past-mobile) {
+	@include breakpoint($past-one-col) {
 		@include grid-span(1, 1);
 	}
 	padding-top: 0;
@@ -176,11 +176,11 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 .sso-links {
 	width: 100%;
 	li {
-		@include breakpoint($mobile-only) {
+		@include breakpoint($one-col-only) {
 			margin: $default-spacing 0;
 		}
 	}
-	@include breakpoint($past-mobile) {
+	@include breakpoint($past-one-col) {
 		@include grid-span(3, 2);
 	}
 	@include clearfix;
@@ -200,7 +200,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 
 #sso .error-box {
 	width: 100%;
-	@include breakpoint($past-mobile) {
+	@include breakpoint($past-one-col) {
 		width: 26.3em;
 	}
 }
@@ -238,7 +238,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 	color: $white;
 	margin: $default-spacing auto 0;
 	display: block;
-	@include breakpoint($mobile-only) {
+	@include breakpoint($one-col-only) {
 		font-size: $meta-font-size;
 		padding: $default-spacing;
 	}
@@ -273,12 +273,11 @@ article {
 }
 
 .loading i {
-	margin: $default-spacing auto 0;
-	font-size: $h1-font-size * 2;
-	@include breakpoint($mobile-only) {
-		margin: $half-spacing 40%;
-	}
 	margin: $default-spacing 45%;
+	@include breakpoint($past-one-col) {
+			margin: $default-spacing auto 0;
+	}
+	font-size: $h1-font-size * 2;
 }
 
 .tertiary-links {

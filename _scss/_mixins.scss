@@ -5,7 +5,7 @@
 	width: $base-size * 2.5;
 	height: $base-size * 2;
 	background: $background;
-	@include breakpoint($past-mobile) {
+	@include breakpoint($past-one-col) {
 		top: -$double-spacing;
 		right: -$triple-spacing;
 	}

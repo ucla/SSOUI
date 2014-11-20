@@ -5,7 +5,10 @@
 input, textarea {
 	width: 100%;
 	font-size: $h4-font-size;
-	@include breakpoint($past-mobile) {
+	@include breakpoint($grid-liquid) {
+		width: 23em;
+	}
+	@include breakpoint($grid-elastic) {
 		width: 21em;
 		font-size: $h3-font-size;
 	}
@@ -56,7 +59,7 @@ fieldset {
 }
 
 legend {
-	@include breakpoint($mobile-only) {
+	@include breakpoint($one-col-only) {
 		text-align: center;
 		font-size: $h4-font-size;
 	}
@@ -69,7 +72,7 @@ legend {
 }
 
 button, .button {
-	@include breakpoint($mobile-only) {
+	@include breakpoint($one-col-only) {
 		width: 100%;
 	}
 	display: inline-block;

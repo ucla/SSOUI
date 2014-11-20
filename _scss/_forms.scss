@@ -6,7 +6,7 @@ input, textarea {
 	width: 100%;
 	font-size: $h4-font-size;
 	@include breakpoint($grid-liquid) {
-		width: 23em;
+		width: 94%;
 	}
 	@include breakpoint($grid-elastic) {
 		width: 21em;
@@ -59,21 +59,23 @@ fieldset {
 }
 
 legend {
-	@include breakpoint($one-col-only) {
-		text-align: center;
-		font-size: $h4-font-size;
+	text-align: center;
+	font-size: $h4-font-size;
+	@include breakpoint($grid-liquid) {
+		text-align: left;
+		font-size: $h2-font-size;
 	}
 	line-height: $base-line-height * 1.1;
 	display: block;
 	width: 100%;
 	font-weight: normal;
 	color: $primary-color;
-	font-size: $h2-font-size;
 }
 
 button, .button {
-	@include breakpoint($one-col-only) {
-		width: 100%;
+	width: 100%;
+	@include breakpoint($grid-liquid) {
+		width: auto;
 	}
 	display: inline-block;
 	*display: inline; /*IE 6/7*/

@@ -3,10 +3,8 @@
 /////////////////////////////////////////
 
 // breakpoints
-$one-col-only: 0 34em;
-$past-one-col: 34.01em;
-$grid-liquid: 34.01em 38em;
-$grid-elastic: 38.01em;
+$grid-liquid: 34em;
+$grid-elastic: 38em;
 
 // singularity.gs layout
 @include add-grid(4);

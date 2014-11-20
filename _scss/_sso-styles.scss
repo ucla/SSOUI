@@ -27,18 +27,18 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-	font-size: $h1-font-size;
+	font-size: $h2-font-size;
+	@include breakpoint($grid-liquid) {
+		font-size: $h1-font-size;
+	}
 	line-height: $base-line-height * .9;
 	margin: 0;
-	@include breakpoint($one-col-only) {
-		font-size: $h2-font-size;
-	}
 }
 
 h2 {
-	font-size: $h2-font-size;
-	@include breakpoint($one-col-only) {
-		font-size: $h3-font-size;
+	font-size: $h3-font-size;
+	@include breakpoint($grid-liquid) {
+		font-size: $h2-font-size;
 	}
 }
 
@@ -98,7 +98,7 @@ li {
 
 section[role="main"] {
 	margin: $double-spacing auto $page-spacing * 1.5;
-	@include breakpoint($past-one-col) {
+	@include breakpoint($grid-liquid) {
 		margin: $page-spacing auto $triple-spacing;
 	}
 }
@@ -116,13 +116,15 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 	bottom: 0;
 	width: 100%;
 	height: $quad-spacing;
-	@include breakpoint($past-one-col) {
+	@include breakpoint($grid-liquid) {
 		height: $double-spacing;
 	}
 	a, span {
-		@include breakpoint($one-col-only) {
-			width: 100%;
-			display: block;
+		display: block;
+		width: 100%;
+		@include breakpoint($grid-liquid) {
+			display: inline;
+			width: auto;
 		}
 	}
 }
@@ -139,7 +141,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 	display: block;
 	margin: 0 auto;
 	width: 80%;
-	@include breakpoint($past-one-col) {
+	@include breakpoint($grid-liquid) {
 		width: 70%;
 	}
 }
@@ -167,7 +169,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 
 .sso-submit {
 	width: 100%;
-	@include breakpoint($past-one-col) {
+	@include breakpoint($grid-liquid) {
 		@include grid-span(1, 1);
 	}
 	padding-top: 0;
@@ -176,11 +178,12 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 .sso-links {
 	width: 100%;
 	li {
-		@include breakpoint($one-col-only) {
-			margin: $default-spacing 0;
+		margin: $default-spacing 0;
+		@include breakpoint($grid-liquid) {
+			margin: inherit;
 		}
 	}
-	@include breakpoint($past-one-col) {
+	@include breakpoint($grid-liquid) {
 		@include grid-span(3, 2);
 	}
 	@include clearfix;
@@ -200,7 +203,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 
 #sso .error-box {
 	width: 100%;
-	@include breakpoint($past-one-col) {
+	@include breakpoint($grid-liquid) {
 		width: 26.3em;
 	}
 }
@@ -238,9 +241,11 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 	color: $white;
 	margin: $default-spacing auto 0;
 	display: block;
-	@include breakpoint($one-col-only) {
-		font-size: $meta-font-size;
-		padding: $default-spacing;
+	font-size: $meta-font-size;
+	padding: $default-spacing;
+	@include breakpoint($grid-liquid) {
+		font-size: $p-font-size;
+		padding: 0;
 	}
 	&:hover {
 		background-color: darken($secondary-login-option-color, 10%);
@@ -274,7 +279,7 @@ article {
 
 .loading i {
 	margin: $default-spacing 45%;
-	@include breakpoint($past-one-col) {
+	@include breakpoint($grid-liquid) {
 			margin: $default-spacing auto 0;
 	}
 	font-size: $h1-font-size * 2;

@@ -3,3 +3,107 @@
 // http://identity.uclahealth.org/body.cfm?id=75
 
 // http://identity.uclahealth.org/body.cfm?id=113
+
+
+/////////////////////////////////////////
+///             LAYOUT
+/////////////////////////////////////////
+
+// breakpoints
+$mobile-only: 0 32em;
+$past-mobile: 32.01em;
+$liquid: 32.01em 38em;
+$elastic: 38.01em;
+
+// singularity.gs layout
+@include add-grid(4);
+@include add-gutter(1/10);
+
+/////////////////////////////////////////
+///            COLOURS
+/////////////////////////////////////////
+
+// NOTE: darken w/ shade($foo, 20%), lighten w/ tint($foo, 70%)
+
+// Primary Colour
+
+$uclaoldblue: #526991;
+$uclaoldbluedark: #40537B;
+
+// Secondary Health Colours
+
+$gold: #ffb300;
+$orange: #d95e00;
+$purple: #55517b;
+$lavendar: #8683a4;
+$tan: #aea444;
+$blue: #21578a;
+$rose: #bd3632;
+$maroon: #5e172d;
+$darkblue: #002857;
+$brown: #65551c;
+$sand: #d3cd8b;
+$aqua: #007a87;
+
+// Neutral Health Colours
+
+$warmgrey3: #d1c6c0;
+$warmgrey7: #9e9689;
+$coolgrey3: #c9cac8;
+$coolgrey8: #8b8d8e;
+
+// Semantic Colours
+
+$neutral: $coolgrey3;
+$white: #fff;
+$black: #000;
+
+$primary-color: $uclaoldblue;
+$primary-color-alternate-state: $uclaoldbluedark;
+$secondary-color: $gold;
+$error-color: $rose;
+$error-color-dark: shade($rose, 20%);
+$error-color-dark-alt: shade($rose, 24%);
+$bullet-color: $warmgrey3;
+$footer-link-color: $white;
+$footer-link-color-hover: $uclayellowneon;
+$secondary-login-option-color: #526991;
+
+/////////////////////////////////////////
+///       TYPOGRAPHY / RHYTHM
+/////////////////////////////////////////
+
+$html-background: #d1e8f8 url('../images/skyline.jpg') no-repeat;
+
+$body-text-color: #666;
+$body-background-color: $white;
+
+$font-stack: ProximaNova, Verdana, sans-serif;
+$global-letter-spacing: 0.5px;
+
+$anchor-color: #0081dc;
+$anchor-color-hover: #0081dc;
+
+// prepare for media queries to shift base font and have that inherited down em chain
+body {
+	font-size: 100%;
+}
+
+$h1-font-size: 2em; 
+$h2-font-size: 1.5em;
+$h3-font-size: 1.25em;
+$h4-font-size: 1.125em;
+
+$p-font-size: 1em;
+$meta-font-size: .75em;
+
+$base-line-height: 1.375em;
+
+$default-spacing: 1em;
+$half-spacing: $default-spacing / 2;
+$double-spacing: $default-spacing * 2;
+$triple-spacing: $default-spacing * 3;
+$quad-spacing: $default-spacing * 4;
+$page-spacing: $default-spacing * 6;
+
+$global-border-radius: 3px;

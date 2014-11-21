@@ -52,13 +52,22 @@ $black: #000;
 $primary-color: $uclaoldblue;
 $primary-color-alternate-state: $uclaoldbluedark;
 $secondary-color: $gold;
+
 $error-color: $rose;
 $error-color-dark: shade($rose, 20%);
 $error-color-dark-alt: shade($rose, 24%);
-$bullet-color: $warmgrey3;
-$footer-link-color: $white;
-$footer-link-color-hover: $uclayellowneon;
+
 $secondary-login-option-color: #526991;
+
+$anchor-color: #0081dc; // taken from identity.uclahealth.org
+$anchor-color-hover: #0081dc;
+$bullet-color: $warmgrey3;
+
+$footer-link-color: $white;
+$footer-link-color-hover: $gold;
+
+$form-valid-color: $blue;
+$form-invalid-color: $rose;
 
 /////////////////////////////////////////
 ///       TYPOGRAPHY / RHYTHM
@@ -71,10 +80,6 @@ $body-background-color: $white;
 
 $font-stack: ProximaNova, Verdana, sans-serif;
 $global-letter-spacing: 0.5px;
-
-// taken from identity.uclahealth.org
-$anchor-color: #0081dc;
-$anchor-color-hover: #0081dc;
 
 // prepare for media queries to shift base font and have that inherited down em chain
 body {

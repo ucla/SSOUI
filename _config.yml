@@ -20,13 +20,13 @@ collections:
 defaults:
   -
     scope:
-      path: ""
+      path: "ucla-logon-mocks"
       type: "ucla-logon-mocks"
     values:
       layout: "ucla-logon"
   -
     scope:
-      path: ""
+      path: "medcenter-mocks"
       type: "medcenter-mocks"
     values:
       layout: "medcenter"

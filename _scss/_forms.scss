@@ -1,7 +1,5 @@
 // General form and button elements adapted from http://purecss.io/forms/ & http://purecss.io/buttons/
 
-@import "ucla-vars"; // WHY?!
-
 input, textarea {
 	width: 100%;
 	font-size: $h4-font-size;
@@ -27,7 +25,7 @@ select, input, textarea {
 select:focus, input:focus, textarea:focus {
 	outline: 0;
 	outline: thin dotted \9; /* IE6-9 */
-	border-color: $uclalightblue;
+	border-color: $form-valid-color;
 }
 
 select[disabled], input[disabled] {
@@ -38,13 +36,13 @@ select[disabled], input[disabled] {
 
 input:focus:invalid,
 select:focus:invalid {
-	color: darken($uclapinkneon, 5%);
-	border-color: $uclapinkneon;
+	color: darken($form-invalid-color, 5%);
+	border-color: $form-invalid-color;
 }
 
 input:focus:invalid:focus,
 select:focus:invalid:focus {
-	border-color: $uclapinkneon;
+	border-color: $form-invalid-color;
 }
 
 select {

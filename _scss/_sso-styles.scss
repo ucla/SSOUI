@@ -55,16 +55,16 @@ p {
 }
 
 a {
-	color: $anchor-font-color;
+	color: $anchor-color;
 	text-decoration: underline;
 	@include transition-property(color);
 	@include transition-duration(.15s);
 	&:visited { 
-		color: $anchor-font-color;
+		color: $anchor-color;
 	}
 	&:hover, &:focus {
 		text-decoration: underline;
-		color: $anchor-font-color-hover;
+		color: $anchor-color-hover;
 		outline: 0;
 	} 
 	&:focus {
@@ -194,7 +194,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 
 .error-box {
 	background: repeating-linear-gradient(45deg, $error-color-dark, $error-color-dark $half-spacing, $error-color-dark-alt $half-spacing, $error-color-dark-alt $default-spacing);
-	color: $uclapinkneon;
+	color: $error-color;
 	padding: $half-spacing;
 	border-radius: $global-border-radius;
 	text-align: center;

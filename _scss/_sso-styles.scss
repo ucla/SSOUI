@@ -32,7 +32,7 @@ h1 {
 		font-size: $h1-font-size;
 	}
 	line-height: $base-line-height * .9;
-	margin: 0;
+	margin: $half-spacing 0;
 }
 
 h2 {
@@ -257,8 +257,7 @@ article {
 	position: relative;
 	background: $body-background-color;
 	box-shadow: 0 1px 1px #347bad;
-	padding: 1em;
-	min-height: 12em;
+	padding: $half-spacing $default-spacing;
 	border-radius: $global-border-radius;
 	legend {
 		display: none;

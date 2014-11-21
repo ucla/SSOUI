@@ -54,7 +54,7 @@ select {
 
 fieldset {
 	margin: 0;
-	padding: $half-spacing 0;
+	padding: 0;
 	border: 0;
 }
 
@@ -66,6 +66,7 @@ legend {
 		font-size: $h2-font-size;
 	}
 	line-height: $base-line-height * 1.1;
+	margin-bottom: $half-spacing;
 	display: block;
 	width: 100%;
 	font-weight: normal;

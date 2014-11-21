@@ -1,17 +1,10 @@
-// http://identity.uclahealth.org/body.cfm?id=76
-
-// http://identity.uclahealth.org/body.cfm?id=75
-
-// http://identity.uclahealth.org/body.cfm?id=113
-
-
 /////////////////////////////////////////
 ///             LAYOUT
 /////////////////////////////////////////
 
 // breakpoints
-$grid-liquid: 34;
-$grid-elastic: 38.01em;
+$grid-liquid: 34em;
+$grid-elastic: 38em;
 
 // singularity.gs layout
 @include add-grid(4);
@@ -79,6 +72,7 @@ $body-background-color: $white;
 $font-stack: ProximaNova, Verdana, sans-serif;
 $global-letter-spacing: 0.5px;
 
+// taken from identity.uclahealth.org
 $anchor-color: #0081dc;
 $anchor-color-hover: #0081dc;
 
@@ -105,3 +99,8 @@ $quad-spacing: $default-spacing * 4;
 $page-spacing: $default-spacing * 6;
 
 $global-border-radius: 3px;
+
+
+// http://identity.uclahealth.org/body.cfm?id=76
+// http://identity.uclahealth.org/body.cfm?id=75
+// http://identity.uclahealth.org/body.cfm?id=113

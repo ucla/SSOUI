@@ -180,7 +180,7 @@ article, #sso, .secondary-button, .sp-support, .tertiary-links-wrapper {
 	li {
 		margin: $default-spacing 0;
 		@include breakpoint($grid-liquid) {
-			margin: inherit;
+			margin: 0 0 .5em;
 		}
 	}
 	@include breakpoint($grid-liquid) {

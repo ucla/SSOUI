@@ -1,0 +1,70 @@
+.logo {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	@include breakpoint($grid-liquid) {
+		width: 70%;
+	}
+}
+
+.login-form {
+	padding-bottom: 0;
+}
+
+#sso {
+	background: $body-background-color;
+	box-shadow: 0 1px 1px #347bad;
+	overflow: hidden;
+	border-radius: $global-border-radius;
+	padding: 0 7.5% 2.5%;
+	@include breakpoint($grid-elastic) {
+		padding: 0 4em 1em;
+	}
+	label {
+		display: none;
+	}
+	fieldset {
+		border: none;
+	}
+}
+
+.sso-submit {
+	width: 100%;
+	@include breakpoint($grid-liquid) {
+		@include grid-span(1, 1);
+	}
+	padding-top: 0;
+}
+
+.sso-links {
+	width: 100%;
+	li {
+		margin: $default-spacing 0;
+		@include breakpoint($grid-liquid) {
+			margin: 0 0 .5em;
+		}
+	}
+	@include breakpoint($grid-liquid) {
+		@include grid-span(3, 2);
+	}
+	@include clearfix;
+	font-size: $meta-font-size;
+	margin: 0;
+
+}
+
+.error-box {
+	background: repeating-linear-gradient(45deg, $error-color-dark, $error-color-dark $half-spacing, $error-color-dark-alt $half-spacing, $error-color-dark-alt $default-spacing);
+	color: $error-color;
+	padding: $half-spacing;
+	border-radius: $global-border-radius;
+	text-align: center;
+	margin-top: 0;
+}
+
+#sso .error-box {
+	width: 100%;
+	@include breakpoint($grid-liquid) {
+		width: 26.3em;
+	}
+}

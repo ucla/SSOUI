@@ -1,0 +1,100 @@
+.sp-support {
+	background: $sp-support-bg;
+	padding: $default-spacing;
+	margin: $default-spacing auto 0;
+	border-radius: $global-border-radius;
+	p, li {
+		font-size: $meta-font-size;
+	}
+	h2 {
+		font-size: $h4-font-size;
+		margin-top: 0;
+	}
+	h3 {
+		font-size: $p-font-size;
+		margin-top: 0;
+	}
+}
+
+.primary-button {
+	background-color: $primary-color;
+	color: #fff;
+	font-size: $h4-font-size;
+	&:hover {
+		background-color: $secondary-color;
+		color: $primary-color-alternate-state;
+	}
+}
+
+.secondary-button {
+	background-color: $secondary-login-option-color;
+	color: $white;
+	margin: $default-spacing auto 0;
+	display: block;
+	font-size: $meta-font-size;
+	padding: $default-spacing;
+	@include breakpoint($grid-liquid) {
+		font-size: $p-font-size;
+		padding: $half-spacing;
+	}
+	&:hover {
+		background-color: darken($secondary-login-option-color, 10%);
+		color: $white;
+	}
+}
+
+article {
+	position: relative;
+	background: $body-background-color;
+	box-shadow: 0 1px 1px #347bad;
+	padding: $half-spacing $default-spacing;
+	border-radius: $global-border-radius;
+	legend {
+		display: none;
+	}
+}
+
+.badge {
+	@include badge();
+}
+
+#report {
+	overflow: hidden;
+	label {
+		display: block;
+		margin-bottom: $half-spacing / 2;
+	}
+}
+
+.loading i {
+	font-size: $h1-font-size * 2;
+	margin: $default-spacing 40%;
+	@include breakpoint($grid-liquid) {
+		margin: $default-spacing 45%;
+	}
+}
+
+.tertiary-links {
+	background: rgba($black, .75);
+	border-top: 1px solid $primary-color-alternate-state;
+	padding: $half-spacing;
+	color: lighten($body-text-color, 40%);
+}
+
+.tertiary-links-wrapper {
+	p {
+		margin: 0 auto;
+		font-size: $meta-font-size;
+	}
+	a {
+		text-decoration: none;
+		color: $footer-link-color;
+		&:visited { 
+			color: $footer-link-color;
+		}
+		&:hover, &:focus {
+			color: $footer-link-color-hover;
+			text-decoration: underline;
+		} 
+	}
+}

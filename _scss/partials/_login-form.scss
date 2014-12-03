@@ -41,7 +41,7 @@
 	li {
 		margin: $default-spacing 0;
 		@include breakpoint($grid-liquid) {
-			margin: 0 0 .5em;
+			margin: 0;
 		}
 	}
 	@include breakpoint($grid-liquid) {
@@ -50,15 +50,6 @@
 	@include clearfix;
 	font-size: $meta-font-size;
 	margin: 0;
-}
-
-.error-box {
-	background: repeating-linear-gradient(45deg, $error-color-dark, $error-color-dark $half-spacing, $error-color-dark-alt $half-spacing, $error-color-dark-alt $default-spacing);
-	color: $error-color;
-	padding: $half-spacing;
-	border-radius: $global-border-radius;
-	text-align: center;
-	margin-top: 0;
 }
 
 #sso .error-box {

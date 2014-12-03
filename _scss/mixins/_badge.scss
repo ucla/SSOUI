@@ -7,7 +7,7 @@
 	background: $background;
 	@include breakpoint($grid-liquid) {
 		top: -$double-spacing;
-		right: -$triple-spacing;
+		right: -$quad-spacing;
 	}
 	&:before {
 		content: "";

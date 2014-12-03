@@ -58,6 +58,15 @@ article {
 	@include badge();
 }
 
+.error-box {
+	background: repeating-linear-gradient(45deg, $error-color-dark, $error-color-dark $half-spacing, $error-color-dark-alt $half-spacing, $error-color-dark-alt $default-spacing);
+	color: $error-color;
+	padding: $half-spacing;
+	border-radius: $global-border-radius;
+	text-align: center;
+	margin-top: 0;
+}
+
 #report {
 	overflow: hidden;
 	label {

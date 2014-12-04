@@ -77,14 +77,14 @@ section[role="main"] ul {
 	padding-left: .1em;
 	margin-bottom: 0;
 	li {
-		margin: -.4em 0 0;
+		margin: -.15em 0 0;
 	}
 	li:before {
 		color: $bullet-color;
 		content: "•";
 		position: relative;
-		font-size: 1.75em;
-		left: -.15em;
+		font-size: 1.6em;
+		left: -.13em;
 		top: .1em;
 	}
 }

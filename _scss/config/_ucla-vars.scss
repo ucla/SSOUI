@@ -49,7 +49,7 @@ $error-color-dark: darken($uclapinkneon, 41%);
 $error-color-dark-alt: darken($uclapinkneon, 46%);
 
 $secondary-login-option-color: #526991;
-$sp-support-bg: rgba(lighten($neutral, 10%), .4);
+$sp-support-bg: rgba($neutral, .45);
 
 $anchor-color: $uclapurpleneon;
 $anchor-color-hover: #1e4b87;

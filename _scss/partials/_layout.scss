@@ -1,7 +1,7 @@
 section[role="main"] {
 	margin: $double-spacing auto $quad-spacing * 2;
 	@include breakpoint($grid-liquid) {
-		margin: 13% auto;
+		margin: 14% auto;
 	}
 }
 

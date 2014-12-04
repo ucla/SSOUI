@@ -28,6 +28,14 @@
 	}
 }
 
+#sso .error-box {
+	width: 100%;
+	font-size: $h4-font-size;
+	@include breakpoint($grid-liquid) {
+		width: 23.3em;
+	}
+}
+
 .sso-submit {
 	width: 100%;
 	@include breakpoint($grid-liquid) {
@@ -38,12 +46,6 @@
 
 .sso-links {
 	width: 100%;
-	li {
-		margin: $default-spacing 0;
-		@include breakpoint($grid-liquid) {
-			margin: -.4em 0 0;
-		}
-	}
 	@include breakpoint($grid-liquid) {
 		@include grid-span(3, 2);
 	}
@@ -52,10 +54,29 @@
 	margin: 0;
 }
 
-#sso .error-box {
-	width: 100%;
+.primary-button {
+	background-color: $primary-color;
+	color: #fff;
 	font-size: $h4-font-size;
+	&:hover {
+		background-color: $secondary-color;
+		color: $primary-color-alternate-state;
+	}
+}
+
+.secondary-button {
+	background-color: $secondary-login-option-color;
+	color: $white;
+	margin: $default-spacing auto 0;
+	display: block;
+	font-size: $meta-font-size;
+	padding: $default-spacing;
 	@include breakpoint($grid-liquid) {
-		width: 23.3em;
+		font-size: $p-font-size;
+		padding: $half-spacing;
+	}
+	&:hover {
+		background-color: darken($secondary-login-option-color, 10%);
+		color: $white;
 	}
 }

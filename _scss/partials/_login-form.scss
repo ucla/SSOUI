@@ -18,7 +18,7 @@
 	border-radius: $global-border-radius;
 	padding: 0 7.5% 2.5%;
 	@include breakpoint($grid-elastic) {
-		padding: 0 4em 1em;
+		padding: 0 4em 1.5em;
 	}
 	label {
 		display: none;

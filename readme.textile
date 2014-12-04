@@ -11,6 +11,6 @@ h2. view locally
 # $ @bundle exec jekyll serve --baseurl ""@
 # visit 0.0.0.0:4000 in a browser of your choice
 
-h3. Theming
+h3. theming
 
 # after the above run $ @bundle exec compass watch@ to compile SCSS

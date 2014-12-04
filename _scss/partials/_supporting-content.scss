@@ -30,6 +30,12 @@ article {
 .error-box {
 	background: repeating-linear-gradient(45deg, $error-color-dark, $error-color-dark $half-spacing, $error-color-dark-alt $half-spacing, $error-color-dark-alt $default-spacing);
 	color: $error-color;
+	h2, h3, p {
+		color: $error-color;
+	}
+	p {
+		font-size: $meta-font-size;
+	}
 	padding: $half-spacing;
 	border-radius: $global-border-radius;
 	text-align: center;

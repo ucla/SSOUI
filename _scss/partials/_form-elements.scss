@@ -33,7 +33,7 @@ select:focus, input:focus, textarea:focus {
 select[disabled], input[disabled] {
 	cursor: not-allowed !important;
 	background-color: #eaeded;
-	color: #cad2d3;
+	color: $neutral;
 }
 
 input:focus:invalid,

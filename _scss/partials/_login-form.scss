@@ -31,8 +31,12 @@
 #sso .error-box {
 	width: 100%;
 	@include breakpoint($grid-liquid) {
-		width: 23.3em;
+		width: 26em;
 	}
+	h2 {
+		font-size: $h3-font-size;
+	}
+	margin-bottom: $default-spacing;
 }
 
 .sso-submit {

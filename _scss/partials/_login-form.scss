@@ -65,6 +65,18 @@
 	}
 }
 
+.or {
+	display: block;
+	border: 1px solid $neutral;
+	border-radius: 900px;
+	width: 2.5em;
+	padding: .5em;
+	margin: 1.5em auto;
+	@include breakpoint($grid-liquid) {
+		margin: 4em auto 1.5em;
+	}
+}
+
 .secondary-button {
 	background-color: $secondary-login-option-color;
 	color: $white;
@@ -82,17 +94,5 @@
 	&:hover {
 		background-color: darken($secondary-login-option-color, 10%);
 		color: $white;
-	}
-}
-
-.or {
-	display: block;
-	border: 1px solid $neutral;
-	border-radius: 900px;
-	width: 2.5em;
-	padding: .5em;
-	margin: 1.5em auto;
-	@include breakpoint($grid-liquid) {
-		margin: 4em auto 1.5em;
 	}
 }

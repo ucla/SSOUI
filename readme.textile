@@ -6,6 +6,7 @@ h2. view locally
 
 # download/clone the repo somewhere
 # navigate to that somewhere dir on the command line
+# $ @gem install bundler@ (if it's not already on your system)
 # $ @bundle install@
 # $ @bundle exec jekyll serve --baseurl ""@
 # if you want to theme $ @bundle exec compass watch@

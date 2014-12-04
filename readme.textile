@@ -9,5 +9,8 @@ h2. view locally
 # $ @gem install bundler@ (if it's not already on your system)
 # $ @bundle install@
 # $ @bundle exec jekyll serve --baseurl ""@
-# if you want to theme $ @bundle exec compass watch@
 # visit 0.0.0.0:4000 in a browser of your choice
+
+h3. Theming
+
+# after the above run $ @bundle exec compass watch@ to compile SCSS

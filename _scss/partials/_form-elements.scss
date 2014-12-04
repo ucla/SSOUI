@@ -58,10 +58,9 @@ fieldset {
 
 legend {
 	text-align: center;
-	font-size: $h4-font-size;
+	font-size: $h2-font-size;
 	@include breakpoint($grid-liquid) {
 		text-align: left;
-		font-size: $h2-font-size;
 	}
 	line-height: $base-line-height * 1.1;
 	margin-bottom: $half-spacing;

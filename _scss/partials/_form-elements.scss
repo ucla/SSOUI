@@ -3,6 +3,7 @@
 input, textarea {
 	width: 100%;
 	font-size: $h4-font-size;
+	background: $input-background-color;
 	@include breakpoint($grid-liquid) {
 		width: 94%;
 	}
@@ -26,6 +27,7 @@ select:focus, input:focus, textarea:focus {
 	outline: 0;
 	outline: thin dotted \9; /* IE6-9 */
 	border-color: $form-valid-color;
+	background: $input-background-color-focus;
 }
 
 select[disabled], input[disabled] {

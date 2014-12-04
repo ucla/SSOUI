@@ -30,7 +30,6 @@
 
 #sso .error-box {
 	width: 100%;
-	font-size: $h4-font-size;
 	@include breakpoint($grid-liquid) {
 		width: 23.3em;
 	}
@@ -46,12 +45,14 @@
 
 .sso-links {
 	width: 100%;
+	margin-bottom: $default-spacing;
 	@include breakpoint($grid-liquid) {
 		@include grid-span(3, 2);
+		margin: 0;
 	}
 	@include clearfix;
 	font-size: $meta-font-size;
-	margin: 0;
+
 }
 
 .primary-button {
@@ -67,10 +68,13 @@
 .secondary-button {
 	background-color: $secondary-login-option-color;
 	color: $white;
-	margin: $default-spacing auto 0;
 	display: block;
-	font-size: $meta-font-size;
+	width: 100%;
 	padding: $default-spacing;
+	@include breakpoint($grid-liquid) {
+		width: 26.5em;
+	}
+	font-size: $meta-font-size;
 	@include breakpoint($grid-liquid) {
 		font-size: $p-font-size;
 		padding: $half-spacing;
@@ -78,5 +82,17 @@
 	&:hover {
 		background-color: darken($secondary-login-option-color, 10%);
 		color: $white;
+	}
+}
+
+.or {
+	display: block;
+	border: 1px solid $neutral;
+	border-radius: 900px;
+	width: 2.5em;
+	padding: .5em;
+	margin: 1.5em auto;
+	@include breakpoint($grid-liquid) {
+		margin: 4em auto 1.5em;
 	}
 }

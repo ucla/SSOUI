@@ -52,6 +52,14 @@ article {
 	}
 }
 
+.meta {
+	font-size: $meta-font-size;
+}
+
+.center {
+	text-align: center;
+}
+
 .tertiary-links {
 	background: rgba($black, .75);
 	border-top: 1px solid $primary-color-alternate-state;

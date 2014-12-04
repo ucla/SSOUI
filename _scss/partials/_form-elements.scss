@@ -47,6 +47,18 @@ select:focus:invalid:focus {
 	border-color: $form-invalid-color;
 }
 
+::-webkit-input-placeholder {
+  color: darken($neutral, 20%);
+}
+
+::-moz-placeholder {
+  color: darken($neutral, 20%);
+}
+
+:-ms-input-placeholder {
+  color: darken($neutral, 20%);
+}
+
 select {
 	border: 1px solid $neutral;
 	background-color: $white;

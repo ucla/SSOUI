@@ -1,13 +1,13 @@
 @mixin badge($background: $error-color, $color: $error-color-dark, $base-size: 2.5em) {
 	position: absolute;
-	bottom: -$quad-spacing;
+	bottom: -$triple-spacing * 1.5;
 	right: $double-spacing;
 	width: $base-size * 2.5;
 	height: $base-size * 2;
 	background: $background;
 	@include breakpoint($grid-liquid) {
-		top: -$double-spacing;
-		right: -$quad-spacing;
+		top: -$triple-spacing;
+		right: -$double-spacing;
 	}
 	&:before {
 		content: "";

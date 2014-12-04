@@ -81,14 +81,12 @@
 	background-color: $secondary-login-option-color;
 	color: $white;
 	display: block;
-	width: 100%;
-	padding: $default-spacing;
-	@include breakpoint($grid-liquid) {
-		width: 26.5em;
-	}
 	font-size: $meta-font-size;
+	padding: $default-spacing;
+	width: 100%;
 	@include breakpoint($grid-liquid) {
-		font-size: $p-font-size;
+		width: 22em;
+		margin: 0 auto;
 		padding: $half-spacing;
 	}
 	&:hover {

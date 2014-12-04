@@ -76,6 +76,9 @@ section[role="main"] ul {
 	list-style: none;
 	padding-left: .1em;
 	margin-bottom: 0;
+	li {
+		margin: -.4em 0 0;
+	}
 	li:before {
 		color: $bullet-color;
 		content: "•";
@@ -84,4 +87,8 @@ section[role="main"] ul {
 		left: -.15em;
 		top: .1em;
 	}
+}
+
+.touch section[role="main"] li {
+	margin: $default-spacing 0;
 }

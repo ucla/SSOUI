@@ -5,10 +5,8 @@
 
 	Warren Leung -- Lead, Java Engineering
 	Carl Uebelhart -- UX, Front End Dev, Design -- @erutan
-	Karthik Doppola -- Java Engineering
-	Xiaoling Zhang -- Suppport
 	
-	Albert Wu -- User Stories, Tanking
+	Albert Wu -- User Stories, Tanking, UX Critiques
 
 # THANKS
 
@@ -19,5 +17,5 @@
 	HTML5, Jekyll
 	jQuery, Modernizr
 	SASS, COMPASS
-	Bundler, Placeholdr
+	Bundler, Webshims
 	Shibboleth

@@ -54,9 +54,7 @@
 		@include grid-span(3, 2);
 		margin: 0;
 	}
-	@include clearfix;
 	font-size: $meta-font-size;
-
 }
 
 .primary-button {
@@ -69,16 +67,37 @@
 	}
 }
 
-.or {
-	display: block;
-	border: 1px solid $neutral;
-	border-radius: 900px;
-	width: 2.5em;
-	padding: .5em;
-	margin: 1.5em auto;
-	@include breakpoint($grid-liquid) {
-		margin: 4em auto 1.5em;
-	}
+// -------- or --------
+
+.line-thru {
+  @include clearfix;
+  display: block;
+  padding: 1em 0;
+  margin-bottom: -1em;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  &:before {
+    width: 40px;
+    height: 10px;
+    background-color: #fff;
+    content: '';
+    margin: -5px 0 0 -20px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+  }
+  &:after {
+    border-bottom: 1px solid $neutral;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 49%;
+    width: 100%;
+    z-index: -2;
+  }
 }
 
 .secondary-button {

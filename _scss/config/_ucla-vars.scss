@@ -16,23 +16,24 @@ $grid-elastic: 38em;
 
 // Primary UCLA Colours
 
-$uclablue: #3399cc;
-$uclasafeblue: #347bad;
-$uclagold: #ffe800;
+$ucla-blue: #3399cc;
+$ucla-blue-safe: #347bad;
+$ucla-gold: #ffe800;
 
 // Secondary UCLA Colours
 
-$ucladarkblue: #0055a6;
-$uclalightblue: #00a5e5;
+$ucla-blue-dark: #0055a6;
+$ucla-blue-light: #00a5e5;
 
 // Tertiary UCLA Colours
 
-$uclayellowneon: #ffff00;
-$uclagreenneon: #00ff87;
-$uclapinkneon: #ff00a5;
-$uclaliteblueneon: #00ffff;
-$uclapurpleneon: #8237ff;
-$uclagrey: #666;
+$ucla-yellow: #ffff00;
+$ucla-green: #00ff87;
+$ucla-pink: #ff00a5;
+$ucla-cyan: #00ffff;
+$ucla-purple: #8237ff;
+$ucla-grey: #666;
+$ucla-orange: #ffb300;
 
 // Semantic Colours
 
@@ -40,28 +41,33 @@ $neutral: #ccc;
 $white: #fff;
 $black: #000;
 
-$primary-color: $uclasafeblue;
-$primary-color-alternate-state: $ucladarkblue;
-$secondary-color: $uclagold;
+$primary-color: $ucla-blue-safe;
+$primary-color-alternate-state: $ucla-blue-dark;
+$secondary-color: $ucla-gold;
 
-$error-color: $uclapinkneon;
-$error-color-dark: darken($uclapinkneon, 42%);
-$error-color-dark-alt: darken($uclapinkneon, 46%);
+$error-color: $ucla-pink;
+$error-color-dark: darken($ucla-pink, 42%);
+$error-color-dark-alt: darken($ucla-pink, 46%);
+
+$anchor-color: $ucla-purple;
+$anchor-color-hover: #1e4b87;
+$bullet-color: $ucla-green;
+
+$footer-link-color: $white;
+$footer-link-color-hover: $ucla-yellow;
+
+$form-valid-color: $ucla-blue-light;
+$form-invalid-color: $ucla-pink;
+$input-background-color: lighten($neutral, 19%);
+$input-background-color-focus: $white;
+
+$background-light-grey: lighten($neutral, 12%);
+$alternate-light-grey: lighten($neutral, 15%);
+
+// SSO Specific
 
 $secondary-login-option-color: #526991;
 $sp-support-bg: rgba($white, .55);
-
-$anchor-color: $uclapurpleneon;
-$anchor-color-hover: #1e4b87;
-$bullet-color: $uclagreenneon;
-
-$footer-link-color: $white;
-$footer-link-color-hover: $uclayellowneon;
-
-$form-valid-color: $uclalightblue;
-$form-invalid-color: $uclapinkneon;
-$input-background-color: lighten($neutral, 19%);
-$input-background-color-focus: $white;
 
 /////////////////////////////////////////
 ///       TYPOGRAPHY / RHYTHM

@@ -14,12 +14,33 @@ $grid-elastic: 38em;
 ///            COLOURS
 /////////////////////////////////////////
 
+// Primary UCLA Colours
+
+$ucla-blue: #3399cc;
+$ucla-blue-safe: #347bad;
+$ucla-gold: #ffe800;
+
+// Secondary UCLA Colours
+
+$ucla-blue-dark: #0055a6;
+$ucla-blue-light: #00a5e5;
+
+// Tertiary UCLA Colours
+
+$ucla-yellow: #ffff00;
+$ucla-green: #00ff87;
+$ucla-pink: #ff00a5;
+$ucla-cyan: #00ffff;
+$ucla-purple: #8237ff;
+$ucla-grey: #666;
+$ucla-orange: #ffb300;
+
 // NOTE: darken w/ shade($foo, 20%), lighten w/ tint($foo, 70%)
 
-// Primary Colour
+// Primary Health Colour
 
-$uclaoldblue: #526991;
-$uclaoldbluedark: #40537B;
+$ucla-blue-old: #526991;
+$ucla-blue-old-dark: #40537B;
 
 // Secondary Health Colours
 
@@ -49,16 +70,13 @@ $neutral: $coolgrey3;
 $white: #fff;
 $black: #000;
 
-$primary-color: $uclaoldblue;
-$primary-color-alternate-state: $uclaoldbluedark;
+$primary-color: $ucla-blue-old;
+$primary-color-alternate-state: $ucla-blue-old-dark;
 $secondary-color: $gold;
 
 $error-color: $white;
 $error-color-dark: shade($rose, 20%);
 $error-color-dark-alt: shade($rose, 24%);
-
-$secondary-login-option-color: #347bad;
-$sp-support-bg: $neutral;
 
 $anchor-color: #0081dc; // taken from identity.uclahealth.org
 $anchor-color-hover: #0081dc;
@@ -72,11 +90,19 @@ $form-invalid-color: $rose;
 $input-background-color: lighten($neutral, 19.1%);
 $input-background-color-focus: $white;
 
+$background-light-grey: lighten($neutral, 12%);
+$alternate-light-grey: lighten($neutral, 15%);
+
+// SSO Specific
+
+$secondary-login-option-color: #526991;
+$sp-support-bg: rgba($white, .55);
+
 /////////////////////////////////////////
 ///       TYPOGRAPHY / RHYTHM
 /////////////////////////////////////////
 
-$html-background: $uclaoldblue;
+$html-background: $ucla-blue-old;
 
 $body-text-color: #444;
 $body-background-color: $white;

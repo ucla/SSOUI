@@ -11,13 +11,17 @@
 @import 'normalize/links';
 @import 'normalize/forms';
 
-// UCLA Single Sign On Specfic
+// UCLA Single Sign On vars
 @import 'config/ucla-vars';
 
-// General SSO Styles 
-@import 'mixins/badge';
-@import 'partials/global-elements';
-@import 'partials/form-elements';
-@import 'partials/layout';
-@import 'partials/login-form';
-@import 'partials/supporting-content';
+// general IAM partials
+@import 'ucla-iam/global-elements';
+@import 'ucla-iam/tables';
+@import 'ucla-iam/form-elements';
+@import 'ucla-iam/flair';
+@import 'ucla-iam/polyfill-overrides';
+
+// app specific styles
+@import 'ucla-app/layout';
+@import 'ucla-app/login-form';
+@import 'ucla-app/supporting-content';

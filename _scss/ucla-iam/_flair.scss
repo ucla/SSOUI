@@ -3,12 +3,12 @@
 /////////////////////////////////////////
 
 //container
-.badged {
+.notification-badged {
   position: relative;
 }
 
 //element w/ badge
-.badge:after{
+.notification-badge:after{
   content:attr(data-count);
   position: absolute;
   background: $ucla-pink;
@@ -27,7 +27,6 @@
 /////////////////////////////////////////
 ///        ICON CONTAINER BADGE
 /////////////////////////////////////////
-
 
 @mixin badge($background: $error-color, $color: $error-color-dark, $base-size: 2.5em) {
 	position: absolute;

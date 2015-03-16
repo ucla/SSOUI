@@ -1,7 +1,10 @@
-// initialize placholdr
+// load & configure webshims
 
-$(function () {
-	$(document).placeholdr();
+webshim.polyfill('forms');
+
+webshim.setOptions("forms", {
+	lazyCustomMessages: true,
+	replaceValidationUI: false,
 });
 
 // js autofocus for older browsers

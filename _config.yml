@@ -32,7 +32,7 @@ defaults:
       layout: "medcenter"
   -
     scope:
-      path: ""
+      path: "as-app-mocks"
       type: "as-app-mocks"
     values:
       layout: "as-app"

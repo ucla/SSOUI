@@ -1,6 +1,6 @@
 html {
 	background: $html-background;
-  background-size: cover;
+  background-size: $html-background-size;
 	box-sizing: border-box;
 	position: relative; 
 	min-height: 100%;

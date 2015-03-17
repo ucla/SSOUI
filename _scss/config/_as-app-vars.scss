@@ -41,8 +41,8 @@ $neutral: #ccc;
 $white: #fff;
 $black: #000;
 
-$primary-color: $ucla-blue-safe;
-$primary-color-alternate-state: $ucla-blue-dark;
+$primary-color: $black;
+$primary-color-alternate-state: $black;
 $secondary-color: $ucla-gold;
 
 $error-color: $ucla-pink;
@@ -67,13 +67,14 @@ $alternate-light-grey: lighten($neutral, 15%);
 // SSO Specific
 
 $secondary-login-option-color: #526991;
-$sp-support-bg: rgba($white, .55);
+$sp-support-bg: rgba($neutral, .85);
 
 /////////////////////////////////////////
 ///       TYPOGRAPHY / RHYTHM
 /////////////////////////////////////////
 
-$html-background: #d1e8f8 url('../images/skyline.jpg') no-repeat;
+$html-background: $neutral url('../images/app.png');
+$html-background-size: auto;
 
 $body-text-color: #444;
 $body-background-color: $white;

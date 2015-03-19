@@ -9,7 +9,6 @@ webshim.setOptions('forms', {
   replaceValidationUI: true,
   iVal: {
     "recheckDelay": 200,
-    "errorBoxClass": "error-box"
   }
 });
 

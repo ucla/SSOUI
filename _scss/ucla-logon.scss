@@ -8,20 +8,24 @@
 @import 'normalize-version';
 @import 'normalize/html5';
 @import 'normalize/base';
-@import 'normalize/links';
+// @import 'normalize/links';
+// @import 'normalize/typography';
+// @import 'normalize/embeds';
+@import 'normalize/groups';
 @import 'normalize/forms';
+// @import 'normalize/tables';
 
 // UCLA Single Sign On vars
 @import 'config/ucla-vars';
 
-// general IAM partials
-@import 'ucla-iam/global-elements';
-@import 'ucla-iam/tables';
-@import 'ucla-iam/form-elements';
-@import 'ucla-iam/flair';
-@import 'ucla-iam/polyfill-overrides';
+// general IAM partials - DO NOT EDIT
+@import 'ucla-iam-core/global-elements';
+@import 'ucla-iam-core/tables';
+@import 'ucla-iam-core/form-elements';
+@import 'ucla-iam-core/flair';
+@import 'ucla-iam-core/polyfill-overrides';
 
 // app specific styles
-@import 'ucla-app/layout';
-@import 'ucla-app/login-form';
-@import 'ucla-app/supporting-content';
+@import 'ucla-this-app/layout';
+@import 'ucla-this-app/login-form';
+@import 'ucla-this-app/supporting-content';

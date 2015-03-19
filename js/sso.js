@@ -1,11 +1,14 @@
 // load & configure webshims
 
-webshim.polyfill('forms');
-
-webshim.setOptions("forms", {
+webshim.setOptions('forms', {
+	//set lazyCustomMessages to true
 	lazyCustomMessages: true,
-	replaceValidationUI: false,
+	//show custom styleable validation bubble
+	replaceValidationUI: true
 });
+
+//start polyfilling
+webshim.polyfill('forms');
 
 // js autofocus for older browsers
 

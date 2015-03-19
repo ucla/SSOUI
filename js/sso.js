@@ -1,4 +1,6 @@
-// load & configure webshims
+/////////////////////////////////////////
+///     load & configure webshims
+/////////////////////////////////////////
 
 webshim.setOptions('forms', {
   //set lazyCustomMessages to true
@@ -14,9 +16,9 @@ webshim.setOptions('forms', {
 //start polyfilling
 webshim.polyfill('forms');
 
-
-
-// disable submit if inputs not filled
+/////////////////////////////////////////
+///  disable submit when inputs empty
+/////////////////////////////////////////
 
 $(document).ready(function() {
   var $submit = $("button[type=submit]"),

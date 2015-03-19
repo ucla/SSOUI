@@ -27,21 +27,6 @@ article {
 	@include badge();
 }
 
-.error-box {
-	background: repeating-linear-gradient(45deg, $error-color-dark, $error-color-dark $half-spacing, $error-color-dark-alt $half-spacing, $error-color-dark-alt $default-spacing);
-	color: $error-color;
-	h2, h3, p {
-		color: $error-color;
-	}
-	p {
-		font-size: $meta-font-size;
-	}
-	padding: $half-spacing;
-	border-radius: $global-border-radius;
-	text-align: center;
-	margin-top: 0;
-}
-
 #report {
 	overflow: hidden;
 	label {
@@ -55,38 +40,5 @@ article {
 	margin: $default-spacing 40%;
 	@include breakpoint($grid-liquid) {
 		margin: $default-spacing 45%;
-	}
-}
-
-.meta {
-	font-size: $meta-font-size;
-}
-
-.center {
-	text-align: center;
-}
-
-.tertiary-links {
-	background: rgba($black, .75);
-	border-top: 1px solid $ucla-blue-light;
-	padding: $half-spacing;
-	color: lighten($body-text-color, 40%);
-}
-
-.tertiary-links-wrapper {
-	p {
-		margin: 0 auto;
-		font-size: $meta-font-size;
-	}
-	a {
-		text-decoration: none;
-		color: $footer-link-color;
-		&:visited { 
-			color: $footer-link-color;
-		}
-		&:hover, &:focus {
-			color: $footer-link-color-hover;
-			text-decoration: underline;
-		} 
 	}
 }

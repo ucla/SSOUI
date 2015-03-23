@@ -2,7 +2,12 @@
 // options in sso.js
 
 .ws-errorbox {
+  width: 100%;
+  margin-top: -$half-spacing;
   @extend .error-box;
+  p {
+    text-align: left;
+  }
 }
 
 .ws-errormessage {
@@ -24,5 +29,5 @@ input.ws-date {
 }
 
 .date-input-buttons {
-  margin-bottom: $p-font-size; 
+  margin-bottom: $p-font-size;
 }

@@ -8,6 +8,7 @@ webshim.setOptions('forms', {
   //show custom styleable validation bubble
   replaceValidationUI: true,
   handleBubble: 'hide',
+  fieldWrapper: '.fieldset',
   iVal: {
     "recheckDelay": 200,
   }

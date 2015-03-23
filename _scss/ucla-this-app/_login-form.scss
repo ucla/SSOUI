@@ -39,7 +39,7 @@
 	margin-bottom: $default-spacing;
 }
 
-.sso-submit {
+.input[type="submit"] {
 	width: 100%;
 	@include breakpoint($grid-liquid) {
 		@include grid-span(1, 1);

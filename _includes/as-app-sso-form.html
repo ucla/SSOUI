@@ -1,24 +1,24 @@
 <form id="sso" role="form" action="/" method="post" class="ws-validate">
 
-	<img src="{{ site.baseurl }}/images/ucla-black.png" alt="UCLA" class="logo">
+  <img src="{{ site.baseurl }}/images/ucla-black.png" alt="UCLA" class="logo">
 
-	<fieldset class="login-form">
-		<legend>Sign In using this application's UCLA Logon Account</legend>
+  <legend>Sign In using this application's UCLA Logon Account</legend>
 
-		<label for="logon">Account ID</label>
-		<input id="logon" name="logon" type="text" placeholder="Application UCLA Logon ID" aria-required="true" pattern=".{3,15}" required autofocus data-errormessage="Logon IDs must be between 3 and 15 characters long" >
+  <fieldset class="fieldset">
+    <label for="logon">Account ID</label>
+    <input id="logon" name="logon" type="text" placeholder="Application UCLA Logon ID" aria-required="true" pattern=".{3,15}" required autofocus data-errormessage="Logon IDs must be between 3 and 15 characters long">
+  </fieldset>
 
-		<label for="pass">Password</label>
-		<input id="pass" name="pass" type="password" placeholder="Application UCLA Logon Password" aria-required="true" pattern=".{8,128}" required data-errormessage="Passwords must be at least 8 characters long">
-	</fieldset>
+  <fieldset class="fieldset">
+    <label for="pass">Password</label>
+    <input id="pass" name="pass" type="password" placeholder="Application UCLA Logon Password" aria-required="true" pattern=".{8,128}" required data-errormessage="Passwords must be at least 8 characters long">
+  </fieldset>
 
-	<fieldset class="sso-submit">
-		<button class="primary-button" type="submit" name="sso">Sign In</button>
-	</fieldset>
+  <button class="primary-button" type="submit" name="sso-submit">Sign In</button>
 
-	<ul class="sso-links">
-		<li><a href="#">Forgot UCLA Logon ID or Password?</a></li>
-		<li><a href="#">Need a UCLA Logon ID?</a></li>
-	</ul>
+  <ul class="sso-links">
+    <li><a href="#">Forgot UCLA Logon ID or Password?</a></li>
+    <li><a href="#">Need a UCLA Logon ID?</a></li>
+  </ul>
 
 </form>

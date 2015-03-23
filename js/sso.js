@@ -7,6 +7,7 @@ webshim.setOptions('forms', {
   lazyCustomMessages: true,
   //show custom styleable validation bubble
   replaceValidationUI: true,
+  handleBubble: 'hide',
   iVal: {
     "recheckDelay": 200,
   }

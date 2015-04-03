@@ -10,7 +10,7 @@ webshim.setOptions('forms', {
   handleBubble: 'hide',
   fieldWrapper: '.fieldset',
   iVal: {
-    "recheckDelay": 200,
+    "recheckDelay": 100,
   }
 });
 

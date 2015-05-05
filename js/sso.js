@@ -36,3 +36,13 @@ $(document).ready(function() {
     $submit.prop("disabled", !checkEmpty());
   }).blur(); // trigger an initial blur
 });
+
+/////////////////////////////////////////
+///  countdown timer
+/////////////////////////////////////////
+
+$(function(){
+	$("#countdown").countdowntimer({
+		minutes : 5
+	});
+});

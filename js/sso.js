@@ -18,11 +18,6 @@
   webshim.polyfill('forms');
 })();
 
-// hack for autofocus for logon input
-$(document).ready(function() {
-  $("input[name='logon']").focus();
-}
-
 /////////////////////////////////////////
 ///  disable submit when inputs empty
 /////////////////////////////////////////

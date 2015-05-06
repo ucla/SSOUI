@@ -48,15 +48,15 @@ select:focus:invalid:focus {
 }
 
 ::-webkit-input-placeholder {
-  color: darken($neutral, 20%);
+  color: $neutral;
 }
 
 ::-moz-placeholder {
-  color: darken($neutral, 20%);
+  color: $neutral;
 }
 
 :-ms-input-placeholder {
-  color: darken($neutral, 20%);
+  color: $neutral;
 }
 
 select {

@@ -45,6 +45,6 @@ $(document).ready(function() {
 // http://harshen.github.io/jquery-countdownTimer/
 $(function(){
 	$("#countdown").countdowntimer({
-		minutes : 5
+		minutes : 1
 	});
 });

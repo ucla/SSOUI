@@ -41,6 +41,7 @@ $(document).ready(function() {
 ///  countdown timer
 /////////////////////////////////////////
 
+// http://harshen.github.io/jquery-countdownTimer/
 $(function(){
 	$("#countdown").countdowntimer({
 		minutes : 5

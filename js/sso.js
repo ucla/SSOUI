@@ -1,21 +1,27 @@
 /////////////////////////////////////////
 ///     load & configure webshims
 /////////////////////////////////////////
+(function () {
+  webshim.setOptions('forms', {
+    //set lazyCustomMessages to true
+    lazyCustomMessages: true,
+    //show custom styleable validation bubble
+    replaceValidationUI: true,
+    handleBubble: 'hide',
+    fieldWrapper: '.fieldset',
+    iVal: {
+      "recheckDelay": 100,
+    }
+  });
+  
+  //start polyfilling
+  webshim.polyfill('forms');
+})();
 
-webshim.setOptions('forms', {
-  //set lazyCustomMessages to true
-  lazyCustomMessages: true,
-  //show custom styleable validation bubble
-  replaceValidationUI: true,
-  handleBubble: 'hide',
-  fieldWrapper: '.fieldset',
-  iVal: {
-    "recheckDelay": 100,
-  }
-});
-
-//start polyfilling
-webshim.polyfill('forms');
+// hack for autofocus for logon input
+$(document).ready(function() {
+  $("input[name='logon']").focus();
+}
 
 /////////////////////////////////////////
 ///  disable submit when inputs empty

@@ -26,7 +26,7 @@ select, input, textarea {
 select:focus, input:focus, textarea:focus {
 	outline: 0;
 	outline: thin dotted \9; /* IE6-9 */
-	border-color: $form-valid-color;
+	border-color: $primary-color;
 	background: $input-background-color-focus;
 }
 
@@ -36,15 +36,27 @@ select[disabled], input[disabled] {
 	color: $neutral;
 }
 
-input:focus:invalid,
-select:focus:invalid {
+input:invalid,
+select:invalid {
+  border-color: $form-invalid-color;
 	color: darken($form-invalid-color, 5%);
-	border-color: $form-invalid-color;
 }
 
 input:focus:invalid:focus,
 select:focus:invalid:focus {
-	border-color: $form-invalid-color;
+  border-color: $primary-color !important;
+	color: darken($form-invalid-color, 5%);
+}
+
+input:valid,
+select:valid {
+	background: lighten($form-valid-color, 47%);
+}
+
+input:focus:valid:focus,
+select:focus:valid:focus {
+	border-color: $form-valid-color;
+	background: lighten($form-valid-color, 47%);
 }
 
 ::-webkit-input-placeholder {

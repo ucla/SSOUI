@@ -69,22 +69,11 @@
 
 .secondary-login {
   margin-top: $default-spacing;
-}
-
-.secondary-button {
-	background-color: $secondary-login-option-color;
-	color: $white;
-	display: block;
-	font-size: $meta-font-size;
-	padding: $default-spacing;
-	width: 100%;
-	@include breakpoint($grid-liquid) {
-		width: 22em;
-		margin: 0 auto;
-		padding: $half-spacing;
-	}
-	&:hover {
-		background-color: darken($secondary-login-option-color, 10%);
-		color: $white;
-	}
+  p {
+    @extend .meta;
+    @extend .center;
+  }
+  p:last-of-type {
+    margin-bottom: 0;
+  }
 }

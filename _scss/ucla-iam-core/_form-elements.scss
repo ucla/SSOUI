@@ -43,7 +43,7 @@ select:focus:invalid:focus {
 	color: $body-text-color;
 }
 
-// styling when field is invalid and it doesn't have focus - let people know, but not too aggressively
+// styling when field is invalid and it doesn't have focus - let people know, but not too aggressively on border/bg due to inputs not reached yet
 input:invalid,
 select:invalid {
   border-color: lighten($form-invalid-color, 25%);

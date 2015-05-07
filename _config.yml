@@ -12,6 +12,10 @@ destination: _site
 collections:
   ucla-logon-mocks:
     output: true
+  ucla-logon-mocks-on-dev:
+    output: true
+  ucla-logon-mocks-on-qa:
+    output: true
   medcenter-mocks:
     output: true
   as-app-mocks:
@@ -24,6 +28,18 @@ defaults:
       type: "ucla-logon-mocks"
     values:
       layout: "ucla-logon"
+  -
+    scope:
+      path: "ucla-logon-mocks-on-dev"
+      type: "ucla-logon-mocks-on-dev"
+    values:
+      layout: "ucla-logon-on-dev"
+  -
+    scope:
+      path: "ucla-logon-mocks-on-qa"
+      type: "ucla-logon-mocks-on-qa"
+    values:
+      layout: "ucla-logon-on-qa"
   -
     scope:
       path: "medcenter-mocks"

@@ -17,6 +17,10 @@ article, #sso, .sp-support, .ucla-iam-footer-content {
 	float: right;
 }
 
+.login-fail {
+  margin-bottom: $default-spacing;
+}
+
 .placeholder-text {
   color: red !important;
 }

@@ -1,0 +1,28 @@
+/////////////////////////////////////////
+///        TOP OF PAGE BANNER
+/////////////////////////////////////////
+
+%location-banner-base {
+  height: $double-spacing;
+  line-height: $double-spacing;
+  width: 100%;
+  color: $black;
+  text-align: center;
+  @include box-shadow($ucla-grey 1px 1px 5px);
+}
+
+.location-banner-dev {
+  @extend %location-banner-base;
+  background: $ucla-yellow;
+  border-bottom: 1px solid darken($ucla-yellow, 20%);
+}
+
+.location-banner-qa {
+  @extend %location-banner-base;
+  background: $ucla-orange;
+  border-bottom: 1px solid darken($ucla-orange, 20%);
+}
+
+/////////////////////////////////////////
+///             MESSAGES
+/////////////////////////////////////////

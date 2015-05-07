@@ -25,6 +25,7 @@
 // http://harshen.github.io/jquery-countdownTimer/
 $(function(){
 	$("#countdown").countdowntimer({
-		minutes : 1
+		minutes: 0,
+		seconds: 59
 	});
 });

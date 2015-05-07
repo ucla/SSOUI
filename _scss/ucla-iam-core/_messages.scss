@@ -26,3 +26,20 @@
 /////////////////////////////////////////
 ///             MESSAGES
 /////////////////////////////////////////
+
+.breaking-news {
+  h1 {
+    color: $ucla-blue-dark;
+    text-shadow: 1px 1px 0px $white;
+    font-style: italic;
+  }
+  position: relative;
+  background: $ucla-yellow;
+	box-shadow: 0 1px 1px #347bad;
+	border-radius: $global-border-radius;
+	padding: 0 7.5% 2.5% ;
+	@include breakpoint($grid-elastic) {
+		padding: 0 $default-spacing;
+	}
+	margin-bottom: $triple-spacing;
+}

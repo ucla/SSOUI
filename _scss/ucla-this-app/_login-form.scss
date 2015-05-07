@@ -64,7 +64,7 @@
 	background-color: $primary-color;
 	color: #fff;
 	font-size: $h4-font-size;
-	&:hover {
+	&:hover, &:focus {
 		background-color: $secondary-color;
 		color: $primary-color-alternate-state;
 	}

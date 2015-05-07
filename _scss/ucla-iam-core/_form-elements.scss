@@ -134,16 +134,16 @@ button, .button {
 }
 
 /* Firefox: Get rid of the inner focus border */
-button::-moz-focus-inner {
+button::-moz-focus-inner, .button::-moz-focus-inner {
 	padding: 0;
 	border: 0;
 }
 
-button:focus {
+button:focus, .button:focus {
 	outline: 0;
 }
 
-button:active {
+button:active, .button:active {
 	box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
 }
 

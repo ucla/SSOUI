@@ -19,26 +19,6 @@
 })();
 
 /////////////////////////////////////////
-///  disable submit when inputs empty
-/////////////////////////////////////////
-
-$(document).ready(function() {
-  var $submit = $("button[type=submit]"),
-    $inputs = $('input[type=text], input[type=password]');
-  
-  function checkEmpty() {
-    // filter over the empty inputs
-    return $inputs.filter(function() {
-        return !$.trim(this.value);
-    }).length === 0;
-  }
-  
-  $inputs.on('keyup blur', function() {
-    $submit.prop("disabled", !checkEmpty());
-  }).blur(); // trigger an initial blur
-});
-
-/////////////////////////////////////////
 ///  countdown timer
 /////////////////////////////////////////
 
@@ -47,12 +27,4 @@ $(function(){
 	$("#countdown").countdowntimer({
 		minutes : 1
 	});
-});
-
-//
-$('#sso input').change()(function(){
-    $(this).addClass('empty');
-  if ($(this).val()) {
-    $(this).removeClass('empty');
-  }
 });

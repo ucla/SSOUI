@@ -54,13 +54,13 @@ select:invalid {
 input:focus:valid:focus,
 select:focus:valid:focus {
 	border-color: $form-valid-color;
-	background: lighten($form-valid-color, 47.5%);
+	background: lighten($form-valid-color, 48%);
 }
 
 // styling when field is valid and the user has left it - subtle success
 input:valid,
 select:valid {
-	background: lighten($form-valid-color, 47.5%);
+	background: lighten($form-valid-color, 48%);
 }
 
 ::-webkit-input-placeholder {

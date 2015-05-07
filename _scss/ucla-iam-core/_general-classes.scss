@@ -13,6 +13,21 @@
 	margin-top: 0;
 }
 
+.error-box-solid {
+	background: $error-color-dark;
+	color: $error-color;
+	h2, h3, p {
+		color: $error-color;
+	}
+	p {
+		font-size: $meta-font-size;
+	}
+	padding: $half-spacing;
+	border-radius: $global-border-radius;
+	text-align: center;
+	margin-top: 0;
+}
+
 .error-box-lite {
   color: $error-color;
   h2, h3, p {
@@ -30,6 +45,10 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: $default-spacing;
+}
+
+.error-title {
+  color: $error-color;
 }
 
 .meta {

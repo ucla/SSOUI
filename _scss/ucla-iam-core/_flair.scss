@@ -25,10 +25,25 @@
 }
 
 /////////////////////////////////////////
+///        ERROR IDEAS
+/////////////////////////////////////////
+
+.triangle {
+  position: absolute;
+  top: -($half-spacing / 2);
+  right: -($half-spacing / 2);
+	width: 0;
+	height: 0;
+	border-top: $triple-spacing solid $error-color;
+	border-left: $quad-spacing solid transparent;
+}
+
+/////////////////////////////////////////
 ///        ICON CONTAINER BADGE
 /////////////////////////////////////////
 
-@mixin badge($background: $error-color, $color: $error-color-dark, $base-size: 2.5em) {
+
+@mixin hex-badge($background: $error-color, $color: $error-color-dark, $base-size: 2.5em) {
 	position: absolute;
 	bottom: -$triple-spacing * 1.5;
 	right: $double-spacing;

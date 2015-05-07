@@ -48,3 +48,11 @@ $(function(){
 		minutes : 1
 	});
 });
+
+//
+$('#sso input').change()(function(){
+    $(this).addClass('empty');
+  if ($(this).val()) {
+    $(this).removeClass('empty');
+  }
+});

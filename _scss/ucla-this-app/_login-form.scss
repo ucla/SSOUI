@@ -48,6 +48,9 @@
 }
 
 .sso-links {
+  li:before {
+		content: "" !important;
+  }
 	width: 100%;
 	margin-bottom: $default-spacing;
 	@include breakpoint($grid-liquid) {

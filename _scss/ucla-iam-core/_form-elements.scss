@@ -36,27 +36,31 @@ select[disabled], input[disabled] {
 	color: $neutral;
 }
 
-input:invalid,
-select:invalid {
-  border-color: $form-invalid-color;
-	color: darken($form-invalid-color, 5%);
-}
-
+// styling when field is invalid and it has focus
 input:focus:invalid:focus,
 select:focus:invalid:focus {
-  border-color: $primary-color !important;
-	color: darken($form-invalid-color, 5%);
+  border-color: $primary-color;
+	color: $form-invalid-color;
 }
 
-input:valid,
-select:valid {
-	background: lighten($form-valid-color, 47%);
+// styling when field is invalid and it doesn't have focus
+input:invalid,
+select:invalid {
+  border-color: lighten($form-invalid-color, 25%);
+	color: $form-invalid-color;
 }
 
+// styling when field is valid and it still has focus - focus border + success
 input:focus:valid:focus,
 select:focus:valid:focus {
 	border-color: $form-valid-color;
-	background: lighten($form-valid-color, 47%);
+	background: lighten($form-valid-color, 47.5%);
+}
+
+// styling when field is valid and the user has left it - subtle success
+input:valid,
+select:valid {
+	background: lighten($form-valid-color, 47.5%);
 }
 
 ::-webkit-input-placeholder {

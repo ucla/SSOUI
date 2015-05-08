@@ -12,7 +12,7 @@ article, #sso, .sp-support, .ucla-iam-footer-content, .breaking-news {
 
 .logo {
 	display: none;
-	width: 30em;
+	width: 28em;
 	margin: $double-spacing auto 0;
 	@include breakpoint($grid-liquid) {
 		display: block;

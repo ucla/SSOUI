@@ -1,5 +1,5 @@
 section[role="main"] {
-  margin-bottom: $quad-spacing * 2
+  margin-bottom: $quad-spacing * 2;
 }
 
 article, #sso, .sp-support, .ucla-iam-footer-content, .breaking-news {
@@ -12,8 +12,8 @@ article, #sso, .sp-support, .ucla-iam-footer-content, .breaking-news {
 
 .logo {
 	display: none;
-	width: 28em;
-	margin: $double-spacing auto 0;
+	width: 26em;
+	margin: $default-spacing auto;
 	@include breakpoint($grid-liquid) {
 		display: block;
 	}

@@ -23,7 +23,7 @@
 #sso .error-box {
 	width: 100%;
 	@include breakpoint($grid-liquid) {
-		width: 26em;
+		width: 25em;
 	}
 	h2 {
 		font-size: $h3-font-size;

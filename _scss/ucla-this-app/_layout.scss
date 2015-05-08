@@ -24,5 +24,8 @@ article, #sso, .sp-support, .ucla-iam-footer-content, .breaking-news {
 }
 
 .login-fail {
-  margin-bottom: $default-spacing;
+  h3 {
+    margin-top: 0;
+  }
+  
 }

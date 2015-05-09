@@ -12,14 +12,14 @@
 	}
 	img {
   	display: block;
-  	width: 25%;
+  	width: 35%;
   	@include breakpoint($grid-liquid) {
     	width: 22em;
       margin: $half-spacing auto;
   	}
   	@include breakpoint($grid-elastic) {
     	width: 26em;
-      margin: $default-spacing auto;
+    	margin: $default-spacing auto $half-spacing;
     }
 	}
 }

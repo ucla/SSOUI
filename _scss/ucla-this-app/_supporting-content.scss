@@ -1,25 +1,22 @@
 .logo {
 	display: block;
+	width: 100%;
 	background: rgba($black, .75);
 	border-bottom: 1px solid $ucla-blue-light;
-	width: 100%;
-	padding: $half-spacing;
-	margin-bottom: $double-spacing;
 	@include breakpoint($grid-liquid) {
-    padding: 0;
     background: none;
     border-bottom: none;
 	}
 	img {
   	display: block;
-  	width: 35%;
+  	width: 40%;
   	@include breakpoint($grid-liquid) {
     	width: 22em;
-      margin: $half-spacing auto;
+      margin: $half-spacing auto 0;
   	}
   	@include breakpoint($grid-elastic) {
     	width: 26em;
-    	margin: $default-spacing auto $half-spacing;
+    	margin: $default-spacing auto 0;
     }
 	}
 }

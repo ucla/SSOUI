@@ -1,3 +1,35 @@
+.logo {
+	display: block;
+	background: rgba($black, .75);
+	border-bottom: 1px solid $ucla-blue-light;
+	width: 100%;
+	padding: $half-spacing;
+	margin-bottom: $double-spacing;
+	@include breakpoint($grid-liquid) {
+    padding: 0;
+    background: none;
+    border-bottom: none;
+	}
+	img {
+  	display: block;
+  	width: 25%;
+  	@include breakpoint($grid-liquid) {
+    	width: 22em;
+      margin: $half-spacing auto;
+  	}
+  	@include breakpoint($grid-elastic) {
+    	width: 26em;
+      margin: $default-spacing auto;
+    }
+	}
+}
+
+// login failed message in login form
+.login-fail h3 {
+  margin-top: 0; 
+}
+
+// SP contact info, etc
 .sp-support {
 	background: $sp-support-bg;
 	padding: $default-spacing;
@@ -12,6 +44,7 @@
 	}
 }
 
+// generally used for non-form message blocks
 article {
 	position: relative;
 	background: $body-background-color;
@@ -23,6 +56,7 @@ article {
 	}
 }
 
+// SP & IdP form styling
 #report {
 	overflow: hidden;
 	label {
@@ -31,6 +65,7 @@ article {
 	}
 }
 
+// spinner
 .loading i {
 	font-size: $h1-font-size * 2;
 	margin: $default-spacing 40%;

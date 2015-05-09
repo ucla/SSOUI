@@ -10,22 +10,6 @@ article, #sso, .sp-support, .ucla-iam-footer-content, .breaking-news {
 	}
 }
 
-.logo {
-	display: none;
-	width: 26em;
-	margin: $default-spacing auto;
-	@include breakpoint($grid-liquid) {
-		display: block;
-	}
-}
-
 .right {
 	float: right;
-}
-
-.login-fail {
-  h3 {
-    margin-top: 0;
-  }
-  
 }

@@ -1,6 +1,7 @@
 {
   "name": "SSOUI",
   "version": "0.0.0",
+  "private": true,
   "homepage": "https://github.com/ucla/SSOUI",
   "authors": [
     "Carl Uebelhart <carl@erutan.net>"

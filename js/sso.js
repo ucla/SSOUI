@@ -1,31 +1,19 @@
 /////////////////////////////////////////
-///     load & configure webshims
-/////////////////////////////////////////
-(function () {
-  webshim.setOptions('forms', {
-    //set lazyCustomMessages to true
-    lazyCustomMessages: true,
-    //show custom styleable validation bubble
-    replaceValidationUI: true,
-    handleBubble: 'hide',
-    fieldWrapper: '.fieldset',
-    iVal: {
-      "recheckDelay": 100,
-    }
-  });
-  
-  //start polyfilling
-  webshim.polyfill('forms');
-})();
-
-/////////////////////////////////////////
 ///  countdown timer
 /////////////////////////////////////////
 
-// http://harshen.github.io/jquery-countdownTimer/
-$(function(){
-	$("#countdown").countdowntimer({
-		minutes: 0,
-		seconds: 59
-	});
-});
+var count = 60;
+var counter = setInterval(timer, 1000);
+
+function timer()
+{
+  count = count-1;
+  if (count <= 0)
+  {
+     clearInterval(counter);
+     //counter ended, do something here
+     return;
+  }
+
+ document.getElementById("countdown").innerHTML = count + " seconds";
+}

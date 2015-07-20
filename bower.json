@@ -6,7 +6,7 @@
   "authors": [
     "Carl Uebelhart <carl@erutan.net>"
   ],
-  "license": "MIT",
+  "license": "UCLA",
   "private": true,
   "ignore": [
     "**/.*",

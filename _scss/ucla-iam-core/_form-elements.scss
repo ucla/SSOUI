@@ -8,7 +8,7 @@ input, textarea {
 		width: 94%;
 	}
 	@include breakpoint($grid-elastic) {
-		width: 21em;
+		width: 22em;
 		font-size: $h3-font-size;
 	}
 	margin-bottom: $default-spacing;
@@ -95,7 +95,7 @@ legend {
 	font-size: $h3-font-size;
 	@include breakpoint($grid-liquid) {
 		text-align: left;
-		font-size: $h2-font-size;
+		font-size: $h1-font-size;
 	}
 	line-height: $base-line-height * 1.1;
 	margin-bottom: $half-spacing;

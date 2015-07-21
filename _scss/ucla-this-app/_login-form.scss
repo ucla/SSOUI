@@ -7,7 +7,6 @@
 	box-shadow: 0 1px 1px #347bad;
 	overflow: hidden;
 	border-radius: $global-border-radius;
-	margin-top: $default-spacing;
 	padding: 2.5% 7.5%;
 	@include breakpoint($grid-elastic) {
 		padding: $double-spacing $quad-spacing;

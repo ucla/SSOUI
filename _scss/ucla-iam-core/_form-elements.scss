@@ -93,6 +93,9 @@ fieldset {
 legend {
 	text-align: center;
 	font-size: $h3-font-size;
+	@include breakpoint($modern-mobile) {
+  	font-size: $h2-font-size;
+	}
 	@include breakpoint($grid-liquid) {
 		text-align: left;
 		font-size: $h1-font-size;

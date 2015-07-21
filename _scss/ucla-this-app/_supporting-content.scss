@@ -9,7 +9,7 @@
 	}
 	img {
   	display: block;
-  	width: 40%;
+  	width: 35%;
   	@include breakpoint($grid-liquid) {
     	width: 22em;
       margin: $half-spacing auto 0;

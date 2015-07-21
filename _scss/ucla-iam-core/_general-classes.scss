@@ -24,6 +24,8 @@
 
 .error-box-lite {
   @extend %error-base;
+  text-align: left;
+  padding-left: 0;
 }
 
 .error-title {

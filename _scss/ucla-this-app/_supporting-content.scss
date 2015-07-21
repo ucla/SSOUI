@@ -22,8 +22,14 @@
 }
 
 // login failed message in login form
-.login-fail h3 {
-  margin-top: 0; 
+.login-fail {
+  h3 {
+    margin: 0;
+  }
+  p {
+    margin-top: $half-spacing;
+    margin-bottom: $double-spacing;
+  }
 }
 
 // SP contact info, etc

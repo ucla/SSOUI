@@ -6,17 +6,14 @@ title: Login Attempts Slowed - Timer Running
   var count = 60;
   var counter = setInterval(timer, 1000);
   
-  function timer()
-  {
+  function timer() {
     count = count-1;
-    if (count <= 0)
-    {
-       clearInterval(counter);
-       //counter ended, do something here
-       return;
+    if (count <= 0) {
+      clearInterval(counter);
+        location.href="http://ucla.github.io/SSOUI/ucla-logon-mocks/slowdown-timer-end.html";
+      return;
     }
-  
-   document.getElementById("countdown").innerHTML = count + " seconds";
+  document.getElementById("countdown").innerHTML = count + " seconds";
   }
 </script>
 

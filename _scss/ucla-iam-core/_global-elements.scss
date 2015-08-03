@@ -72,6 +72,13 @@ a {
 	}
 }
 
+ol {
+  padding-left: $default-spacing * 1.5;
+  li {
+    margin-bottom: $half-spacing;
+  }
+}
+
 section[role="main"] ul {
 	list-style: none;
 	padding-left: .1em;

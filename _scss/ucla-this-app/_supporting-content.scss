@@ -22,6 +22,15 @@
 	}
 }
 
+// environmental/contextual info for error pages
+.ticket-info {
+  background: $background-light-grey;
+  border-radius: $global-border-radius;
+  font-size: $meta-font-size;
+  font-family: $font-stack-monospace;
+  padding: $half-spacing;
+}
+
 // login failed message in login form
 .login-fail {
   h3 {

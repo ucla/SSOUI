@@ -25,6 +25,9 @@
 // for IE8 w/ modernizr check
 .no-rgba .logo {
   background: #111;
+	@include breakpoint($grid-liquid) {
+    background: none;
+	}
 }
 
 // environmental/contextual info for error pages

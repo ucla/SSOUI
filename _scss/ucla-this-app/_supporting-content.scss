@@ -81,3 +81,8 @@ article {
 		display: none;
 	}
 }
+
+// spinner for the redirect
+#loading-spinner {
+  height: $quad-spacing * 1.5;
+}

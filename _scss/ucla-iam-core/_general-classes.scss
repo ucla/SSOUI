@@ -62,6 +62,12 @@
 	}
 }
 
+// for IE8 w/ modernizr check
+.no-rgba .ucla-iam-footer {
+  background: #111;
+}
+
+
 .ucla-iam-footer-content {
 	p {
 		margin: 0 auto;
@@ -79,4 +85,3 @@
 		} 
 	}
 }
-

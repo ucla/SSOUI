@@ -22,6 +22,11 @@
 	}
 }
 
+// for IE8 w/ modernizr check
+.no-rgba .logo {
+  background: #111;
+}
+
 // environmental/contextual info for error pages
 .ticket-info {
   background: $background-light-grey;
@@ -57,6 +62,11 @@
 	}
 }
 
+// for IE8 w/ modernizr check
+.no-rgba .sp-support {
+  background: $sp-support-bg-fallback;
+}
+
 // generally used for non-form message blocks
 article {
 	position: relative;
@@ -67,18 +77,4 @@ article {
 	legend {
 		display: none;
 	}
-}
-
-// SP & IdP form styling
-#report {
-	overflow: hidden;
-	label {
-		display: block;
-		margin-bottom: $half-spacing / 2;
-	}
-}
-
-// spinner
-#loading-spinner {
-  height: $quad-spacing * 1.5;
 }

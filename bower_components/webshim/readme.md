@@ -1,3 +1,5 @@
+**Important note: Webshim is not compatible with upcoming jQuery 3.x and I do not plan to work on a new major version. I will still fix critical bugs in the future though.**
+
 [Webshim](http://aFarkas.github.com/webshim/demos/index.html)
 ================================
 
@@ -32,7 +34,7 @@ Features
 Installation and Usage
 ------------------
 
-1 - [Download the Webshim Lib](https://github.com/aFarkas/webshim/releases/latest) and put the `js-webshim-folder` in your project.
+1 - [Download the Webshim Lib](https://github.com/aFarkas/webshim/releases/latest) and put the `js-webshim` folder in your project.
 
 2 - Include the JavaScript:
 

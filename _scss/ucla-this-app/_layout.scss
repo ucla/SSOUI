@@ -16,3 +16,9 @@ article, #sso, .sp-support, .ucla-iam-footer-content, .breaking-news {
 .right {
 	float: right;
 }
+
+.wide {
+  @include breakpoint($grid-elastic) {
+    width: 42em;
+  }
+}

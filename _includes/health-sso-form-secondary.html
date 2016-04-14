@@ -1,32 +1,32 @@
 <form id="sso" role="form" action="/" method="post" class="ws-validate">
-  
+
   <img src="{{ site.baseurl }}/images/health.png" alt="UCLA Health" class="logo">
-  
+
   <legend>Sign In with your Medcenter ID</legend>
 
   <fieldset class="fieldset">
     <label for="logon">Medcenter Account ID</label>
     <input id="logon" name="logon" type="text" placeholder="Your Medcenter ID" aria-required="true" pattern=".{3,15}" autocorrect="off" autocapitalize="none" required autofocus>
   </fieldset>
-    
+
   <fieldset class="fieldset">
     <label for="pass">Medcenter Password</label>
     <input id="pass" name="pass" type="password" placeholder="Your Medcenter Password" aria-required="true" pattern=".{8,128}" autocorrect="off" autocapitalize="none" required data-errorbox="passerror">
   </fieldset>
-  
+
   <button class="primary-button" type="submit" name="sso-submit">Sign In</button>
-  
+
 	<ul class="sso-links">
 		<li>Forgot your <a href="https://logon.ucla.edu/userlookup.php">UCLA Logon ID</a> or Password?</a></li>
 		<li><a href="#" title="Create a UCLA Logon ID">Need a UCLA Logon ID?</a></li>
 	</ul>
-  
+
   <aside class="secondary-login">
     <p class="line-thru">or</p>
-    
-    <p class="meta center">Are you a part of the general campus?</p>
-    
-    <a href="#">Sign In with your UCLA Logon ID</a>
+
+    <p>Are you a part of the general campus?</p>
+
+    <p><a href="#">Sign In with your UCLA Logon ID</a></p>
   </aside>
-  
+
 </form>

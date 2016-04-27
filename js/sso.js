@@ -1,18 +1,8 @@
 /////////////////////////////////////////
-///     load & configure webshims
+///       initiate foundation
 /////////////////////////////////////////
-(function () {
-  webshim.setOptions('forms',{
-  //set lazyCustomMessages to true
-	lazyCustomMessages: true,
-	//show custom styleable validation bubble
-	replaceValidationUI: true,
-  });
-  
-  //start polyfilling
-  webshim.polyfill('forms');
-})();
 
+$(document).foundation();
 
 /////////////////////////////////////////
 ///       initiate spinner

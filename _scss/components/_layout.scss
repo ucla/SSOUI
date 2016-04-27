@@ -1,9 +1,13 @@
 html {
-  background: $body-background;
+  background: $html-background;
   background-size: cover;
   position: relative; 
   min-height: 100%;
   width: 100%;
+}
+
+body {
+  background: none !important;
 }
 
 section[role="main"] {
@@ -12,7 +16,7 @@ section[role="main"] {
 
 article, #sso, .sp-support, .ucla-iam-footer-content, .breaking-news {
 	width: 96%;
-	margin: $global-spacing auto 0;
+	margin: $global-margin auto 0;
 	@include breakpoint(grid-elastic) {
 		width: 36em;
 	}

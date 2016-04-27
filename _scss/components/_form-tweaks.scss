@@ -1,0 +1,55 @@
+/////////////////////////////////////////
+//   FOUNDATION OVERRIDES / ADDITIONS
+/////////////////////////////////////////
+
+// display like it's a header
+legend {
+  font-size: rem-calc(nested-map-get($header-sizes, large-type, h2));
+  margin-bottom: ($global-spacing / 2);
+  display: block;
+  width: 100%;
+  font-weight: normal;
+  color: $primary-color-safe;
+}
+
+input {
+  font-weight: $global-weight-normal;
+  @include breakpoint(multi-column) {
+    max-width: 28rem;
+  }
+}
+
+button[disabled] {
+  @include button-disabled;
+}
+ 
+// no CSS output for Foundation buttons component :)
+button {
+  @include button();
+  border: 1px solid $medium-gray;
+  text-transform: uppercase;
+  font-weight: $global-weight-bold;
+  &:hover {
+    color: $white;
+  }
+ }
+
+// blue + gold, action that changes page/etc
+.primary-button {
+  background-color: $ucla-its-primary-button-color;
+  color: $white;
+  border: none;
+  &:hover {
+    background-color: $ucla-its-primary-button-color-hover;
+    color: $white;
+  }
+}
+
+// button that cancels/clears changes
+.cancel-button {
+  color: $alert-color;
+  &:hover {
+    background-color: mix($alert-color, $white, 80%);
+    color: $white;
+  }
+}

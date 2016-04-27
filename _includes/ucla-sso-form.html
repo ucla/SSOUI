@@ -1,13 +1,11 @@
-<form id="sso" role="form" action="/" method="post" class="ws-validate">
+<form id="sso" role="form" action="/" method="post" data-abide novalidate>
 
   <legend>Sign In with your UCLA Logon ID</legend>
 
-  <fieldset class="fieldset">
+  <fieldset>
 		<label for="logon">Your UCLA Logon ID</label>
 		<input id="logon" name="logon" type="text" placeholder="Your UCLA Logon ID" aria-required="true" pattern="[a-z0-9]{3,15}" title="Logon IDs are 3 to 15 characters long." tabindex="1" autocorrect="off" autocapitalize="none" required autofocus>
-  </fieldset>
 
-  <fieldset class="fieldset">
 		<label for="pass">Your UCLA Logon Password</label>
 		<input id="pass" name="pass" type="password" placeholder="Your UCLA Logon Password" aria-required="true" pattern="[a-zA-Z0-9 !@#$%^&*().,]{8,128}"  title="Passwords are at least 8 characters long and consist of letters, numbers, and the following symbols: !@#$%^&*().," tabindex="2" autocorrect="off" autocapitalize="none" required>
 	</fieldset>

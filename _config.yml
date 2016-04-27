@@ -24,31 +24,31 @@ collections:
 defaults:
   -
     scope:
-      path: "ucla-logon-mocks"
-      type: "ucla-logon-mocks"
+      path: ucla-logon-mocks
+      type: ucla-logon-mocks
     values:
-      layout: "ucla-logon"
+      layout: ucla-logon
   -
     scope:
-      path: "ucla-logon-mocks-on-dev"
-      type: "ucla-logon-mocks-on-dev"
+      path: ucla-logon-mocks-on-dev
+      type: ucla-logon-mocks-on-dev
     values:
-      layout: "ucla-logon-on-dev"
+      layout: ucla-logon-on-dev
   -
     scope:
-      path: "ucla-logon-mocks-on-qa"
-      type: "ucla-logon-mocks-on-qa"
+      path: ucla-logon-mocks-on-qa
+      type: ucla-logon-mocks-on-qa
     values:
-      layout: "ucla-logon-on-qa"
+      layout: ucla-logon-on-qa
   -
     scope:
-      path: "medcenter-mocks"
-      type: "medcenter-mocks"
+      path: medcenter-mocks
+      type: medcenter-mocks
     values:
-      layout: "medcenter"
+      layout: medcenter
   -
     scope:
-      path: "as-app-mocks"
-      type: "as-app-mocks"
+      path: as-app-mocks
+      type: as-app-mocks
     values:
-      layout: "as-app"
+      layout: as-app

@@ -4,20 +4,20 @@
 	width: 100%;
 	background: rgba($black, .75);
 	border-bottom: 1px solid $ucla-blue-light;
-	@include breakpoint($grid-liquid) {
+	@include breakpoint(grid-liquid) {
     background: none;
     border-bottom: none;
 	}
 	img {
   	display: block;
   	width: 35%;
-  	@include breakpoint($grid-liquid) {
+  	@include breakpoint(grid-liquid) {
     	width: 22em;
-      margin: $half-spacing auto 0;
+      margin: ($global-margin / 2) auto 0;
   	}
-  	@include breakpoint($grid-elastic) {
+  	@include breakpoint(grid-elastic) {
     	width: 26em;
-    	margin: $default-spacing auto 0;
+    	margin: $global-spacing auto 0;
     }
 	}
 }
@@ -25,18 +25,18 @@
 // for IE8 w/ modernizr check
 .no-rgba .logo {
   background: #111;
-	@include breakpoint($grid-liquid) {
+	@include breakpoint(grid-liquid) {
     background: none;
 	}
 }
 
 // environmental/contextual info for error pages
 .ticket-info {
-  background: $background-light-grey;
-  border-radius: $global-border-radius;
-  font-size: $meta-font-size;
-  font-family: $font-stack-monospace;
-  padding: $half-spacing;
+  background: $lighter-gray;
+  border-radius: $global-radius;
+  font-size: $helptext-font-size;
+  font-family: $font-family-monospace;
+  padding: $global-padding / 2;
 }
 
 // login failed message in login form
@@ -45,22 +45,22 @@
     margin: 0;
   }
   p {
-    margin-top: $half-spacing;
-    margin-bottom: $double-spacing;
+    margin-top: $global-margin / 2;
+    margin-bottom: $global-margin * 2;
   }
 }
 
 // SP contact info, etc
 .sp-support {
 	background: $sp-support-bg;
-	padding: $default-spacing;
-	margin: $default-spacing auto 0;
-	border-radius: $global-border-radius;
+	padding: $global-padding;
+	margin: $global-margin auto 0;
+	border-radius: $global-radius;
 	p, li {
-		font-size: $meta-font-size;
+		font-size: $helptext-font-size;
 	}
 	h2 {
-		font-size: $h4-font-size;
+		font-size: rem-calc(nested-map-get($header-sizes, large-type, h4));
 		margin: 0;
 	}
 }
@@ -73,10 +73,10 @@
 // generally used for non-form message blocks
 article {
 	position: relative;
-	background: $body-background-color;
+	background: $white;
 	box-shadow: 0 1px 1px #347bad;
-	padding: $default-spacing $double-spacing;
-	border-radius: $global-border-radius;
+	padding: $global-padding ($global-padding * 2);
+	border-radius: $global-radius;
 	legend {
 		display: none;
 	}
@@ -84,5 +84,5 @@ article {
 
 // spinner for the redirect
 #loading-spinner {
-  height: $quad-spacing * 1.5;
+  height: $global-spacing * 6;
 }

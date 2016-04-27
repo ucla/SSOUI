@@ -1,7 +1,5 @@
 # Require any additional compass plugins here.
-require 'singularitygs'
-require 'breakpoint'
-require 'compass-normalize'
+require 'toolkit' 
 
 # USE BUNDLER!!
 
@@ -11,6 +9,7 @@ css_dir = "css"
 sass_dir = "_scss"
 images_dir = "images"
 javascripts_dir = "js"
+add_import_path "bower_components/foundation-sites/scss"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed

@@ -1,0 +1,32 @@
+html {
+  background: $body-background;
+  background-size: cover;
+  position: relative; 
+  min-height: 100%;
+  width: 100%;
+}
+
+section[role="main"] {
+  margin-bottom: $global-margin * 8;
+}
+
+article, #sso, .sp-support, .ucla-iam-footer-content, .breaking-news {
+	width: 96%;
+	margin: $global-spacing auto 0;
+	@include breakpoint(grid-elastic) {
+		width: 36em;
+	}
+}
+.ucla-iam-footer-content {
+  margin-top: 0;
+}
+
+.right {
+	float: right;
+}
+
+.wide {
+  @include breakpoint(grid-elastic) {
+    width: 42em;
+  }
+}

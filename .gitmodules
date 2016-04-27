@@ -1,0 +1,4 @@
+[submodule "bower_components/foundation-sites"]
+	path = bower_components/foundation-sites
+	url = https://github.com/ucla/foundation-sites.git
+	branch = develop

@@ -10,15 +10,17 @@
     <p>Make sure you're signing in with the right account ID, and carefully retype your password. If you still have problems, try <a href="#">resetting your password or looking up your Logon ID</a>.</p>
   </div>
     
-  <fieldset class="fieldset">
-    <label for="logon">Account ID</label>
-    <input id="logon" name="logon" type="text" placeholder="Your UCLA Logon ID" aria-required="true" pattern=".{3,15}" autocorrect="off" autocapitalize="none" required autofocus data-errormessage="Logon IDs must be between 3 and 15 characters long" >
-  </fieldset>
+  <fieldset>
+		<label for="logon"><span hidden>Your UCLA Logon ID</span>
+  		<input id="logon" name="logon" type="text" placeholder="Your UCLA Logon ID" aria-required="true" pattern="[a-z0-9]{3,15}" title="Logon IDs are 3 to 15 characters long." tabindex="1" autocorrect="off" autocapitalize="none" required autofocus>
+  		<span class="form-error">Logon IDs are 3 to 15 characters long.</span>
+		</label>
 
-  <fieldset class="fieldset">
-    <label for="pass">Password</label>
-    <input id="pass" name="pass" type="password" placeholder="Your UCLA Logon Password" aria-required="true" pattern=".{8,128}" autocorrect="off" autocapitalize="none" required data-errormessage="Passwords must be at least 8 characters long">
-  </fieldset>
+		<label for="pass"><span hidden>Your UCLA Logon Password</span>
+		  <input id="pass" name="pass" type="password" placeholder="Your UCLA Logon Password" aria-required="true" pattern="[a-zA-Z0-9 !@#$%^&*().,]{8,128}"  title="Passwords are at least 8 characters long and can consist of letters, numbers, and the following symbols: !@#$%^&*().," tabindex="2" autocorrect="off" autocapitalize="none" required>
+		<span class="form-error">Passwords are at least 8 characters long and can consist of letters, numbers, and the following symbols: !@#$%^&*().,</span>
+		</label>
+	</fieldset>
   
   <button class="primary-button" type="submit" name="sso-submit">Sign In</button>
   

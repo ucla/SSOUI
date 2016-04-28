@@ -4,8 +4,8 @@
 
 // display like it's a header
 legend {
-  font-size: rem-calc(nested-map-get($header-sizes, large-type, h2));
-  margin-bottom: ($global-spacing / 2);
+  font-size: rem-calc(nested-map-get($header-sizes, large-type, h1));
+  margin-bottom: $global-margin;
   display: block;
   width: 100%;
   font-weight: normal;
@@ -15,7 +15,7 @@ legend {
 input {
   font-weight: $global-weight-normal;
   @include breakpoint(multi-column) {
-    max-width: 28rem;
+    max-width: 30rem;
   }
 }
 

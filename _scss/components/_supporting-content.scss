@@ -12,11 +12,11 @@
   	display: block;
   	width: 35%;
   	@include breakpoint(grid-liquid) {
-    	width: 22em;
+    	width: 22rem;
       margin: ($global-margin / 2) auto 0;
   	}
   	@include breakpoint(grid-elastic) {
-    	width: 26em;
+    	width: 26rem;
     	margin: $global-spacing auto 0;
     }
 	}
@@ -74,7 +74,6 @@
 article {
 	position: relative;
 	background: $white;
-	box-shadow: 0 1px 1px #347bad;
 	padding: $global-padding ($global-padding * 2);
 	border-radius: $global-radius;
 	legend {
@@ -85,4 +84,8 @@ article {
 // spinner for the redirect
 #loading-spinner {
   height: $global-spacing * 6;
+}
+
+.ucla-iam-footer-content p {
+  margin-bottom: 0;
 }

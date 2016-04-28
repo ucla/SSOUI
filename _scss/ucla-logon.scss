@@ -5,7 +5,7 @@
 /////////////////////////////////////////
 
 // Fonts
-@import 'ucla/proxima-nova';
+@import 'components/proxima-nova';
 
 // Main library stuff
 @import 'config/ucla-settings';
@@ -21,7 +21,7 @@
 /////////////////////////////////////////
 
 @include foundation-global-styles;
-@include foundation-grid;
+// @include foundation-grid;
 // @include foundation-flex-grid;
 @include foundation-typography;
 // @include foundation-button;

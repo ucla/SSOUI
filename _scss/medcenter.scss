@@ -4,9 +4,6 @@
 ///       FRAMEWORK COMPONENTS
 /////////////////////////////////////////
 
-// Fonts
-@import 'ucla/proxima-nova';
-
 // Main library stuff
 @import 'config/med-settings';
 @import 'foundation';
@@ -21,7 +18,7 @@
 /////////////////////////////////////////
 
 @include foundation-global-styles;
-@include foundation-grid;
+// @include foundation-grid;
 // @include foundation-flex-grid;
 @include foundation-typography;
 // @include foundation-button;

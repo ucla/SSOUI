@@ -39,21 +39,13 @@
   padding: $global-padding / 2;
 }
 
-// login failed message in login form
-.login-fail {
-  h3 {
-    margin: 0;
-  }
-  p {
-    margin-top: $global-margin / 2;
-    margin-bottom: $global-margin * 2;
-  }
-}
-
 // SP contact info, etc
 .sp-support {
 	background: $sp-support-bg;
-	padding: $global-padding;
+	padding: 2.5% 7.5%;
+	@include breakpoint(grid-elastic) {
+		padding: $global-padding ($global-padding * 2.5);
+	}
 	margin: $global-margin auto 0;
 	border-radius: $global-radius;
 	p, li {

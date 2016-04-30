@@ -24,7 +24,7 @@ button[disabled] {
 }
  
 // no CSS output for Foundation buttons component :)
-button {
+button, .button {
   @include button();
   border: 1px solid $medium-gray;
   text-transform: uppercase;

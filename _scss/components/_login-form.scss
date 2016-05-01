@@ -27,33 +27,22 @@
 	margin-bottom: $global-spacing;
 }
 
-.input[type="submit"] {
-	width: 100%;
-	@include breakpoint(grid-liquid) {
-		@include grid-column(3);
-	}
-	padding-top: 0;
+// login failed message in login form
+.login-fail {
+  padding-top: 0;
+  h3 {
+    margin: 0;
+  }
 }
 
 .sso-links {
-	width: 100%;
 	margin-bottom: $global-spacing;
 	padding-left: $global-padding / 2;
-	@include breakpoint(grid-liquid) {
-		@include grid-column(9);
-		margin: 0;
-	}
 	font-size: $helptext-font-size;
 }
 
-.primary-button {
-	background-color: $primary-color;
-	color: #fff;
-	font-size: rem-calc(nested-map-get($header-sizes, large-type, h4));
-	&:hover, &:focus {
-		background-color: $secondary-color;
-		color: $primary-color-alternate;
-	}
+.line-thru {
+  @include line-thru();
 }
 
 .secondary-login {

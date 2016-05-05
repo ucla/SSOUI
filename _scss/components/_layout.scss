@@ -11,6 +11,10 @@ body {
   font-family: $ucla-font-stack;
 }
 
+@media (max-height: 500px) {
+  
+}
+
 section[role="main"] {
   margin-bottom: $global-margin * 8;
 }
@@ -30,13 +34,12 @@ article, #sso, .sp-support, .ucla-iam-footer-content, .breaking-news {
 	float: right;
 }
 
-.wide {
-  @include breakpoint(grid-elastic) {
-    width: 42rem;
-  }
+.secondary-login {
+  @include grid-row();
+  @include clearfix();
 }
 
-.secondary-login {
+.row {
   @include grid-row();
 }
 

@@ -22,14 +22,6 @@
 	}
 }
 
-// for IE8 w/ modernizr check
-.no-rgba .logo {
-  background: #111;
-	@include breakpoint(grid-liquid) {
-    background: none;
-	}
-}
-
 // environmental/contextual info for error pages
 .ticket-info {
   background: $lighter-gray;
@@ -55,11 +47,6 @@
 		font-size: rem-calc(nested-map-get($header-sizes, large-type, h4));
 		margin: 0;
 	}
-}
-
-// for IE8 w/ modernizr check
-.no-rgba .sp-support {
-  background: $sp-support-bg-fallback;
 }
 
 // generally used for non-form message blocks

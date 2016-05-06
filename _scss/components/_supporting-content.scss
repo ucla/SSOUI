@@ -19,7 +19,11 @@
     	width: 26rem;
     	margin: $global-spacing auto 0;
     }
-	}
+    @media (max-height: 500px) {
+      width: 16rem;
+      margin: 0 auto 0;
+    }
+  }
 }
 
 // environmental/contextual info for error pages

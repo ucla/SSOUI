@@ -1,13 +1,12 @@
 {
-  "name": "SSOUI",
-  "version": "0.0.0",
-  "private": true,
-  "homepage": "https://github.com/ucla/SSOUI",
+  "name": "foundation-ssg",
+  "version": "1.0.0",
   "authors": [
-    "Carl Uebelhart <carl@erutan.net>"
+    "ZURB <foundation@zurb.com>"
   ],
-  "license": "UCLA",
-  "private": true,
+  "description": "Static site generator for Foundation for Sites.",
+  "main": "gulpfile.js",
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -16,8 +15,11 @@
     "tests"
   ],
   "dependencies": {
-    "webshim": "~1.15.7",
-    "jquery": "~1",
-    "respond": "~1"
-  }
+    "motion-ui": "~1.1.0",
+    "webshim": "~1.15.10",
+    "sass-toolkit": "~2.9.0",
+    "what-input": "^1.2.5",
+    "zxcvbn": "~4.2.0"
+  },
+  "private": true
 }

@@ -1,4 +1,6 @@
-_site
+.DS_Store
+node_modules
+npm-debug.log
+bower_components
+dist
 .sass-cache
-Gemfile.lock
-.jekyll-metadata

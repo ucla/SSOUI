@@ -1,0 +1,31 @@
+---
+title: Login Attempts Slowed - Timer Running
+layout: ucla-logon
+---
+
+<script>
+  var count = 60;
+  var counter = setInterval(timer, 1000);
+  
+  function timer() {
+    count = count-1;
+    if (count <= 0) {
+      clearInterval(counter);
+        location.href="http://ucla.github.io/SSOUI/ucla-logon-mocks/slowdown-timer-end.html";
+      return;
+    }
+  document.getElementById("countdown").innerHTML = count + " seconds";
+  }
+</script>
+
+<article>
+	
+	{{> include badge.html }}
+
+	<h1>You had too many unsuccessful Single Sign-On attempts. Please wait a bit.</h1>
+
+  <p>For your security we have slowed down your sign-on attempts. You can wait for the timer to expire and try signing in again, or go <a href="https://logon-asm1.logon.ucla.edu/passreset.php">reset your password</a> now if you've forgotten it.</p>
+	
+	<h2 class="error-box-solid"><span id="countdown"></span> until you can attempt to login</h2>
+
+</article>

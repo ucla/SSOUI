@@ -1,14 +1,3 @@
-/*  ASSETS
-
-<script src="/SSOUI/bower_components/jquery/dist/jquery.min.js"></script>
-<script src="/SSOUI/js/placeholders.min.js"></script>
-<script src="/SSOUI/js/spin.min.js"></script>
-<script src="/SSOUI/bower_components/foundation-sites/js/foundation.core.js"></script>
-<script src="/SSOUI/bower_components/foundation-sites/js/foundation.util.mediaQuery.js"></script>
-<script src="/SSOUI/bower_components/foundation-sites/js/foundation.abide.js"></script>
-
-*/
-
 /////////////////////////////////////////
 ///       initiate foundation
 /////////////////////////////////////////

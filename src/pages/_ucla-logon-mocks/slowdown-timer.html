@@ -11,7 +11,7 @@ layout: ucla-logon
     count = count-1;
     if (count <= 0) {
       clearInterval(counter);
-        location.href="http://ucla.github.io/SSOUI/ucla-logon-mocks/slowdown-timer-end.html";
+        location.href="http://ucla.github.io{{root}}/ucla-logon-mocks/slowdown-timer-end.html";
       return;
     }
   document.getElementById("countdown").innerHTML = count + " seconds";

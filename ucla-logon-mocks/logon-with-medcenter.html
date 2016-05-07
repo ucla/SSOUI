@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>UCLA Single Sign-On</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="..//assets/css/ucla-logon.css">
+	<script src="..//assets/js/modernizr.custom.js"></script>
+</head>
+
+<body>
+
+
+	<header class="logo" role="banner"><img src="../assets/img/ucla-white.png" alt="UCLA"></header>
+
+	<section class="content" role="main">
+			
+			<form id="sso" role="form" action="/" method="post" data-abide novalidate>
+			
+			  <legend>Sign In with your UCLA Logon ID</legend>
+			
+			  <fieldset>
+					<label for="logon"><span hidden>Your UCLA Logon ID</span>
+			  		<input id="logon" name="logon" type="text" placeholder="Your UCLA Logon ID" aria-required="true" pattern="[a-z0-9]{3,15}" title="Logon IDs are 3 to 15 characters long." tabindex="1" autocorrect="off" autocapitalize="none" required autofocus>
+			  		<span class="form-error">Logon IDs are 3 to 15 characters long.</span>
+					</label>
+			
+					<label for="pass"><span hidden>Your UCLA Logon Password</span>
+					  <input id="pass" name="pass" type="password" placeholder="Your UCLA Logon Password" aria-required="true" pattern="[a-zA-Z0-9 !@#$%^&*().,]{8,128}"  title="Passwords are at least 8 characters long and can consist of letters, numbers, and the following symbols: !@#$%^&*().," tabindex="2" autocorrect="off" autocapitalize="none" required>
+					<span class="form-error">Passwords are at least 8 characters long and can consist of letters, numbers, and the following symbols: !@#$%^&*().,</span>
+					</label>
+				</fieldset>
+				
+				<div class="row">
+			  	<button class="primary-button" type="submit" name="sso-submit" class="sso-submit" tabindex="3">Sign In</button>
+			  	
+			  	<ul class="sso-links">
+			  		<li>Forgot your <a href="https://logon.ucla.edu/userlookup.php" title="Lookup your UCLA Logon ID">UCLA Logon ID</a> or <a href="https://logon.ucla.edu/passreset.php" title="Reset your password">Password</a>?</li>
+			  		<li><a href="https://logon.ucla.edu/activate.php" title="Create a UCLA Logon ID">Need a UCLA Logon ID?</a></li>
+			  	</ul>
+				</div>
+				
+				<aside class="secondary-login">
+			  	<span class="line-thru">or</span>
+			  	
+			  	<p>Are you a member of UCLA Health Systems?</p>
+			  	
+			  	<p><a href="#">Sign In with your Med Center ID</a></p>
+				</aside>
+			
+			</form>
+			
+			<aside class="sp-support">
+				<h2>You're Signing Into Lambda Labs</h2>
+				
+				<p>If you're having general issues signing in, please read our <a href="#">FAQ</a>. For issues specific to Lambda Labs, use the contact information below:</p>
+			
+				<ul>
+					<li>phone: (310) 208-0448</li>
+					<li>email: <a href="#">gordon@ucla.edu</li>
+			  </ul>
+			</aside>
+	</section>
+
+	 <footer role="contentinfo" class="ucla-iam-footer">
+	 	<div class="ucla-iam-footer-content">
+	 		<p><a href="..//ucla-logon-mocks/cms-policies.html">Privacy, Security & Legal</a> <span>Loaded: </span></p>
+	 	</div>
+	 </footer>
+	 
+	 <script src="..//assets/js/app.js"></script>
+	 
+
+</body>
+</html>

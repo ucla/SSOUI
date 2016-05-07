@@ -28,7 +28,7 @@ function loadConfig() {
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, sass, javascript, images, copy, copyBower), styleGuide));
+ gulp.series(clean, gulp.parallel(pages, sass, sassM, sassA, javascript, images, copy), styleGuide));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -45,11 +45,6 @@ function clean(done) {
 function copy() {
   return gulp.src(PATHS.assets)
     .pipe(gulp.dest(PATHS.dist + '/assets'));
-}
-
-function copyBower() {
-  return gulp.src(PATHS.bowerDirectLinked)
-    .pipe(gulp.dest('dist/assets/bower_components'));
 }
 
 // Copy page templates into finished HTML files
@@ -82,7 +77,41 @@ function styleGuide(done) {
 // Compile Sass into CSS
 // In production, the CSS is compressed
 function sass() {
-  return gulp.src('src/assets/scss/app.scss')
+  return gulp.src('src/assets/scss/ucla-logon.scss')
+    .pipe($.sourcemaps.init())
+    .pipe($.sass({
+      includePaths: PATHS.sass
+    })
+      .on('error', $.sass.logError))
+    .pipe($.autoprefixer({
+      browsers: COMPATIBILITY
+    }))
+    .pipe($.if(PRODUCTION, $.uncss(UNCSS_OPTIONS)))
+    .pipe($.if(PRODUCTION, $.cssnano()))
+    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
+    .pipe(gulp.dest(PATHS.dist + '/assets/css'))
+    .pipe(browser.reload({ stream: true }));
+}
+    
+function sassM() {
+  return gulp.src('src/assets/scss/medcenter.scss')
+    .pipe($.sourcemaps.init())
+    .pipe($.sass({
+      includePaths: PATHS.sass
+    })
+      .on('error', $.sass.logError))
+    .pipe($.autoprefixer({
+      browsers: COMPATIBILITY
+    }))
+    .pipe($.if(PRODUCTION, $.uncss(UNCSS_OPTIONS)))
+    .pipe($.if(PRODUCTION, $.cssnano()))
+    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
+    .pipe(gulp.dest(PATHS.dist + '/assets/css'))
+    .pipe(browser.reload({ stream: true }));
+}
+
+function sassA() {
+  return gulp.src('src/assets/scss/as-app.scss')
     .pipe($.sourcemaps.init())
     .pipe($.sass({
       includePaths: PATHS.sass
@@ -135,7 +164,7 @@ function watch() {
   gulp.watch(PATHS.assets, copy);
   gulp.watch('src/pages/**/*.html').on('change', gulp.series(pages, browser.reload));
   gulp.watch('src/{layouts,partials}/**/*.html').on('change', gulp.series(resetPages, pages, browser.reload));
-  gulp.watch('src/assets/scss/**/*.scss', sass);
+  gulp.watch('src/assets/scss/**/*.scss', sass, sassA, sassM);
   gulp.watch('src/assets/js/**/*.js').on('change', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/img/**/*').on('change', gulp.series(images, browser.reload));
   gulp.watch('src/styleguide/**').on('change', gulp.series(styleGuide, browser.reload));

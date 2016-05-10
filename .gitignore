@@ -2,3 +2,13 @@ _site
 .sass-cache
 Gemfile.lock
 .jekyll-metadata
+node_modules
+bower_components/jquery/src/css/var/getStyles.js
+bower_components/jquery/src/data/Data.js
+bower_components/jquery/src/data/var
+bower_components/jquery/src/selector-native.js
+bower_components/jquery/src/var/arr.js
+bower_components/motion-ui
+bower_components/sass-toolkit
+bower_components/what-input
+bower_components/zxcvbn

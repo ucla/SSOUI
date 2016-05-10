@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 _site
 .sass-cache
 Gemfile.lock
@@ -12,3 +13,8 @@ bower_components/motion-ui
 bower_components/sass-toolkit
 bower_components/what-input
 bower_components/zxcvbn
+=======
+bower_components
+dist
+node_modules
+>>>>>>> origin/gh-pages

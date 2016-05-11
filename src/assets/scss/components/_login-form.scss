@@ -18,7 +18,7 @@
 
 #sso .error-box {
 	width: 100%;
-	@include breakpoint(grid-liquid) {
+	@include breakpoint(large-type) {
 		width: 26rem;
 	}
 	h2 {

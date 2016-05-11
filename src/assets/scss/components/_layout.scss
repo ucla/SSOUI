@@ -18,8 +18,8 @@ section[role="main"] {
 article, #sso, .sp-support, .ucla-iam-footer-content, .breaking-news {
 	width: 96%;
 	margin: $global-margin auto 0;
-	@include breakpoint(grid-elastic) {
-		width: 36rem;
+	@include breakpoint(multi-column) {
+		width: 34rem;
 	}
 }
 .ucla-iam-footer-content {
@@ -41,7 +41,7 @@ article, #sso, .sp-support, .ucla-iam-footer-content, .breaking-news {
 
 .sso-submit {
 	width: 100%;
-	@include breakpoint(grid-liquid) {
+	@include breakpoint(multi-column) {
 		@include grid-column(3);
 		margin: 0;
 	}
@@ -49,7 +49,7 @@ article, #sso, .sp-support, .ucla-iam-footer-content, .breaking-news {
 
 .sso-links {
 	width: 100%;
-	@include breakpoint(grid-liquid) {
+	@include breakpoint(multi-column) {
 		@include grid-column(9);
 		margin: 0;
 	}

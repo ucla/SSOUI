@@ -1,27 +1,22 @@
 // UCLA image
 .logo {
-	display: block;
+  display: none;
+  @media (min-height: 30rem) {
+    display: block;
+  }
 	width: 100%;
 	background: rgba($black, .75);
 	border-bottom: 1px solid $ucla-blue-light;
-	@include breakpoint(grid-liquid) {
+	@media (min-width: 34rem) and (min-height: 36rem) {
     background: none;
     border-bottom: none;
 	}
 	img {
   	display: block;
   	width: 35%;
-  	@include breakpoint(grid-liquid) {
-    	width: 22rem;
-      margin: ($global-margin / 2) auto 0;
-  	}
-  	@include breakpoint(grid-elastic) {
-    	width: 26rem;
+  	@media (min-width: 34rem) and (min-height: 36rem) {
+    	width: 24rem;
     	margin: $global-spacing auto 0;
-    }
-    @media (max-height: 500px) {
-      width: 16rem;
-      margin: 0 auto 0;
     }
   }
 }
@@ -39,7 +34,7 @@
 .sp-support {
 	background: $sp-support-bg;
 	padding: 2.5% 7.5%;
-	@include breakpoint(grid-elastic) {
+	@include breakpoint(multi-column) {
 		padding: $global-padding ($global-padding * 2.5);
 	}
 	margin: $global-margin auto 0;

@@ -95,9 +95,7 @@ $print-transparent-backgrounds: true;
 $breakpoints: (
   small: 0, // single-column
   modern-mobile: 375px,
-  grid-liquid: 34rem,
-  grid-elastic: 38rem,
-  multi-column: 38rem,
+  multi-column: 34rem,
   large-type: 38rem,
   medium: 38rem, // has to be here, dislike semantically ;)
 );

@@ -22,8 +22,16 @@ article, #sso, .sp-support, .ucla-iam-footer-content, .breaking-news {
 		width: 34rem;
 	}
 }
+
+.wide {
+	@include breakpoint(multi-column) {
+		width: 42rem;
+	}
+}
+
 .ucla-iam-footer-content {
   margin-top: 0;
+  padding-left: $global-padding * 2.5;
 }
 
 .right {

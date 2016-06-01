@@ -7,7 +7,7 @@
 	overflow: hidden;
 	border-radius: $global-radius;
 	padding: 2.5% 7.5%;
-	@include breakpoint(grid-elastic) {
+	@include breakpoint(multi-column) {
 		padding: $global-padding ($global-padding * 2.5);
 	}
   @include grid-row();

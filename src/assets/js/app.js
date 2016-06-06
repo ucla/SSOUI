@@ -3,6 +3,8 @@
 /////////////////////////////////////////
 
 $(document).foundation();
+Foundation.Abide.defaults.patterns['ucla_logon'] = /^[a-z0-9]{2,15}$/;
+Foundation.Abide.defaults.patterns['ucla_pass'] = /^[a-zA-Z0-9 !@#$%^&*().,]{8,128}$/; 
 
 /////////////////////////////////////////
 ///       initiate spinner

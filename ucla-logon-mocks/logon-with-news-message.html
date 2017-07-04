@@ -29,12 +29,12 @@
 			
 			  <fieldset>
 					<label for="logon"><span hidden>Your UCLA Logon ID</span>
-			  		<input id="logon" name="logon" type="text" placeholder="Your UCLA Logon ID" aria-required="true" pattern="[a-z0-9]{3,15}" title="Logon IDs are 3 to 15 characters long." tabindex="1" autocorrect="off" autocapitalize="none" required autofocus>
-			  		<span class="form-error">Logon IDs are 3 to 15 characters long.</span>
+			  		<input id="logon" name="logon" type="text" placeholder="Your UCLA Logon ID" aria-required="true" pattern="ucla_logon" title="Logon IDs are 2 to 15 characters long." tabindex="1" autocorrect="off" autocapitalize="none" required autofocus>
+			  		<span class="form-error">Logon IDs consist of 2 to 15 lower case letters and numbers.</span>
 					</label>
 			
 					<label for="pass"><span hidden>Your UCLA Logon Password</span>
-					  <input id="pass" name="pass" type="password" placeholder="Your UCLA Logon Password" aria-required="true" pattern="[a-zA-Z0-9 !@#$%^&*().,]{8,128}"  title="Passwords are at least 8 characters long and can consist of letters, numbers, and the following symbols: !@#$%^&*().," tabindex="2" autocorrect="off" autocapitalize="none" required>
+					  <input id="pass" name="pass" type="password" placeholder="Your UCLA Logon Password" aria-required="true" pattern="ucla_pass"  title="Passwords are at least 8 characters long and can consist of letters, numbers, and the following symbols: !@#$%^&*().," tabindex="2" autocorrect="off" autocapitalize="none" required>
 					<span class="form-error">Passwords are at least 8 characters long and can consist of letters, numbers, and the following symbols: !@#$%^&*().,</span>
 					</label>
 				</fieldset>
@@ -63,7 +63,7 @@
 
 	 <footer role="contentinfo" class="ucla-iam-footer">
 	 	<div class="ucla-iam-footer-content">
-	 		<p><a href="..//ucla-logon-mocks/cms-policies.html">Privacy, Security & Legal</a> <span>Loaded: </span></p>
+	 		<p><a href="..//ucla-logon-mocks/cms-policies.html">Privacy, Security & Legal</a></p>
 	 	</div>
 	 </footer>
 	 

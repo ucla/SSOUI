@@ -101,6 +101,7 @@ $breakpoints: (
   large-type: 38rem,
   medium: 38rem, // has to be here, dislike semantically ;)
 );
+$print-breakpoint: large-type;
 $breakpoint-classes: ();
 
 // 3. The Grid
@@ -122,22 +123,22 @@ $header-font-family: $body-font-family;
 $header-font-weight: $global-weight-bold;
 $header-font-style: normal;
 $font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
-$header-sizes: (
+$header-styles: (
   small: (
-    'h1': 24,
-    'h2': 20,
-    'h3': 19,
-    'h4': 18,
-    'h5': 17,
-    'h6': 16,
+    'h1': ('font-size': 24),
+    'h2': ('font-size': 20),
+    'h3': ('font-size': 19),
+    'h4': ('font-size': 18),
+    'h5': ('font-size': 17),
+    'h6': ('font-size': 16),
   ),
   large-type: (
-    'h1': 32,
-    'h2': 24,
-    'h3': 22,
-    'h4': 20,
-    'h5': 18,
-    'h6': 16,
+    'h1': ('font-size': 32),
+    'h2': ('font-size': 24),
+    'h3': ('font-size': 22),
+    'h4': ('font-size': 20),
+    'h5': ('font-size': 18),
+    'h6': ('font-size': 16),
   ),
 );
 $header-color: $dark-gray;

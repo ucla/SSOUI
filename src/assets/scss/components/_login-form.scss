@@ -22,7 +22,7 @@
 		width: 26rem;
 	}
 	h2 {
-		font-size: rem-calc(nested-map-get($header-sizes, large-type, h3));
+		font-size: rem-calc(map-deep-get($header-styles, large-type, h3, font-size));
 	}
 	margin-bottom: $global-spacing;
 }

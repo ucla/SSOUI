@@ -4,6 +4,9 @@
 ///       FRAMEWORK COMPONENTS
 /////////////////////////////////////////
 
+// Fonts
+@import 'components/proxima-nova';
+
 // Main library stuff
 @import 'config/med-settings';
 @import 'foundation';
@@ -61,7 +64,6 @@
 // ZURB Motion UI
 // @include motion-ui-transitions;
 // @include motion-ui-animations;
-
 
 /////////////////////////////////////////
 ///   ADDITIONAL UC SPECIFIC STYLING

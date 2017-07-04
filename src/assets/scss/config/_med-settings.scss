@@ -63,9 +63,9 @@ $foundation-palette: (
   warning: $ucla-orange,
   alert: $ucla-health-rose,
 );
-$primary-color: $ucla-blue-old;
-$primary-color-safe: $ucla-blue-safe;
-$primary-color-alternate: $ucla-blue-old-dark;
+$primary-color: $ucla-health-dark-blue;
+$primary-color-safe: $ucla-health-dark-blue;
+$primary-color-alternate: $ucla-health-dark-blue;
 $secondary-color: $ucla-health-gold;
 $success-color: $ucla-green;
 $warning-color: $ucla-orange;
@@ -73,8 +73,8 @@ $alert-color: $ucla-health-rose;
 $alert-color-dark: tint($ucla-health-rose, 92.5%);
 $alert-color-dark-alternate: tint($ucla-health-rose, 94%);
 $body-background: $white;
-$body-font-color: #444;
-$body-font-family: "Adobe Univers", Futura, "Trade Gothic", Univers;
+$body-font-color: #333;
+$body-font-family: $ucla-font-stack;
 $body-antialiased: true;
 $global-spacing: 1rem;
 $global-margin: $global-spacing;
@@ -95,12 +95,11 @@ $print-transparent-backgrounds: true;
 $breakpoints: (
   small: 0, // single-column
   modern-mobile: 375px,
-  grid-liquid: 34rem,
-  grid-elastic: 38rem,
-  multi-column: 38rem,
+  multi-column: 34rem,
   large-type: 38rem,
   medium: 38rem, // has to be here, dislike semantically ;)
 );
+$print-breakpoint: large-type;
 $breakpoint-classes: ();
 
 // 3. The Grid
@@ -118,26 +117,26 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: "Adobe Minion Regular", MinionPro, Bodoni, "Adobe Caslon", Century, Palatino;
+$header-font-family: $body-font-family;
 $header-font-weight: $global-weight-bold;
 $header-font-style: normal;
 $font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
-$header-sizes: (
+$header-styles: (
   small: (
-    'h1': 24,
-    'h2': 20,
-    'h3': 19,
-    'h4': 18,
-    'h5': 17,
-    'h6': 16,
+    'h1': ('font-size': 24),
+    'h2': ('font-size': 20),
+    'h3': ('font-size': 19),
+    'h4': ('font-size': 18),
+    'h5': ('font-size': 17),
+    'h6': ('font-size': 16),
   ),
   large-type: (
-    'h1': 32,
-    'h2': 24,
-    'h3': 22,
-    'h4': 20,
-    'h5': 18,
-    'h6': 16,
+    'h1': ('font-size': 32),
+    'h2': ('font-size': 24),
+    'h3': ('font-size': 22),
+    'h4': ('font-size': 20),
+    'h5': ('font-size': 18),
+    'h6': ('font-size': 16),
   ),
 );
 $header-color: $dark-gray;
@@ -155,10 +154,10 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: #0081dc; // taken from identity.uclahealth.org
-$anchor-color-hover: #0081dc;
+$anchor-color: $ucla-health-link;
+$anchor-color-hover: $ucla-health-link-hover;
 $anchor-text-decoration: none;
-$anchor-text-decoration-hover: none;
+$anchor-text-decoration-hover: underline;
 $hr-width: $global-width;
 $hr-border: 1px solid $body-font-color;
 $hr-margin: rem-calc(8) auto;
@@ -577,7 +576,7 @@ $topbar-input-width: 200px;
 
 $global-letter-spacing: 0.5px;
 $secondary-login-option-color: #526991;
-$sp-support-bg: rgba($light-gray, .85);
+$sp-support-bg: #add7f2;
 $footer-link-color: $white;
 $footer-link-color-hover: $ucla-health-gold;
-$html-background: #3e83c2;
+$html-background: url('../img/health-background.jpg') no-repeat fixed;

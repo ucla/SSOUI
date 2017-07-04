@@ -21,6 +21,17 @@
   }
 }
 
+.health-logo {
+	img {
+  	display: block;
+  	width: 35%;
+  	@media (min-width: 34rem) and (min-height: 36rem) {
+    	width: 32rem;
+    	margin: ($global-spacing * 3.3) auto;
+    }
+  }
+}
+
 // environmental/contextual info for error pages
 .ticket-info {
   background: $lighter-gray;
@@ -43,7 +54,7 @@
 		font-size: $helptext-font-size;
 	}
 	h2 {
-		font-size: rem-calc(nested-map-get($header-sizes, large-type, h4));
+		font-size: rem-calc(map-deep-get($header-styles, large-type, h4, font-size));
 		margin: 0;
 	}
 }

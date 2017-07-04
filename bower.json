@@ -15,11 +15,15 @@
     "tests"
   ],
   "dependencies": {
-    "motion-ui": "~1.1.0",
-    "webshim": "~1.15.10",
-    "sass-toolkit": "~2.9.0",
+    "foundation-sites": "ucla/foundation-sites#2365d79d9542ff2fc0647ceb5c97fbef814f0c99",
+    "motion-ui": "~1.2.2",
+    "sass-toolkit": "~2.10.2",
     "what-input": "^1.2.5",
-    "zxcvbn": "~4.2.0"
+    "spin.js": "^2.3.2"
+  },
+  "resolutions": {
+    "jquery": "1.12.4",
+    "what-input": "1.2.5"
   },
   "private": true
 }

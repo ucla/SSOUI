@@ -4,22 +4,33 @@ import plugins  from 'gulp-load-plugins';
 import yargs    from 'yargs';
 import browser  from 'browser-sync';
 import gulp     from 'gulp';
+import gutil    from 'gulp-util';
 import panini   from 'panini';
 import rimraf   from 'rimraf';
 import sherpa   from 'style-sherpa';
 import yaml     from 'js-yaml';
 import fs       from 'fs';
-import access   from 'gulp-accessibility';
-// import arialinter  from 'gulp-arialinter';
+import path     from 'path';
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
 
 // Check for --production flag
 const PRODUCTION = !!(yargs.argv.production);
+const NO_STYLEGUIDE = !!(yargs.argv.no_styleguide);
+const NO_UNCSS = !!(yargs.argv.no_uncss);
+const DESTINATION = yargs.argv.dest;
 
 // Load settings from settings.yml
-const { COMPATIBILITY, PORT, UNCSS_OPTIONS, PATHS } = loadConfig();
+const CONFIG = loadConfig();
+const { COMPATIBILITY, UNCSS_OPTIONS, PATHS } = CONFIG;
+const PORT = yargs.argv.port || CONFIG.PORT;
+
+PATHS.dist = DESTINATION || PATHS.dist;
+
+if (DESTINATION) {
+  gutil.log(gutil.colors.yellow(`Overriding destination: ${DESTINATION}`));
+}
 
 function loadConfig() {
   let ymlFile = fs.readFileSync('config.yml', 'utf8');
@@ -28,7 +39,7 @@ function loadConfig() {
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, sass, javascript, images, copy), styleGuide));
+ gulp.series(clean, gulp.parallel(pages, fa, sass, javascript, images, copy), styleGuide));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -37,7 +48,7 @@ gulp.task('default',
 // Delete the "dist" folder
 // This happens every time a build starts
 function clean(done) {
-  rimraf(PATHS.dist, done);
+  rimraf(path.join(PATHS.dist, '*'), done);
 }
 
 // Copy files out of the assets folder
@@ -45,6 +56,11 @@ function clean(done) {
 function copy() {
   return gulp.src(PATHS.assets)
     .pipe(gulp.dest(PATHS.dist + '/assets'));
+}
+
+function copyBower() {		
+  return gulp.src(PATHS.bowerDirectLinked)		
+    .pipe(gulp.dest(PATHS.dist + '/assets/bower_components'));		
 }
 
 // Copy page templates into finished HTML files
@@ -68,10 +84,21 @@ function resetPages(done) {
 
 // Generate a style guide from the Markdown content and HTML template in styleguide/
 function styleGuide(done) {
-  sherpa('src/styleguide/index.md', {
-    output: PATHS.dist + '/styleguide.html',
-    template: 'src/styleguide/template.html'
-  }, done);
+  if (NO_STYLEGUIDE) {
+    gutil.log(gutil.colors.yellow('--no_styleguide. Skipping...'));
+    done();
+  } else {
+    sherpa('src/styleguide/index.md', {
+      output: PATHS.dist + '/styleguide.html',
+      template: 'src/styleguide/template.html'
+    }, done);
+  }
+}
+
+// Move font-awesome fonts folder to compiled folder
+function fa() {
+  return gulp.src( './bower_components/font-awesome/fonts/**.*')
+    .pipe(gulp.dest(PATHS.dist + '/assets/fonts'));
 }
 
 // Compile Sass into CSS
@@ -86,8 +113,8 @@ function sass() {
     .pipe($.autoprefixer({
       browsers: COMPATIBILITY
     }))
-    .pipe($.if(PRODUCTION, $.uncss(UNCSS_OPTIONS)))
-    .pipe($.if(PRODUCTION, $.cssnano()))
+    .pipe($.if(PRODUCTION && !NO_UNCSS, $.uncss(UNCSS_OPTIONS)))
+    .pipe($.if(PRODUCTION, $.cleanCss({ compatibility: 'ie9' })))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
     .pipe(gulp.dest(PATHS.dist + '/assets/css'))
     .pipe(browser.reload({ stream: true }));
@@ -98,7 +125,7 @@ function sass() {
 function javascript() {
   return gulp.src(PATHS.javascript)
     .pipe($.sourcemaps.init())
-    .pipe($.babel())
+    .pipe($.babel({ignore: ['what-input.js']}))
     .pipe($.concat('app.js'))
     .pipe($.if(PRODUCTION, $.uglify()
       .on('error', e => { console.log(e); })
@@ -125,13 +152,19 @@ function server(done) {
   done();
 }
 
+// Reload the browser with BrowserSync
+function reload(done) {
+  browser.reload();
+  done();
+}
+
 // Watch for changes to static assets, pages, Sass, and JavaScript
 function watch() {
   gulp.watch(PATHS.assets, copy);
-  gulp.watch('src/pages/**/*.html').on('change', gulp.series(pages, browser.reload));
-  gulp.watch('src/{layouts,partials}/**/*.html').on('change', gulp.series(resetPages, pages, browser.reload));
-  gulp.watch('src/assets/scss/**/*.scss', sass);
-  gulp.watch('src/assets/js/**/*.js').on('change', gulp.series(javascript, browser.reload));
-  gulp.watch('src/assets/img/**/*').on('change', gulp.series(images, browser.reload));
-  gulp.watch('src/styleguide/**').on('change', gulp.series(styleGuide, browser.reload));
+  gulp.watch('src/pages/**/*.html').on('all', gulp.series(pages, browser.reload));
+  gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages, browser.reload));
+  gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
+  gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
+  gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
+  gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
 }

@@ -1,15 +1,15 @@
 <form id="sso" role="form" action="/" method="post" data-abide novalidate>
     
-  <legend>Sign In with your Medcenter ID</legend>
+  <legend>Sign In with your Mednet/AD account</legend>
 
   <fieldset>
-		<label for="logon"><span hidden>Your Medcenter Account ID</span>
+		<label for="logon"><span hidden>Your Mednet/AD Account ID</span>
   		<input id="logon" name="logon" type="text" placeholder="Your Medcenter Account ID" aria-required="true" pattern="[a-z0-9]{3,15}" title="Logon IDs are 3 to 15 characters long." tabindex="1" autocorrect="off" autocapitalize="none" required autofocus>
   		<span class="form-error">Logon IDs are 3 to 15 characters long.</span>
 		</label>
 
-		<label for="pass"><span hidden>Your Medcenter Password</span>
-		  <input id="pass" name="pass" type="password" placeholder="Your Medcenter Password" aria-required="true" pattern="[a-zA-Z0-9 !@#$%^&*().,]{8,128}"  title="Passwords are at least 8 characters long and can consist of letters, numbers, and the following symbols: !@#$%^&*().," tabindex="2" autocorrect="off" autocapitalize="none" required>
+		<label for="pass"><span hidden>Your Mednet/AD Password</span>
+		  <input id="pass" name="pass" type="password" placeholder="Your Medcenter Password" aria-required="true" pattern="[a-zA-Z0-9 !@#$%^&*().,]{8,128}"  title="Passwords are at least 8 characters long and must have 3 of the following: Number (0-9), Lower Case letter(a-z), Upper Case letter(A-Z), and/or Special Characters. They cannot be a recently used password and cannot contain any part of your name or ID." tabindex="2" autocorrect="off" autocapitalize="none" required>
 		<span class="form-error">Passwords are at least 8 characters long and can consist of letters, numbers, and the following symbols: !@#$%^&*().,</span>
 		</label>
 	</fieldset>
@@ -17,9 +17,7 @@
   <button class="primary-button" type="submit" name="sso-submit">Sign In</button>
 	
   <ul class="sso-links">
-		<li>Forgot your <a href="https://my.uclahealth.org/MyChart/recoverlogin.asp" title="Lookup your Medcenter ID">Medcenter ID</a> or <a href="https://my.uclahealth.org/MyChart/passwordreset.asp" title="Reset your password">Password</a>?</li>
-		<li><a href="https://my.uclahealth.org/MyChart/digidaccesscheck.asp" title="Create a Medcenter ID">Need a Medcenter ID?</a></li>
+		<li>Forgot your Mednet/AD ID <a href="http://www.mednet.ucla.edu/ChangeMyPassword.htm" title="Reset your password">Password</a>?</li>
 	</ul>
-
   
 </form>

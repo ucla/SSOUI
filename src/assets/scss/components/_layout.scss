@@ -58,7 +58,8 @@ article, #sso, .sp-support, .ucla-iam-footer-content, .breaking-news {
 .sso-links {
 	width: 100%;
 	@include breakpoint(multi-column) {
-		@include grid-column(9);
+		width: 75%;
+		float: right;
 		margin: 0;
 	}
 }

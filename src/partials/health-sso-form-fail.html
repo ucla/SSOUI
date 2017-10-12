@@ -1,21 +1,21 @@
 <form id="sso" role="form" action="/" method="post" data-abide novalidate>
     
-  <legend>Sign In with Mednet AD</legend>
+  <legend>Sign In with Mednet ID</legend>
     
   <div>
     <h2 class="error-title">Your ID and/or password were incorrect.</h2>
     
-    <p class="error-title">Make sure you're signing in with the right account ID, and carefully retype your password. If you still have problems, try <a href="#">resetting your password or looking up your Medcenter ID</a>.</p>
+    <p class="error-title">Make sure you are signing in with your Mednet username (e.g., JBruin) and password. If you are still experiencing issues call Customer Care, 310-267-2273.</p>
   </div>
   
   <fieldset>
-		<label for="logon"><span hidden>Your Mednet/AD Account ID</span>
-  		<input id="logon" name="logon" type="text" placeholder="Your Mednet/AD Account ID" aria-required="true" pattern="[a-z0-9]{3,15}" title="Logon IDs are 3 to 15 characters long." tabindex="1" autocorrect="off" autocapitalize="none" required autofocus>
+		<label for="logon"><span hidden>Your Mednet Account ID</span>
+  		<input id="logon" name="logon" type="text" placeholder="Your Mednet Account ID" aria-required="true" pattern="[a-z0-9]{3,15}" title="Logon IDs are 3 to 15 characters long." tabindex="1" autocorrect="off" autocapitalize="none" required autofocus>
   		<span class="form-error">Logon IDs are 3 to 15 characters long.</span>
 		</label>
 
-		<label for="pass"><span hidden>Your Mednet/AD Password</span>
-		  <input id="pass" name="pass" type="password" placeholder="Your Medcenter Password" aria-required="true" pattern="[a-zA-Z0-9 !@#$%^&*().,]{8,128}"  title="Passwords are at least 8 characters long and must have 3 of the following: Numbers (0-9), Lower Case Letters (a-z), Upper Case Letters (A-Z), and/or Special Characters." tabindex="2" autocorrect="off" autocapitalize="none" required>
+		<label for="pass"><span hidden>Your Mednet Password</span>
+		  <input id="pass" name="pass" type="password" placeholder="Your Mednet Password" aria-required="true" pattern="[a-zA-Z0-9 !@#$%^&*().,]{8,128}"  title="Passwords are at least 8 characters long and must have 3 of the following: Numbers (0-9), Lower Case Letters (a-z), Upper Case Letters (A-Z), and/or Special Characters." tabindex="2" autocorrect="off" autocapitalize="none" required>
 		<span class="form-error">Passwords are at least 8 characters long and must have 3 of the following: Numbers (0-9), Lower Case Letters (a-z), Upper Case Letters (A-Z), and/or Special Characters.</span>
 		</label>
 	</fieldset>
@@ -23,7 +23,7 @@
   <button class="primary-button" type="submit" name="sso-submit">Sign In</button>
   
   <ul class="sso-links">
-		<li>Forgot your Mednet/AD ID <a href="http://www.mednet.ucla.edu/ChangeMyPassword.htm" title="Reset your password">Password</a>?</li>
+		<li>Forgot your Mednet ID <a href="http://www.mednet.ucla.edu/ChangeMyPassword.htm" title="Reset your password">Password</a>?</li>
 	</ul>
   
 </form>

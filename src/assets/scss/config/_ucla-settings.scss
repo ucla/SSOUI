@@ -61,7 +61,7 @@ $foundation-palette: (
   secondary: $ucla-gold,
   success: $ucla-green,
   warning: $ucla-orange,
-  alert: $ucla-pink,
+  alert: $ucla-its-danger,
 );
 $primary-color: $ucla-blue;
 $primary-color-safe: $ucla-blue-safe;
@@ -69,7 +69,7 @@ $primary-color-alternate: $ucla-blue-dark;
 $secondary-color: $ucla-gold;
 $success-color: $ucla-green;
 $warning-color: $ucla-orange;
-$alert-color: $ucla-pink;
+$alert-color: $ucla-its-danger;
 $alert-color-dark: darken($ucla-pink, 42%);
 $alert-color-dark-alternate: darken($ucla-pink, 46%);
 $body-background: none;
@@ -333,7 +333,7 @@ $dropdownmenu-border: 1px solid $medium-gray;
 $flexvideo-margin-bottom: rem-calc(16);
 $flexvideo-ratio: 4 by 3;
 $flexvideo-ratio-widescreen: 16 by 9;
-
+  
 // 19. Forms
 // ---------
 
@@ -357,7 +357,7 @@ $select-background: $white;
 $select-triangle-color: #333;
 $select-radius: $global-radius;
 $input-color: $black;
-$input-placeholder-color: $medium-gray;
+$input-placeholder-color: #717171;
 $input-font-family: inherit;
 $input-font-size: rem-calc(16);
 $input-background: $white;

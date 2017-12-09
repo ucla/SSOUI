@@ -7,7 +7,7 @@
 	<title>UCLA Single Sign-On</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="..//assets/css/medcenter.css">
-	<script src="..//assets/js/modernizr.custom.js"></script>
+	<script src="..//assets/directlinked/modernizr.custom.js"></script>
 </head>
 
 <body>
@@ -19,9 +19,9 @@
 			
 			<form id="sso" role="form" action="/" method="post" data-abide novalidate>
 			
-			  <legend>Sign In with Mednet ID</legend>
-			
 			  <fieldset>
+			    <legend>Sign In with Mednet ID</legend>
+			    
 					<label for="logon"><span hidden>Your Mednet Account ID</span>
 			  		<input id="logon" name="logon" type="text" placeholder="Your Mednet Account ID" aria-required="true" pattern="[a-z0-9]{3,20}" title="Mednet IDs are 3 to 20 characters long." tabindex="1" autocorrect="off" autocapitalize="none" required autofocus>
 			  		<span class="form-error">Mednet IDs consist of 3 to 20 lower case characters and does not contain @mednet.ucla.edu.</span>

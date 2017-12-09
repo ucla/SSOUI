@@ -39,7 +39,7 @@ function loadConfig() {
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, fa, sass, javascript, images, copy), styleGuide));
+ gulp.series(clean, gulp.parallel(pages, fa, sass, javascript, images, copy, copyBower), styleGuide));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -60,7 +60,7 @@ function copy() {
 
 function copyBower() {		
   return gulp.src(PATHS.bowerDirectLinked)		
-    .pipe(gulp.dest(PATHS.dist + '/assets/bower_components'));		
+    .pipe(gulp.dest(PATHS.dist + '/assets/js'));		
 }
 
 // Copy page templates into finished HTML files
@@ -138,9 +138,11 @@ function javascript() {
 // In production, the images are compressed
 function images() {
   return gulp.src('src/assets/img/**/*')
+/*
     .pipe($.if(PRODUCTION, $.imagemin({
       progressive: true
     })))
+*/
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
 

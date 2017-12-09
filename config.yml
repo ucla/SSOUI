@@ -33,6 +33,7 @@ PATHS:
   bowerDirectLinked:
     # - "bower_components/zxcvbn/dist/zxcvbn.js"
     # - "bower_components/zxcvbn/dist/zxcvbn.js.map"
+    - "src/assets/directlinked/modernizr.custom.js"
   # Paths to JavaScript libraries, which are combined into one file
   javascript:
     # Libraries required by Foundation
